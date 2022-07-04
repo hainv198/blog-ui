@@ -1,0 +1,198 @@
+.header{
+    width: 91%;
+    margin-left: 4em;
+    margin-bottom: 15em;
+}
+.page-cover{
+    z-index: 100;
+    position: relative;
+}
+.category-cover-title::after,.category-cover-title::before{
+    left: -.06em;
+    top: -.06em;
+    transition: top .25s ease-in,left .25s ease-in,color .25s ease-in;
+    transition-delay: .8s;
+}
+.category-cover-title::before{
+    color: rgba(255,255,255,.4);
+    z-index: -1;
+}
+.category-cover-title::after{
+    color: rgba(94,60,59,.3);
+}
+.category-cover-title::after,.category-cover-title::before{
+    content: attr(title);
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: currentColor;
+    -webkit-text-stroke-width: .02em;
+}
+.category-cover-title{
+    color: #d8c4c3;
+    font-size: 6em;
+    left: 0;
+    top: 0;
+    transition: top .25s ease-in,left .25s ease-in,color .25s ease-in;
+    transition-delay: .8s;
+    display: inline-block;
+    line-height: .9;
+    margin: 0;
+    position: relative;
+    z-index: 80;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+::after,::before{
+    text-transform: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+}
+.category-cover{
+    display: flex;
+    height: 100%;
+    left: 0;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.category-cover-left{
+    padding: 0 0 45px 35px;
+    max-width: 100%;
+}
+.category-cover-subtitle{
+    display: block;
+    font-family: "Freehand",Arial,sans-serif;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 0;
+    position: relative;
+    font-size: 1.5em;
+    left: -15px;
+}
+.category-cover-right-title{
+    font-family: "Freehand",Arial,sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.category-cover-excerpt{
+    font-family: Montserrat,Arial,sans-serif;
+    font-size: 1em;
+    letter-spacing: .03em;
+    line-height: 1.65em;
+    padding-left: 20px;
+    width: 315px;
+    position: absolute;
+    z-index: 5;
+}
+.category-cover-right{
+    left: 25em;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    overflow: visible;
+    font-size: 1em;
+    width: 200px;
+    display: flex;
+    letter-spacing: .03em;
+    line-height: 1.65em;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.salt-icon{
+    background-color: #c0e2e2;
+    border: 1px solid #c0e2e2;
+    border-radius: 50%;
+}
+.page-cover-image{
+    height: 660px;
+    max-width: 650px;
+    mask-position: top center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    left: 50px;
+    margin: 0 auto;
+    padding-left: 7%;
+    right: 0;
+    width: 100%;
+    position: relative;
+}
+.page-cover_image{
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -18em;
+    /*width: 140%;*/
+    z-index: -5;
+}
+----
+.page-content {
+    width: 60%;
+}
+
+.page-content__search {
+
+}
+
+.page-content__search-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.search-title__heading {
+    font-family: 'Freehand', cursive;
+    font-size: 30px;
+}
+.page-content__search-ul {
+    list-style: none;
+    width: 15%;
+    min-width: 300px;
+    box-shadow:  2px 2px 2px rgb(0 0 0 / 5%), -2px 2px 2px rgb(0 0 0 / 4%), 2px 2px 2px rgb(0 0 0 / 5%), 0 0 2px rgb(0 0 0 / 8%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.page-content__search-li {
+    border-bottom: 1px solid lightgray;
+}
+.page-content__search-link{
+    margin-left:30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+.page-content__search-link:hover{
+    text-decoration: underline;
+}
+.page-content__search-li a{
+    text-decoration: none;
+}
+.card-image{
+    position: relative;
+    z-index: 0;
+    /*aspect-ratio: 4/3;*/
+    height: 22rem;
+    width: 40rem;
+}
+.card-icon{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -3rem;
+    margin-top: -4rem;
+    margin-right: auto;
+}
+.card-text{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 2rem;
+}
