@@ -1,0 +1,23 @@
+
+.country {
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill,minmax(85px,1fr));
+  margin: 10px 0 15px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  p {
+    padding: 2px 3px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background: #f5f4f2;
+  }
+}
+.continents span {
+  margin:0 auto;
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #807979;
+}

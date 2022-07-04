@@ -1,11 +1,11 @@
 .wrapper {
-  width: 100%;
-  margin-top: 10px;
+  width: 165px;
+  min-height: 100px;
+  margin-top: 8px;
   background: rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
   border-radius: 8px;
   padding-top: 8px;
-  min-height: 100px;
   box-sizing: border-box;
   max-height: min((100vh - 96px) - 60px, 734px);
   overflow: hidden auto;

@@ -19,9 +19,7 @@ const Search = () => {
         loop: '10',
         onLoopDone: () => console.log(`loop completed after 3 runs.`),
     })
-
     const inputRef = useRef()
-
     useEffect(() => {
         if(! searchValue.trim()) {
             setSearchResult([])
@@ -34,18 +32,14 @@ const Search = () => {
             })
     },[searchValue])
 
-
-
    const handleClear = () => {
         setSearchValue('');
         inputRef.current.focus()
         setSearchResult([])
     }
-
     const handleHideResult = () => {
         setShowResult(false);
     };
-
     return (
         <div>
             <HeadlessTippy
@@ -62,14 +56,12 @@ const Search = () => {
                             {searchResult.map((item) => (
                                 <AccountItem key={item.id} data={ item}/>
                             ))}
-
                         </Wrapper>
                     </div>
                 )}
                 onClickOutside={handleHideResult}
             >
                 <div className='input-search'>
-
                         <input
                             ref={inputRef}
                             type="text"
@@ -79,12 +71,11 @@ const Search = () => {
                             onChange={e => setSearchValue(e.target.value)}
                             onFocus={() =>setShowResult(true)}
                         />
-
                     {!! searchValue && (
                         <button
                             className='btn-closes'
                             onClick={handleClear}
-
+                            style={{marginLeft:70}}
                         >
                             <CloseIcon/>
                         </button>
@@ -95,5 +86,4 @@ const Search = () => {
         </div>
     );
 };
-
 export default Search;
