@@ -150,7 +150,7 @@ const Home = () => {
 
             {/* <!-- section4 --> */}
             <div class="container" id="section4">
-                <div class="row" id='section4-reverse '>
+                <div class="row" id='section4-reverse'>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 section4-card">
                         <div class="row feautured-article">
                             <div class="col-3">
