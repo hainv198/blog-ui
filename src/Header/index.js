@@ -7,17 +7,20 @@ import PublicIcon from '@mui/icons-material/Public';
 import 'tippy.js/dist/tippy.css';
 import Search from "./Search";
 import {Outlet} from "react-router";
+import {Link} from 'react-router-dom'
 import {NavLink} from "react-router-dom"; // optional
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import HeadlessTippy  from '@tippyjs/react/headless';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import Language from "./Language";
-import {useEffect, useState} from "react";
 import Destinations from "./Destinations";
 import Footer from "../LuyenPages/Footer/Footer";
+import Account from "../Components/Authentication/Account";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {useState} from "react";
 function Header() {
-
+    const [currentUser, setCurrentUser] = useState(true)
     return (
         <div>
             <Navbar collapseOnSelect expand="lg"   variant="light" className='header_layout'>
@@ -62,6 +65,18 @@ function Header() {
                                 </div>
                             </HeadlessTippy>
 
+                            <div className='btn-sign'>
+                                {currentUser ? (
+                                    <Tippy content={<span>Sign in</span>}>
+                                        <button>
+                                            <Nav.Link as={NavLink} to='/singin'>Sign in<AccountCircleIcon/></Nav.Link>
+                                        </button>
+                                    </Tippy>
+                                ) : (
+                                    <Account status={currentUser}/>
+                                )}
+                            </div>
+
                             <div className='icon-btn'>
                                 <Tippy
                                     content={<span>Instagram</span>}>
@@ -73,8 +88,6 @@ function Header() {
                                 <Tippy content={<span>Pinterest</span>}>
                                     <span><i className='bx bxl-pinterest-alt'></i></span>
                                 </Tippy>
-
-
                             </div>
                         </div>
                     </Navbar.Collapse>

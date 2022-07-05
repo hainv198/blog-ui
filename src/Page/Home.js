@@ -6,7 +6,6 @@ import '../LuyenPages/Homepage/homepage.css'
 const Home = () => {
     return (
         <div style={{ marginTop: 100 }} className = "homepage">
-
             {/* <!-- section 1 --> */}
             <div className={'container'} id={'section1'}>
                 <div className={'row'} id={'home-img1'}>
