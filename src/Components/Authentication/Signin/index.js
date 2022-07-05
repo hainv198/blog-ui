@@ -24,7 +24,7 @@ const SignIn = () => {
 
     return (
         <div className='container signin'>
-            <div style={{width:500,}}>
+            <div style={{width:400}}>
                 <div>
                     <h1>Sign in to your account</h1>
                     <p className='py-2'>
@@ -34,7 +34,7 @@ const SignIn = () => {
                         </Link>
                     </p>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form className='sign-form' onSubmit={handleSubmit}>
                     <div >
                         <label>Email Address</label><br/>
                         <input
