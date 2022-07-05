@@ -4,6 +4,7 @@ const Country = ({data}) => {
     const [countrys, setCountrys] = useState([])
     useEffect(() => {
         setCountrys(data.data.country)
+        console.log(data)
     },[data])
     return (
         <div className='wrappers row'>

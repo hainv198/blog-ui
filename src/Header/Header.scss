@@ -1,9 +1,10 @@
 .navbar {
   padding: 10px;
-  background-color: transparent;
+  background-color: #c0e2e2;
   box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
   width: 100%;
   position: fixed;
+  z-index: 1000;
   top: 0;
 
 }
@@ -101,7 +102,7 @@
   background: #e5e5e5;
   border-radius: 92px;
   margin: auto;
-  margin-right: 0;
+  margin-left: 0;
   svg {
     font-size: 1.5rem;
   }
@@ -113,7 +114,7 @@
 .header-left {
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  width: 310px;
 }
 
 //icon
@@ -126,8 +127,28 @@
     padding: 8px 10px;
     background: #e5e5e5;
     border-radius: 15px;
-    margin: 0 3px;
+    margin: 0 2px;
     cursor:pointer;
   }
 
+}
+.btn-sign {
+  margin: auto;
+  button {
+    padding: 9px;
+    border-radius: 12px;
+    display: flex;
+
+    .nav-link {
+      padding: unset;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      svg {
+        font-size: 1.7rem;
+        padding: 0 0 3px 3px;
+      }
+    }
+  }
 }

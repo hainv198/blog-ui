@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f306ed-15e8-45eb-872a-cd1f153233fe" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
-      <change afterPath="$PROJECT_DIR$/src/Components/Authentication/Account/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Authentication/ProtectedRoute/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+    <list default="true" id="39f306ed-15e8-45eb-872a-cd1f153233fe" name="Changes" comment="FireBase">
+      <change afterPath="$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Authentication/Signin/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Authentication/Signup/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Context/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/Account/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/ProtectedRoute/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/ProtectedRoute/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/GlobalStyles/GlobalStyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/GlobalStyles/GlobalStyles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Destinations/Country/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Destinations/Country/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +29,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/Account/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/ProtectedRoute/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/Signup/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/GlobalStyles/GlobalStyles.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Context/AuthContext.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Header/Header.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Header/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Page/Home.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,12 +61,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MULTICAMPUSPC/Documents/GitHub/blog-ui",
+    "last_opened_file_path": "C:/Kits_2022-/shop-app",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -62,6 +83,7 @@
       <workItem from="1656898821869" duration="1788000" />
       <workItem from="1656984001984" duration="430000" />
       <workItem from="1656984454874" duration="1575000" />
+      <workItem from="1656986057589" duration="14953000" />
     </task>
     <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
       <created>1656984066463</created>
@@ -70,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656984066463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FireBase">
+      <created>1656986224965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656986224965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json" />
+    <MESSAGE value="FireBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="FireBase" />
   </component>
 </project>
