@@ -9,6 +9,7 @@ import {AuthContextProvider} from "./Context/AuthContext";
 import SignIn from "./Components/Authentication/Signin";
 import SignUp from "./Components/Authentication/Signup";
 import Account from "./Components/Authentication/Account";
+import TemplatePage from "./Post pages/TemplatePage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                         <Route path='/contact' element={<Contact />}/>
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
+                        <Route path='/page/:id' element={<TemplatePage/>}/>
                     </Route>
                     <Route path='/account/:id' element={<Account/>}/>
                 </Routes>

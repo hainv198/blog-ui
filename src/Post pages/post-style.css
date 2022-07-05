@@ -1,3 +1,4 @@
+
 .header-title{
     font-weight: 800;
     font-size: 3rem;
@@ -5,9 +6,9 @@
 .header-content{
     font-family: 'Merriweather',Georgia,serif;
     font-style: italic;
-    line-height: 2rem;
-    font-size: 1.3rem;
-    letter-spacing: .125rem;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
 }
 .image-main {
     border-radius: 50%;
@@ -49,12 +50,14 @@ ol {
 
 .post-content-title {
     margin-top: 15px;
+    font-size: 4rem;
 }
 
 .post-content-article {
     font-family: 'Merriweather', Georgia, serif;
-    font-size: 1.4rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    line-height: 3.3rem;
     text-align: justify;
     margin-top: 15px;
 }

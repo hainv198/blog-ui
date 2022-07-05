@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from "react";
 import {Col, Container, Row, Table} from "react-bootstrap";
 import "./post-style.css";
+import {useParams} from "react-router";
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
+    let params = useParams()
     useEffect(() => {
         //doi params vao day
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/1";
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + params.id;
         fetch(url)
             .then(response => response.json())
             .then(data => setPost(data))
@@ -18,7 +20,7 @@ function TemplatePage() {
             {post != null ? (
                 <Container fluid>
                     <Row>
-                        <Col lg={6} style={{marginTop: "11rem"}}>
+                        <Col lg={6} style={{marginTop: "15rem"}}>
                             <ol className={'ms-auto me-auto w-50'}>
                                 <li className={'top-header-list'}>Home</li>
                                 <li className={'top-header-list'}> ></li>
@@ -260,7 +262,7 @@ function TemplatePage() {
                                                      style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Find Hotels</h6>
+                                                <h3>Find Hotels</h3>
                                                 <span className={'text-muted'}>via Booking.com</span>
                                             </td>
                                             <td width={"5%"}>
@@ -268,7 +270,7 @@ function TemplatePage() {
                                                      src={require("../images/insurance.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Get a Travel Insurance</h6>
+                                                <h3>Get a Travel Insurance</h3>
                                                 <span className={'text-muted'}>via Heymondo</span>
                                             </td>
                                         </tr>
@@ -279,7 +281,7 @@ function TemplatePage() {
                                                      style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Find a Rental Car</h6>
+                                                <h3>Find a Rental Car</h3>
                                                 <span className={'text-muted'}>via Sunny Cars</span>
                                             </td>
                                             <td width={"5%"}>
@@ -287,7 +289,7 @@ function TemplatePage() {
                                                      src={require("../images/boot.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Book Tours & Attractions</h6>
+                                                <h3>Book Tours & Attractions</h3>
                                                 <span className={'text-muted'}>via Viator</span>
                                             </td>
                                         </tr>
@@ -297,7 +299,7 @@ function TemplatePage() {
                                                      src={require("../images/plane.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Find Cheap Flights</h6>
+                                                <h3>Find Cheap Flights</h3>
                                                 <span className={'text-muted'}>via Skyscanner</span>
                                             </td>
                                             <td width={"5%"}>
@@ -305,7 +307,7 @@ function TemplatePage() {
                                                      src={require("../images/ticket.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <h6>Book a Bus/Train/Transfer</h6>
+                                                <h3>Book a Bus/Train/Transfer</h3>
                                                 <span className={'text-muted'}>via 12Go</span>
                                             </td>
                                         </tr>
