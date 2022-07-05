@@ -15,6 +15,7 @@ import 'tippy.js/dist/tippy.css';
 import Language from "./Language";
 import {useEffect, useState} from "react";
 import Destinations from "./Destinations";
+import Footer from "../LuyenPages/Footer/Footer";
 function Header() {
 
     return (
@@ -80,6 +81,7 @@ function Header() {
                 </Container>
             </Navbar>
             <Outlet/>
+            <Footer/>
         </div>
 
 

@@ -1,0 +1,42 @@
+/* .footer {
+    margin-top:  20px;
+} */
+#test {
+    border: 1px solid orange;
+}
+
+.footer-content {
+    justify-content: space-between;
+}
+.footer div{
+    /* border: 1px solid red; */
+}
+
+.footer input {
+    border: 1px solid red;
+    font-size: larger;
+}
+
+.subcribe-form {
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid green;
+    max-width: 400px;
+}
+
+@media screen and (min-width: 992px) {
+    #myForm {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #myForm {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myForm form div{
+       text-align: center;
+    }
+  }

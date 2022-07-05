@@ -5,7 +5,7 @@ import Home from './Home';
 
 const Contact = () => {
     return (
-        <div style={{ marginTop: 100 }}>
+        <div style={{ marginTop: 100 }} className="about">
             {/* <!-- section1 --> */}
             <div id="section1" class="container">
                 <div>
