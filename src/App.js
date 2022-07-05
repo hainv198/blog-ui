@@ -9,7 +9,11 @@ import {AuthContextProvider} from "./Context/AuthContext";
 import SignIn from "./Components/Authentication/Signin";
 import SignUp from "./Components/Authentication/Signup";
 import TemplatePage from "./Post pages/TemplatePage";
-import Account from "./Components/Admin";
+import Admin from "./Admin/Layout";
+import HomeAdmin from "./Admin/Page/Home";
+import List from "./Admin/Page/List";
+import New from "./Admin/Page/New";
+import Single from "./Admin/Page/Single";
 
 function App() {
   return (
@@ -26,7 +30,23 @@ function App() {
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='/page/:id' element={<TemplatePage/>}/>
                     </Route>
-                    <Route path='/account' element={<Account/>}/>
+
+                </Routes>
+                <Routes>
+                    <Route path='/admin' element={<Admin/>}>
+                        <Route path='home' index element={<HomeAdmin/>}/>
+                        <Route path='users'>
+                            <Route index element={<List/>}/>
+                            <Route path=':userId' element={<Single/>}/>
+                            <Route path='new' element={<New/>}/>
+                        </Route>
+                        <Route path='products'>
+                            <Route index element={<List/>}/>
+                            <Route path=':productId' element={<Single/>}/>
+                            <Route path='new' element={<New/>}/>
+                        </Route>
+                    </Route>
+
                 </Routes>
             </Router>
         </AuthContextProvider>

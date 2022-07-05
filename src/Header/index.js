@@ -19,7 +19,7 @@ import Destinations from "./Destinations";
 import Footer from "../LuyenPages/Footer/Footer";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {useState} from "react";
-import Account from "../Components/Admin";
+import Admin from "../Admin/Layout";
 function Header() {
     const [currentUser, setCurrentUser] = useState(true)
     return (
@@ -74,7 +74,7 @@ function Header() {
                                         </button>
                                     </Tippy>
                                 ) : (
-                                    <Account status={currentUser}/>
+                                    <Admin status={currentUser}/>
                                 )}
                             </div>
 
