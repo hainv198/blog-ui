@@ -22,7 +22,7 @@ const Home = () => {
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
                             holiday a piece of cake!</p>
                         <p>Choose a
-                            <select>
+                            <select class="choose-destination">
                                 <option value="default">destination here</option>
                                 <option value="1">HN</option>
                                 <option value="2">QN</option>
@@ -150,8 +150,8 @@ const Home = () => {
 
             {/* <!-- section4 --> */}
             <div class="container" id="section4">
-                <div class="row">
-                    <div class="col-lg-3 .col-md-3 .col-sm-6 .col-xs-12 section4-card">
+                <div class="row" id='section4-reverse '>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 section4-card">
                         <div class="row feautured-article">
                             <div class="col-3">
                                 <img src="https://static.saltinourhair.com/wp-content/uploads/2020/03/23121752/travel-guide-krabi-774x600.jpg"
@@ -190,7 +190,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div class="col-lg-3 .col-md-3 .col-sm-6 .col-xs-12 section4-card">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 section4-card">
                         <img src="https://static.saltinourhair.com/wp-content/uploads/2021/06/04100711/santorini-greece-things-to-do-travel-guide-600x600.jpg"
                             alt="" />
                         <div class="bottom-left">
@@ -203,7 +203,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div class="col-lg-3 .col-md-3 .col-sm-6 .col-xs-12 section4-card">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 section4-card">
                         <img src="https://static.saltinourhair.com/wp-content/uploads/2021/06/04100711/santorini-greece-things-to-do-travel-guide-600x600.jpg"
                             alt="" />
                         <div class="bottom-left">
@@ -216,7 +216,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div class="col-lg-3 .col-md-3 .col-sm-6 .col-xs-12 section4-card">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 section4-card">
                         <img src="https://static.saltinourhair.com/wp-content/uploads/2021/06/04100711/santorini-greece-things-to-do-travel-guide-600x600.jpg"
                             alt="" />
                         <div class="bottom-left">
@@ -234,11 +234,11 @@ const Home = () => {
             {/* <!-- section5 --> */}
             <div class="container" id="section5">
                 <div class="row">
-                    <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 section5-left">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 section5-left">
                         <img src="https://static.saltinourhair.com/build/images/home/about-us.jpg" alt="" />
                     </div>
 
-                    <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12" id="test">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="test">
                         <div class="row about-us">
                             <div class="col-12">
                                 <h1>About us</h1>
