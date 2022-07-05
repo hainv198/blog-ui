@@ -9,12 +9,12 @@ const Home = () => {
             {/* <!-- section 1 --> */}
             <div className={'container'} id={'section1'}>
                 <div className={'row'} id={'home-img1'}>
-                    <div className={'col-lg-6 .col-md-6 .col-sm-6 .col-xs-12'}>
+                    <div className={'col-lg-6 col-md-6 col-sm-6 col-xs-12'}>
                         <img src="https://static.saltinourhair.com/build/images/home/saltinourhair-header-menton-default.jpg"
                             alt="homeimg" />
                     </div>
 
-                    <div className={'col-lg-6 .col-md-6 .col-sm-6 .col-xs-12'} id={'icon1'}>
+                    <div className={'col-lg-6 col-md-6 col-sm-6 col-xs-12'} id={'icon1'}>
                         <div>
                             <img src={'../LuyenPages/Homepage/Img/icons8-table-lamp-50.png'} />
                         </div>
@@ -37,7 +37,7 @@ const Home = () => {
             {/* <!-- section2 --> */}
             <div class="container" id="section2">
                 <div class="row">
-                    <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src="/homepage/Img/icons8-table-lamp-50.png" alt="img1" />
                             <div>Italy</div>
@@ -52,7 +52,7 @@ const Home = () => {
                                 alt="" />
                         </div>
                     </div>
-                    <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src="/homepage/Img/icons8-table-lamp-50.png" alt="img1" />
                             <div>Italy</div>
@@ -105,7 +105,7 @@ const Home = () => {
             {/* <!-- section3 --> */}
             <div class="container" id="section3">
                 <div class="row banner">
-                    <div class="col-lg-6 .col-md-6 .col-sm-12 .col-xs-12 banner-left">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 banner-left">
                         <div>
                             <h3>Its easy to do better</h3>
                             <h1>Sustainable travel</h1>
@@ -114,7 +114,7 @@ const Home = () => {
                             <button class="banner-btn">Travel tip</button>
                         </div>
                     </div>
-                    <div class="col-lg-6 .col-md-6 .col-sm-12 .col-xs-12 section3-right">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 section3-right">
                         <div class="banner-right text-center">
                             <div class="row banner-article">
                                 <div class="col-3">
