@@ -1,9 +1,7 @@
-/* .footer {
-    margin-top:  20px;
-} */
-#test {
-    border: 1px solid orange;
+.footer {
+    background-color: #c0e2e2;
 }
+
 
 .footer-content {
     justify-content: space-between;
