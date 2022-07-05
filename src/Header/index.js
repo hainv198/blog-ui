@@ -15,10 +15,11 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import Language from "./Language";
 import Destinations from "./Destinations";
+
 import Footer from "../LuyenPages/Footer/Footer";
-import Account from "../Components/Authentication/Account";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {useState} from "react";
+import Account from "../Components/Admin";
 function Header() {
     const [currentUser, setCurrentUser] = useState(true)
     return (

@@ -8,8 +8,8 @@ import Contact from "./Page/Contact";
 import {AuthContextProvider} from "./Context/AuthContext";
 import SignIn from "./Components/Authentication/Signin";
 import SignUp from "./Components/Authentication/Signup";
-import Account from "./Components/Authentication/Account";
 import TemplatePage from "./Post pages/TemplatePage";
+import Account from "./Components/Admin";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='/page/:id' element={<TemplatePage/>}/>
                     </Route>
-                    <Route path='/account/:id' element={<Account/>}/>
+                    <Route path='/account' element={<Account/>}/>
                 </Routes>
             </Router>
         </AuthContextProvider>
