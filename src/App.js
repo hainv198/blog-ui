@@ -23,8 +23,8 @@ function App() {
                         <Route path='/contact' element={<Contact />}/>
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
-                        <Route path='/account' element={<Account/>}/>
                     </Route>
+                    <Route path='/account/:id' element={<Account/>}/>
                 </Routes>
             </Router>
         </AuthContextProvider>

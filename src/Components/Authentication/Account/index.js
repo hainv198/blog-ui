@@ -21,7 +21,7 @@ const Account = ({status}) => {
     };
 
     return (
-        <div>
+        <div style={{marginTop:100}}>
 
             <p>{user && user.email}</p>
             <button onClick={handleLogout}>

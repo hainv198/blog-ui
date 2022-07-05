@@ -5,6 +5,9 @@ import '../LuyenPages/Homepage/homepage.css'
 
 const Home = () => {
     return (
+
+
+        //param.id = ....
         <div style={{ marginTop: 100 }}>
 
             {/* <!-- section 1 --> */}
