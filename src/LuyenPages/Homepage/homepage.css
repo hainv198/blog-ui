@@ -1,0 +1,131 @@
+#section1 {
+    border: 1px solid red;
+}
+#home-img1 {
+        align-items: center;
+}
+#home-img1 div img{
+    max-width: 100%;
+}
+
+#icon1 div{
+    text-align: center;
+}
+
+/* section2 */
+#section2 {
+    border: 1px solid black;
+    margin: 20px auto;
+}
+.featured-img img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* recomendation */
+
+.where-to {
+    margin: 10x 0px;
+    list-style: none;
+    list-style-type: none;
+    border: 1px solid red;
+}
+
+.where-to li {
+    margin-right: 5px;
+    display: inline;
+    background-color: #f0e8e7;
+    border-radius: 10px;
+    width: 50px;
+    padding: 10px;
+}
+
+.where-to li img {
+    max-width: 30px;
+}
+
+.list-group-item {
+    list-style: none;
+    display: inline !important;
+}
+
+/* section3 */
+
+#section3 {
+    border: 1px solid red;
+}
+
+.section3-right {
+    padding: 30px 20px 0px;
+}
+
+.banner {
+    align-items: center;
+}
+.banner-right {
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+.banner-article {
+    align-items:center;
+    padding: 10px;
+    justify-content:center;
+}
+
+
+.banner-article img{
+    max-width: 80px;
+    border-radius: 10px;
+}
+
+
+/* section4 */
+#section4 {
+    border: 1px solid red;
+    margin-top: 20px;
+}
+
+#section4 div {
+   align-items: center;
+   justify-content: center;
+}
+
+
+.section4-card{
+    position: relative;
+    border-radius: 10px;
+}
+
+.section4-card img{
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+  }
+
+/* section5 */
+
+#section5 {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+#section5 div{
+    align-items: center;
+}
+
+.about-us {
+    text-align: right;
+}
+
+/* section6 */
+.form-inline {
+    justify-content: center;
+}
+
