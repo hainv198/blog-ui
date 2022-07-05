@@ -1,8 +1,8 @@
 import React from "react";
-import './category-style.css'
+import '../category-style.css'
 import {Button, Card, CardImg, Col, Container, Row} from "react-bootstrap";
 
-function App() {
+function Asia() {
     return (
         <>
             <header className={'header'}>
@@ -33,7 +33,7 @@ function App() {
                             <div className={'category-cover-right-top mt-3'}>
                                 <div className={'category-cover-right-icon text-center'}>
                                     <span>
-                                        <img className={'salt-icon w-25'} src={require('./images/lightbulb.png')}/>
+                                        <img className={'salt-icon w-25'} src={require('../../images/lightbulb.png')}/>
                                     </span>
                                 </div>
                                 <div className={'category-cover-right-content'}>
@@ -51,7 +51,7 @@ function App() {
                             <div className={'category-cover-right-bottom mt-3'}>
                                 <div className={'category-cover-right-icon text-center'}>
                                     <span>
-                                        <img className={'salt-icon w-25'} src={require('./images/compass.png')}/>
+                                        <img className={'salt-icon w-25'} src={require('../../images/compass.png')}/>
                                     </span>
                                 </div>
                                 <div className={'category-cover-right-content'}>
@@ -125,7 +125,7 @@ function App() {
                             <Card.Img className={"card-image"} src={'https://static.saltinourhair.com/wp-content/uploads/2020/04/23120534/best-things-to-do-luang-prabang-laos-1267x1080.jpg'} />
                             <Card.Body className={'text-center'}>
                                 <Card.Title>
-                                    <img className={'card-icon'} style={{width: "6rem"}} src={require("./images/hand.png")}/>
+                                    <img className={'card-icon'} style={{width: "6rem"}} src={require("../../images/hand.png")}/>
                                 </Card.Title>
                                 <Card.Text className={"card-text mt-4"}>
                                     11 best things to do in Luang Prabang
@@ -139,4 +139,4 @@ function App() {
     );
 }
 
-export default App;
+export default Asia;
