@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.css';
-import '../LuyenPages/Homepage/homepage.css'
+import '../LuyenPages/Homepage/homepage.css';
+import FlightSharpIcon from '@mui/icons-material/FlightSharp';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
                     <div className={'col-lg-6 col-md-6 col-sm-6 col-xs-12'} id={'icon1'}>
                         <div>
                             <img src={'../LuyenPages/Homepage/Img/icons8-table-lamp-50.png'} />
+                            <FlightSharpIcon/>
                         </div>
                         <p>Hi, we’re Nick & Hannah from Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
