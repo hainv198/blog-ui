@@ -1,0 +1,25 @@
+#section1 {
+    margin-top: 30px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+#section1 div {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* section2 */
+.person div{
+    padding: 15px;
+}
+
+/* section3 */
+#section3 {
+    margin-top: 30px;
+}
+.section3-content {
+    max-width: 750px;
+    margin: auto;
+}
