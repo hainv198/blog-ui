@@ -88,7 +88,7 @@ const Home = () => {
                 <div class="container">
                     <ul class="where-to">
                         <li>
-                            Where to next?
+                            Where to Next?
                         </li>
 
                         <li>
