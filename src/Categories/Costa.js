@@ -115,7 +115,7 @@ const Costa = () => {
                 <h2 className="mb-3">MUST DO IN TURKEY</h2>
                 <div className="d-flex justify-content-between row">
                     <div className="must-do__img-container">
-                        <img className="must-do__img" src={require("../images/turkey/mustdo2.jpg/")} alt="title"/>
+                        <img className="must-do__img" src={require("../images/turkey/mustdo2.jpg")} alt="title"/>
                         <div className="must-do__title">
                             <h4>11 things to do in Istanbul, <br/>Turkey</h4>
                             <span className="must-do__tag">Turkey</span>
