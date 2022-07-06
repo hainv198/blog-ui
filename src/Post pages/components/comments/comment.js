@@ -23,7 +23,7 @@ const Comment = (props) => {
     if (showCmt != null ? (
         cmtList = showCmt.map((item) => (
             <>
-                <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "3%"}}>
+                <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px", maxWidth: "90%"}}>
                     <div>
                         <h3>{item.username}</h3> <span style={{fontSize: "1.3rem"}}> {new Date(item.createdAt).toDateString()}</span>
                     </div>
