@@ -14,8 +14,8 @@ const Vietnam = () => {
                             <div className={'category-cover-left'}>
                                 <h1 className={'mt-5'}>
                                     <span className={'category-cover-subtitle'}>Travel in</span>
-                                    <div className={'category-cover-title'} title={'Asia'}>
-                                        Asia
+                                    <div className={'category-cover-title'} title={'Vietnam'}>
+                                        Vietnam
                                     </div>
                                 </h1>
                                 <p style={{fontSize: ".4em"}} className={'category-cover-excerpt'}>
