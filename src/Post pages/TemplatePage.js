@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {Col, Container, Row, Table} from "react-bootstrap";
+import {Button, Col, Container, Row, Table} from "react-bootstrap";
 import "./post-style.css";
 import {useParams} from "react-router";
+import {Link} from "react-router-dom";
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
@@ -20,25 +21,48 @@ function TemplatePage() {
             {post != null ? (
                 <Container fluid>
                     <Row>
-                        <Col lg={6} style={{marginTop: "15rem"}}>
-                            <ol className={'ms-auto me-auto w-50'}>
-                                <li className={'top-header-list'}>Home</li>
-                                <li className={'top-header-list'}> ></li>
-                                <li className={'top-header-list'}>{post.sub_tag} </li>
-                                <li className={'top-header-list'}> ></li>
-                            </ol>
-                            <h1 className={'w-75 ms-auto me-auto header-title'}>{post.title}</h1>
-                            <p className={'w-75 ms-auto me-auto header-content'}>{post.tag_header}</p>
+                        <Col lg={7} style={{marginTop: "20rem"}}>
+                            <div className={'header-content-container'}>
+                                <ol className={'ms-auto me-auto w-50'}>
+                                    <li className={'top-header-list'}>Home</li>
+                                    <li className={'top-header-list'}> ></li>
+                                    <li className={'top-header-list'}>{post.sub_tag} </li>
+                                    <li className={'top-header-list'}> ></li>
+                                </ol>
+                                <h1 className={'w-75 ms-auto me-auto header-title'}>{post.title}</h1>
+                                <p className={'w-75 ms-auto me-auto header-content'}>{post.tag_header}</p>
+                            </div>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={5}>
                             <div>
                                 <img className={'image-main'} src={post.image}/>
                             </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <h1>Link to about here</h1>
-                    </Row>
+                    <Container fluid className={'about-us'}>
+                        <Row>
+                            <div className="row">
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-us-left">
+                                    <img src="https://static.saltinourhair.com/build/images/kofi-block-image.png"
+                                         alt=""/>
+                                </div>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div className="row about-us-right">
+                                        <div className="col-12">
+                                            <h2>Hi, we're Nick & Hannah</h2>
+                                            <p className="about-us-content">
+                                                We hope you're enjoying our free travel guides & tips! If so, please
+                                                consider supporting our work.
+                                            </p>
+                                            <Link to={"/contact"}><Button variant={'dark'} size={'lg'}
+                                                                          className={'about-us-button rounded-pill'}>About
+                                                us <i className="bi bi-arrow-right"></i></Button></Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Row>
+                    </Container>
                     <Row>
                         <Col lg={6} className={'me-auto ms-auto mt-5'}>
                             <Row>
@@ -162,7 +186,7 @@ function TemplatePage() {
                             <Row>
                                 <h3 className={'text-center'}>Related articles</h3>
                                 <div className={'ms-5 mt-3'}>
-                                    <div className="card post-related-card mb-3" style={{maxWidth: "20rem"}}>
+                                    <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -177,7 +201,7 @@ function TemplatePage() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card post-related-card mb-3" style={{maxWidth: "20rem"}}>
+                                    <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -192,7 +216,7 @@ function TemplatePage() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card post-related-card mb-3" style={{maxWidth: "20rem"}}>
+                                    <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -209,10 +233,9 @@ function TemplatePage() {
                                 </div>
                             </Row>
                             <Row>
-                                <h3 className={'text-center'}>Must see articles</h3>
+                                <h3 className={'text-center mt-3'}>Must see articles</h3>
                                 <div className={'ms-5 mt-3'}>
-                                    <div className="card post-related-card mb-3"
-                                         style={{maxWidth: "20rem", height: "6rem"}}>
+                                    <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -227,8 +250,7 @@ function TemplatePage() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card post-related-card mb-3"
-                                         style={{maxWidth: "20rem", height: "6rem"}}>
+                                    <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
                                                 <img
@@ -314,13 +336,33 @@ function TemplatePage() {
                                         </tbody>
                                     </Table>
                                 </div>
+                                <Col>
+                                    <Row>
+                                        <Container>
+                                        <div className={'text-center col-md-8 mt-3'}>
+                                            <Button variant={'danger'} className={'social-buttons rounded-pill'}>
+                                                <i className="bi bi-pinterest"></i>
+                                                <span> Pinterest</span>
+                                            </Button>
+                                            <Button className={'social-buttons rounded-pill'}>
+                                                <i className="bi bi-facebook"></i>
+                                                <span> Facebook</span>
+                                            </Button>
+                                            <Button variant={'success'} className={'social-buttons rounded-pill'}>
+                                                <i className="bi bi-whatsapp"></i>
+                                                <span> Whatsapp</span>
+                                            </Button>
+                                        </div>
+                                        </Container>
+                                    </Row>
+                                </Col>
                             </Container>
                         </Col>
                     </Row>
                     <Container>
                         <Row style={{marginTop: "5rem", backgroundColor: "#f5f5f5", borderRadius: "5%"}}>
                             <Col style={{marginTop: "5rem"}}>
-                                <div>
+                                <div className={'read-all-text d-flex flex-column'}>
                                     <span>Read all articles about</span><br/>
                                     <div className={'category-cover-title'} title={post.sub_tag}>
                                         {post.sub_tag}
@@ -331,7 +373,7 @@ function TemplatePage() {
                                 </div>
                             </Col>
                             <Col>
-                                <img src={post.image} style={{width: "70%", borderRadius: "25%"}}/>
+                                <img className={'read-all-img'} src={post.image} style={{width: "80%"}}/>
                             </Col>
                         </Row>
                     </Container>
@@ -344,7 +386,6 @@ function TemplatePage() {
                             </Col>
                         </Row>
                     </Container>
-                    <h1>-------Footer-------</h1>
                 </Container>
             ) : ("")}
         </>
