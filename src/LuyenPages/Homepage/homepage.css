@@ -59,8 +59,12 @@
 }
 
 .homepage .featured-img img {
-    max-width: 100%;
+    max-width: 90%;
+    min-width: 85%;
     border-radius: 10px;
+    display: block;
+    margin: auto;
+    max-height: 275px;
 }
 
 .homepage .featured-img img:hover {
@@ -109,19 +113,25 @@
 .homepage .where-to {
     margin: 30px 15px 10px;
     list-style: none;
-    list-style-type: none;
     border: 1px solid red;
+    /* line-height: 30px;
+    overflow:hidden !important; */
 }
 
 
 .homepage .where-to li {
     margin-right: 5px;
     display: inline;
-    background-color: #f5f4f2;
+    background-color:#f1bc68;
     border-radius: 20px;
-    width: 50px;
+    /* width: 50px; */
     padding: 10px;
     font-weight: bold;
+    margin: 5px;
+
+    /* overflow: hidden; 
+    text-overflow: hidden;
+    white-space: nowrap; */
 }
 
 .homepage .where-to li:nth-of-type(1) {
@@ -132,9 +142,17 @@
 
 
 .homepage .where-to li img {
-    max-width: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 4px;
+    object-fit: cover;
+}
+
+.homepage .where-to li img:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+    
 }
 
 .homepage .list-group-item {
@@ -162,11 +180,12 @@
     max-width: 450px;
     color: #FFFFFF;
     margin: auto;
+    font-size: larger;
 }
 
 .homepage .banner-left div h3,
 .banner-left div h1 {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .homepage .banner-btn {
@@ -210,6 +229,11 @@
 .homepage .banner-article img {
     max-width: 80px;
     border-radius: 10px;
+}
+
+.homepage .banner-article img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 
 
@@ -307,4 +331,20 @@
 /* section6 */
 .homepage .form-inline {
     justify-content: center;
+}
+
+.homepage a {
+    text-decoration: none;
+    color: black;
+}
+
+.homepage a:hover {
+    color: #0778e8;
+}
+
+.homepage button:hover {
+    background-color: bisque;
+    transform: scale(1.05);
+    transition-duration: 1s;
+    color: #0778e8;
 }

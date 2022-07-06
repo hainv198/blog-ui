@@ -1,10 +1,40 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Button, Form} from "react-bootstrap";
-import styles from './styles.css'
+import "./styles.css"
+import {Button, Col, Row} from "react-bootstrap";
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Container from "react-bootstrap/Container";
+
+
 const Comment = (props) => {
     const [dataCmt, setDataCmt] = useState(null);
+    const [showCmt, setShowCmt] = useState(null);
+
+//?post_id= + props.data
+    useEffect(() => {
+        let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
+        console.log(url)
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setShowCmt(data))
+    }, [])
+    let cmtList = [];
+
+    if (showCmt != null ? (
+        cmtList = showCmt.map((item) => (
+            <>
+                <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px"}}>
+                    <div>
+                        <h3>{item.username}</h3> <span style={{fontSize: "1.3rem"}}> {new Date(item.createdAt).toDateString()}</span>
+                    </div>
+                    <p>{item.content}
+                        <br/><br/><Button variant={'outline-secondary'} className={"rounded-pill"}><i
+                            className="bi bi-arrow-90deg-up"></i> Reply</Button>
+                    </p>
+                </Row>
+            </>
+        ))
+    ) : ("")) ;
     let emailRef = useRef();
     let nameRef = useRef();
     let contentRef = useRef();
@@ -25,21 +55,27 @@ const Comment = (props) => {
         setDataCmt(initDataCmt);
 
         let url = '';
-    },[]);
+    }, []);
 
-    const handleChange = (e) =>
-    {
+    const handleChange = (e) => {
         const target = e.target;
         const value = target.value;
         const name = target.name;
-
-        console.log(name);
+        const date = new Date();
+        const postId = props.data;
         let _data = {...dataCmt};
         _data[name] = value;
+        _data.createdAt = date;
+        _data.post_id = postId;
 
         setDataCmt(_data)
     };
-
+    // const setTitle = () =>{
+    //     const cmtTitle = props;
+    //     let _data = {...dataCmt};
+    //     _data.post_title = cmtTitle;
+    //     setDataCmt(_data);
+    // }
     const saveComment = (e) => {
         console.log('save comment', dataCmt);
         if (emailRef.current.value == '' || nameRef.current.value == '' || contentRef.current.value == '') {
@@ -48,7 +84,7 @@ const Comment = (props) => {
         } else {
             const requestOptions = {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(dataCmt),
             };
             fetch(
@@ -59,7 +95,7 @@ const Comment = (props) => {
                 .then((data) => {
                     //var date = new Date(data.dob);
                     const date = new Date();
-                    data.post_title = props.title;
+                    // data.post_title = cmtTitle;
                     data.createAt = date.getDate();
                     //data.dob = date.getTime();
                 });
@@ -70,31 +106,49 @@ const Comment = (props) => {
         }
 
     };
-
+const date = new Date();
+console.log(date);
 
     return (
         <>
-            <form>
+            <Container>
+                <Row>
+                <Col md={6} className={'me-auto ms-auto mt-3'}>
+                    <div style={{height: "50rem"}} className={'comment-container'}>
+                    {cmtList}
+                    </div>
+                </Col>
+
+                    <Col>
+            <form className={'ms-auto me-auto comment-form '}>
                 <div className="form-group">
-                    <label htmlFor="note">Write a comment</label>
-                    <p>Your email address will not be published. Required fields are marked*.</p>
-                    <label htmlFor="inputName">Name<span>*</span></label>
-                    <input ref={nameRef} onChange={handleChange} type="text" className="form-control" id="inputName" name="username" required={true}/>
+                    <label className={'comment-label'} htmlFor="note">Write a comment</label>
+                    <p style={{fontSize: "1.3rem"}} className={'text-muted'}>Your email address will not be published.
+                        Required fields are marked*.</p>
+                    <label className={'comment-label'} htmlFor="inputName">Name<span>*</span></label>
+                    <input ref={nameRef} onChange={handleChange} type="text" className="form-control" id="inputName"
+                           name="username" required={true}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputEmail">Email<span>*</span></label>
-                    <input ref={emailRef} onChange={handleChange}  type="email" className="form-control" id="inputEmail" name="email" required={true}/>
+                    <label className={'comment-label'} htmlFor="inputEmail">Email<span>*</span></label>
+                    <input ref={emailRef} onChange={handleChange} type="email" className="form-control" id="inputEmail"
+                           name="email" required={true}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputCommentContent">Comment<span>*</span></label>
-                    <textarea  ref={contentRef}  onChange={handleChange}  className="form-control" id="inputCommentContent" name="content" rows="3" required={true}></textarea>
+                    <label className={'comment-label'} htmlFor="inputCommentContent">Comment<span>*</span></label>
+                    <textarea ref={contentRef} onChange={handleChange} className="form-control" id="inputCommentContent"
+                              name="content" rows="15" cols='3' required={true}></textarea>
                 </div>
-                <div className="form-check">
+                <div className="form-check mt-4">
                     <input type="checkbox" className="form-check-input" id="notify_me"/>
-                    <label className="form-check-label" htmlFor="notify_me">Notify me when new comments are loaded</label>
+                    <label className="form-check-label" style={{fontWeight: "bold"}} htmlFor="notify_me">Notify me when
+                        new comments are loaded</label>
                 </div>
-                <button type="button" className="send-btn" onClick={saveComment}>Submit</button>
+                <button type="button" className="send-btn comment-button" onClick={saveComment}>Send Comment</button>
             </form>
+                    </Col>
+                </Row>
+            </Container>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
@@ -106,6 +160,7 @@ const Comment = (props) => {
                 draggable
                 pauseOnHover
             />
+
         </>
     );
 

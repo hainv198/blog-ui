@@ -13,7 +13,7 @@ const Columbia = () => {
                                 <h1>
                                     <span className={'category-cover-subtitle'}>Travel in</span>
                                     <div style={{fontSize: "2.5em"}} className={'category-cover-title'} title={'Columbia'}>
-                                        Columbia
+                                        Colombia
                                     </div>
                                 </h1>
                                 <p style={{fontSize: ".4em"}} className={'category-cover-excerpt'}>
@@ -36,7 +36,7 @@ const Columbia = () => {
                                 </div>
                                 <div className="right-content-text">
                                     <h5><strong>Best time to travel</strong></h5>
-                                    <span>March to October is the best time to visit Turkey</span>
+                                    <span>March to October is the best time to visit Colombia</span>
                                 </div>
                             </div>
                             <div className={'category-cover-right-top mt-3'}>
@@ -47,7 +47,7 @@ const Columbia = () => {
                                 </div>
                                 <div className="right-content-text">
                                     <h5><strong>Currency</strong></h5>
-                                    <span>March to October is the best time to visit Columbia</span>
+                                    <span>March to October is the best time to visit Colombia</span>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const Columbia = () => {
 
                             </div>
                             <div className="article-heading">
-                                <h1 className="text-center container w-75">Turkey Travel Guide: The Ultimate 2-week Itinerary</h1>
+                                <h1 className="text-center container w-75">Colombia Travel Guide: The Ultimate 2-week Itinerary</h1>
                             </div>
                         </div>
                     </div>
@@ -111,27 +111,27 @@ const Columbia = () => {
             </div>
             {/*page content intro article*/}
             <div className="must-do section container">
-                <h2 className="mb-3">MUST DO IN COLUMBIA</h2>
+                <h2 className="mb-3">MUST DO IN COLOMBIA</h2>
                 <div className="d-flex justify-content-between row">
                     <div className="must-do__img-container">
                         <img className="must-do__img" src={require("../images/columbia/mustdo1.jpg")} alt="title"/>
                         <div className="must-do__title">
-                            <h4>15 things to do in Bogota, <br/>Columbia</h4>
+                            <h4>15 things to do in Bogota, <br/>Colombia</h4>
                             <span className="must-do__tag">Columbia</span>
                         </div>
                     </div>
                     <div className="must-do__img-container">
                         <img className="must-do__img text-white" src={require("../images/columbia/mustdo.jpg")} />
                         <div className="must-do__title">
-                            <h4>7 Best Things to o in Kas,<br/>Columbia</h4>
-                            <span className="must-do__tag">Columbia</span>
+                            <h4>7 Best Things to o in Kas,<br/>Colombia</h4>
+                            <span className="must-do__tag">Colombia</span>
                         </div>
                     </div>
                     <div className="must-do__img-container">
                         <img className="must-do__img" src={require("../images/columbia/mustdo2.jpg")} />
                         <div className="must-do__title">
-                            <h4>Best things to do in Salento<br/>Columbia</h4>
-                            <span className="must-do__tag">Columbia</span>
+                            <h4>Best things to do in Salento<br/>Colombia</h4>
+                            <span className="must-do__tag">Colombia</span>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,8 @@ import {Button, Col, Container, Row, Table} from "react-bootstrap";
 import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
+import Comment from "./components/comments/comment";
+
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
@@ -54,7 +56,7 @@ function TemplatePage() {
                                                 We hope you're enjoying our free travel guides & tips! If so, please
                                                 consider supporting our work.
                                             </p>
-                                            <Link to={"/contact"}><Button variant={'dark'} size={'lg'}
+                                            <Link to={"/about"}><Button variant={'dark'} size={'lg'}
                                                                           className={'about-us-button rounded-pill'}>About
                                                 us <i className="bi bi-arrow-right"></i></Button></Link>
                                         </div>
@@ -386,16 +388,14 @@ function TemplatePage() {
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <img className={'read-all-img'} src={post.image} style={{width: "80%"}}/>
+                                <img className={'read-all-img'} src={post.image} style={{maxWidth: "80%"}}/>
                             </Col>
                         </Row>
                     </Container>
                     <Container>
                         <Row>
-                            <Col>
-                                <div>
-                                    <h1>Comments</h1>
-                                </div>
+                            <Col className={'col-lg-12 me-auto ms-auto'}>
+                                <Comment data={params.id}/>
                             </Col>
                         </Row>
                     </Container>
