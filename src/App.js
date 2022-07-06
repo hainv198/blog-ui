@@ -35,7 +35,7 @@ function App() {
                         <Route path='/about' element={<Aboutus />}/>
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
-                        <Route path='/page/:id' element={<TemplatePage/>}/>
+                        <Route path='page/:id' element={<TemplatePage/>}/>
                         <Route path='/categories/'>
                             <Route path='costa' element={<Costa/>}/>
                             <Route path='egypt' element={<Egypt/>}/>

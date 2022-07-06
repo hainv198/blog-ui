@@ -56,7 +56,7 @@ function TemplatePage() {
                                                 We hope you're enjoying our free travel guides & tips! If so, please
                                                 consider supporting our work.
                                             </p>
-                                            <Link to={"/contact"}><Button variant={'dark'} size={'lg'}
+                                            <Link to={"/about"}><Button variant={'dark'} size={'lg'}
                                                                           className={'about-us-button rounded-pill'}>About
                                                 us <i className="bi bi-arrow-right"></i></Button></Link>
                                         </div>
@@ -394,10 +394,8 @@ function TemplatePage() {
                     </Container>
                     <Container>
                         <Row>
-                            <Col>
-                                <div>
-                                    <Comment/>
-                                </div>
+                            <Col className={'col-lg-12 me-auto ms-auto'}>
+                                <Comment data={post.title}/>
                             </Col>
                         </Row>
                     </Container>
