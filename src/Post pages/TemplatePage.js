@@ -361,7 +361,7 @@ function TemplatePage() {
                     </Row>
                     <Container>
                         <Row style={{marginTop: "5rem", backgroundColor: "#f5f5f5", borderRadius: "5%"}}>
-                            <Col style={{marginTop: "5rem"}}>
+                            <Col lg={6} style={{marginTop: "5rem"}}>
                                 <div className={'read-all-text d-flex flex-column'}>
                                     <span>Read all articles about</span><br/>
                                     <div className={'category-cover-title'} title={post.sub_tag}>
@@ -372,7 +372,7 @@ function TemplatePage() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col>
+                            <Col lg={6}>
                                 <img className={'read-all-img'} src={post.image} style={{width: "80%"}}/>
                             </Col>
                         </Row>

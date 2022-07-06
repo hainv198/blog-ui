@@ -14,7 +14,8 @@
     /*border-radius: 50%;*/
     width: 100%;
     -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
-    mask-size: 100rem;
+    /*mask-size: 100rem;*/
+    mask-size: 100%;
     mask-position: center;
     mask-repeat: no-repeat;
 }
@@ -88,6 +89,20 @@ ol {
 
 .post-related .card-text {
     font-weight: 800;
+}
+@media screen and (max-width: 500px) {
+    .post-related-card img {
+        display: none;
+    }
+    .post-related-card{
+        max-width: 90%;
+    }
+    .post-related{
+        margin: auto!important;
+        padding: 0;
+        border: solid red 1px;
+    }
+
 }
 
 .post-content-title {
