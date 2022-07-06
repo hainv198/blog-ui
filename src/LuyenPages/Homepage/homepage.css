@@ -136,9 +136,16 @@
 
 
 .homepage .where-to li img {
-    max-width: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 4px;
+    object-fit: cover;
+}
+
+.homepage .where-to li img:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 
 .homepage .list-group-item {

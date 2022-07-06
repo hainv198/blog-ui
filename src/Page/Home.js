@@ -2,9 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.css';
 import '../LuyenPages/Homepage/homepage.css';
-import FlightSharpIcon from '@mui/icons-material/FlightSharp';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Home = () => {
+    const [country, setCountry] = useState(null);
+    useEffect(() => {
+        console.log('app useeffect!!');
+        let url = "https://62b04a60b0a980a2ef4f849b.mockapi.io/Test";
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                setCountry(data);
+            });
+        console.log("Countries =" + country);
+    }, []);
+
+    console.log("Countries =" + country);
+
+    var country_list = [];
+    if (country != null) {
+        country_list = country.map((element) => (
+            <li>
+                <Link to={"/categories/" + element.country}>
+                    <img src={element.image} alt={"img"} />
+                    {element.country}
+                </Link>
+            </li>
+        ));
+    }
+    console.log(country_list);
 
     return (
         <div style={{ marginTop: 75 }} className="homepage">
@@ -99,12 +127,13 @@ const Home = () => {
                             Where to Next?
                         </li>
 
-                        <li>
+                        {/* <li>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Costa Rica
                         </li>
                         <li>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Thailand
-                        </li>
+                        </li> */}
+                        {country_list}
                     </ul>
                 </div>
             </div>
