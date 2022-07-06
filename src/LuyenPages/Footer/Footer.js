@@ -18,7 +18,6 @@ function Footer() {
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Destination</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travel</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                                 </ul>
                             </div>
@@ -28,19 +27,17 @@ function Footer() {
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term of service</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help center</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Copyright report</a></li>
                                 </ul>
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <h3>Section</h3>
+                                <h3>Our fanpage</h3>
                                 <ul class="nav flex-column">
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pinterest</a></li>
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                                 </ul>
                             </div>
                         </div>
