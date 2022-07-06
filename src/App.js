@@ -14,6 +14,7 @@ import HomeAdmin from "./Admin/Page/Home";
 import List from "./Admin/Page/List";
 import New from "./Admin/Page/New";
 import Single from "./Admin/Page/Single";
+import Vietnam from "./Categories/Vietnam";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='/page/:id' element={<TemplatePage/>}/>
+                        <Route path='/categories/vietnam' element={<Vietnam />}/>
+
                     </Route>
 
                 </Routes>
