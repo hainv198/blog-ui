@@ -395,7 +395,7 @@ function TemplatePage() {
                     <Container>
                         <Row>
                             <Col className={'col-lg-12 me-auto ms-auto'}>
-                                <Comment data={post.title}/>
+                                <Comment data={params.id}/>
                             </Col>
                         </Row>
                     </Container>

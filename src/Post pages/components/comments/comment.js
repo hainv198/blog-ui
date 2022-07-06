@@ -10,9 +10,10 @@ const Comment = (props) => {
     const [dataCmt, setDataCmt] = useState(null);
     const [showCmt, setShowCmt] = useState(null);
 
-
+//?post_id= + props.data
     useEffect(() => {
         let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments";
+        console.log(url)
         fetch(url)
             .then(response => response.json())
             .then(data => setShowCmt(data))
@@ -60,8 +61,12 @@ const Comment = (props) => {
         const target = e.target;
         const value = target.value;
         const name = target.name;
+        const date = new Date();
+        const postId = props.data;
         let _data = {...dataCmt};
         _data[name] = value;
+        _data.createdAt = date;
+        _data.post_id = postId;
 
         setDataCmt(_data)
     };
@@ -101,7 +106,8 @@ const Comment = (props) => {
         }
 
     };
-
+const date = new Date();
+console.log(date);
 
     return (
         <>
