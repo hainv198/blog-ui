@@ -8,6 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {Outlet} from "react-router";
 import HomeAdmin from "../Page/Home";
 import './Layout.scss'
+import Search from "../../Header/Search";
 
 const Admin = () => {
     const { user, logout } = UserAuth();
@@ -25,7 +26,7 @@ const Admin = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg"  variant="light">
                 <Container>
                     <Navbar.Brand href="/admin/home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -44,6 +45,7 @@ const Admin = () => {
                             {/*        Separated link*/}
                             {/*    </NavDropdown.Item>*/}
                             {/*</NavDropdown>*/}
+
                         </Nav>
                         <Nav>
 

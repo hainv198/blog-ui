@@ -12,10 +12,11 @@ const Destinations = () => {
             .then((res) => res.json())
             .then((res) => {
                 setDestinations(res)
-                console.log(setDestinations(res))
+
             })
 
     },[destinations])
+
     return (
         <div>
             <HeadlessTippy
@@ -25,7 +26,9 @@ const Destinations = () => {
 
                         <DestinationsHover>
                             {destinations.map((item) => (
+                                <>
                                 <Title data={item} key={item.id}/>
+                                </>
                                 ))}
                         </DestinationsHover>
 
