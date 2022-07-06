@@ -1,11 +1,9 @@
 import React from "react";
 import "../Footer/Footer.css";
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-
-
-
 
 import { Button, Card, CardImg, Col, Container, Row } from "react-bootstrap";
+
+
 
 function Footer() {
     return (
@@ -26,13 +24,12 @@ function Footer() {
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <h3>Section</h3>
+                                <h3>Our policy</h3>
                                 <ul class="nav flex-column">
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term of service</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help center</a></li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Copyright report</a></li>
                                 </ul>
                             </div>
 
@@ -65,7 +62,7 @@ function Footer() {
                     </div>
 
                     <div class="d-flex justify-content-between py-4 my-4 border-top">
-                        <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+                        <p>&copy; 2022. All Rights Reserved by Localhost:3000</p>
                         {/* <ul class="list-unstyled d-flex">
                             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use href="#twitter" /></svg></a></li>
                             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use href="#instagram" /></svg></a></li>
