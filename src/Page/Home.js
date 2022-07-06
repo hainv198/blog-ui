@@ -7,7 +7,7 @@ import FlightSharpIcon from '@mui/icons-material/FlightSharp';
 const Home = () => {
 
     return (
-        <div style={{ marginTop: 75 }} className = "homepage">
+        <div style={{ marginTop: 75 }} className="homepage">
             {/* <!-- section 1 --> */}
             <div className={'container'} id={'section1'}>
                 <div className={'row'} id={'home-img1'}>
@@ -18,7 +18,7 @@ const Home = () => {
 
                     <div className={'col-lg-6 col-md-6 col-sm-6 col-xs-12'} id={'icon1'}>
                         <div>
-                            <img src={require ("../images/hand.png")} alt="img" />
+                            <img src={require("../images/hand.png")} alt="img" />
                         </div>
                         <p>Hi, we’re Nick & Hannah from Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
@@ -41,7 +41,7 @@ const Home = () => {
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src={require ("../images/globe.png")} alt="img1" />
+                            <img src={require("../images/globe.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src={require ("../images/boot.png")} alt="img1" />
+                            <img src={require("../images/boot.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
@@ -71,7 +71,7 @@ const Home = () => {
                     </div>
                     <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src={require ("../images/plane.png")} alt="img1" />
+                            <img src={require("../images/plane.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
@@ -244,8 +244,8 @@ const Home = () => {
                         <div class="row about-us">
                             <div class="col-12">
                                 <h1>About us</h1>
-                                <div>Hannah & Nick</div>
-                                <p class="about-us-content">We're Hannah & Nick, two creatives that run a 'travel content
+                                <div>Group 5</div>
+                                <p class="about-us-content">We're group 5 with 4 members, 3 play boyz and 1 lady that run a 'travel content
                                     creation' company named Salt in our Hair. We inspire people to travel via our travel guides,
                                     photography and videography.
                                 </p>
