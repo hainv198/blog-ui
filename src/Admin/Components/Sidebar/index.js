@@ -98,7 +98,7 @@ const Sidebar = () => {
                     // onClick={() => dispatch({ type: "DARK" })}
                 ></div>
             </div>
-            <Outlet/>
+
         </div>
     );
 };

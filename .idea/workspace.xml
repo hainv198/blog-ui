@@ -5,38 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a2fc33-aef5-4968-bb53-a111cd3ca833" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Datatable/datatable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Datatable/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Featured/featured.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Featured/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Navbar/Navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Navbar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Sidebar/sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Table/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Table/table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Widget/Widget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Components/Widget/widget.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Layout/Layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/Home/Home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/Home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/List/List.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/List/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/New/New.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/New/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/Single/Single.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Page/Single/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/datatablesource.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/Drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Components/Chart/chart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/Drawer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Components/Chart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/Header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/Components/Sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Components/Sidebar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Layout/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,21 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Kitsss/blog-ui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Kitsss/blog-ui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kitsss\blog-ui\src\Admin\Page" />
@@ -94,6 +65,7 @@
       <updated>1657037425330</updated>
       <workItem from="1657037430094" duration="23000" />
       <workItem from="1657037865475" duration="10691000" />
+      <workItem from="1657070508401" duration="4200000" />
     </task>
     <servers />
   </component>
