@@ -3,6 +3,8 @@ import {Button, Col, Container, Row, Table} from "react-bootstrap";
 import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
+import Comment from "./components/comments/comment";
+
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
@@ -394,7 +396,7 @@ function TemplatePage() {
                         <Row>
                             <Col>
                                 <div>
-                                    <h1>Comments</h1>
+                                    <Comment/>
                                 </div>
                             </Col>
                         </Row>

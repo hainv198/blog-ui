@@ -14,6 +14,13 @@ import HomeAdmin from "./Admin/Page/Home";
 import List from "./Admin/Page/List";
 import New from "./Admin/Page/New";
 import Single from "./Admin/Page/Single";
+import Costa from "./Categories/Costa";
+import Egypt from "./Categories/Egypt";
+import France from "./Categories/France";
+import Vietnam from "./Categories/Vietnam";
+import Columbia from "./Categories/columbia";
+import Turkey from "./Categories/turkey";
+import Asia from "./Categories/Asia";
 
 function App() {
   return (
@@ -29,6 +36,15 @@ function App() {
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='/page/:id' element={<TemplatePage/>}/>
+                        <Route path='/categories/'>
+                            <Route path='costa' element={<Costa/>}/>
+                            <Route path='egypt' element={<Egypt/>}/>
+                            <Route path='france' element={<France/>}/>
+                            <Route path='vietnam' element={<Vietnam/>}/>
+                            <Route path='columbia' element={<Columbia/>}/>
+                            <Route path='turkey' element={<Turkey/>}/>
+                            <Route path='asia' element={<Asia/>}/>
+                        </Route>
                     </Route>
 
                 </Routes>
