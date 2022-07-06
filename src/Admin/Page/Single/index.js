@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Single = () => {
+const Index = () => {
     return (
-        <div style={{marginTop:100}}>
-            <h1>Single</h1>
+        <div>
+            
         </div>
     );
 };
 
-export default Single;
+export default Index;

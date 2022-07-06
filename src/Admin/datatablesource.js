@@ -18,7 +18,6 @@ export const userColumns = [
         headerName: "Email",
         width: 230,
     },
-
     {
         field: "age",
         headerName: "Age",
