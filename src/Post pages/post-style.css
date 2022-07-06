@@ -90,6 +90,17 @@ ol {
 .post-related .card-text {
     font-weight: 800;
 }
+.post-related-container{
+    margin-left: 1.7rem;
+    margin-top: 1rem;
+}
+.post-related{
+    overflow: hidden;
+    position: sticky;
+    top: 10rem;
+    align-self: start;
+}
+
 @media screen and (max-width: 500px) {
     .post-related-card img {
         display: none;
@@ -101,6 +112,10 @@ ol {
         margin: auto!important;
         padding: 0;
         border: solid red 1px;
+        overflow: hidden;
+    }
+    .post-related-container{
+        margin-left: 1.7rem;
     }
 
 }

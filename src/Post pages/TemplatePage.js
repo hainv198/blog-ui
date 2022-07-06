@@ -185,7 +185,7 @@ function TemplatePage() {
                         <Col lg={3} className={'post-related'}>
                             <Row>
                                 <h3 className={'text-center'}>Related articles</h3>
-                                <div className={'ms-5 mt-3'}>
+                                <div className={'post-related-container d-flex flex-column'}>
                                     <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
@@ -234,7 +234,7 @@ function TemplatePage() {
                             </Row>
                             <Row>
                                 <h3 className={'text-center mt-3'}>Must see articles</h3>
-                                <div className={'ms-5 mt-3'}>
+                                <div className={'post-related-container'}>
                                     <div className="card post-related-card mb-3">
                                         <div className="row g-0">
                                             <div className="col-md-4">
