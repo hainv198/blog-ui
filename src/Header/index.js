@@ -39,8 +39,8 @@ function Header() {
                                     <Nav.Link as={NavLink} to="/travel">
                                         Travel
                                     </Nav.Link>
-                                    <Nav.Link as={NavLink} to="/about" exact>
-                                        About us
+                                    <Nav.Link style={{padding:'unset'}} as={NavLink} to="/about" exact>
+                                        About
                                     </Nav.Link>
                             </div>
                             <Search/>

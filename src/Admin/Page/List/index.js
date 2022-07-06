@@ -53,7 +53,7 @@ const List = () => {
                                 </button>
                             </div>
                             <p>
-                                <Link to={'/admin/list/new'}>
+                                <Link to={'/admin/users/usersedit/new'}>
                                     <button
                                         className="btn btn-primary"
                                         type="button"

@@ -53,8 +53,8 @@ function App() {
                         <Route path='home' index element={<HomeAdmin/>}/>
                         <Route path='users'>
                             <Route index element={<List/>}/>
-                            <Route path=':userId' element={<Single/>}/>
-                            <Route path='new' element={<New/>}/>
+                            <Route path='users/:id' element={<Single/>}/>
+                            <Route path='usersedit/:id' element={<New/>}/>
                         </Route>
                         <Route path='products'>
                             <Route index element={<Single/>}/>

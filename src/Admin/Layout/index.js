@@ -28,7 +28,9 @@ const Admin = () => {
         <div>
             <Navbar collapseOnSelect expand="lg"  variant="light">
                 <Container>
-                    <Navbar.Brand href="/admin/home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/admin/home">
+                        <img src={'https://static.saltinourhair.com/build/images/saltinourhair-logo.png'} alt="" width={'114px'} height={'23px'}/>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

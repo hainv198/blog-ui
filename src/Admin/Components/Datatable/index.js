@@ -24,7 +24,6 @@ export default function Datatable ({data}) {
 
     const sortColumn = (field, type) => {
         const sortData = [...customer];
-        //const sortData = students;
         if (type === 'string') {
             sortData.sort((a, b) => direction * a[field].localeCompare(b[field]));
         } else if (type === 'number') {
@@ -95,20 +94,20 @@ export default function Datatable ({data}) {
                             {item.status === false && (
                                 <td style={{borderRight:'1px solid #333', textAlign:'center'}}>
                                     <button
-                                        style={{width:80}}
+                                        style={{width:80,height:34.33}}
                                         className="btn btn-secondary ">
                                         User <i className='bx bxs-user-circle'></i>
                                     </button>
                                 </td>
                             )}
                             <td style={{borderRight:'1px solid #333', textAlign:'center', width:'10%'}}>
-                                <Link to={'/user/' + item.id}>Details</Link>
+                                <Link to={'users/' + item.id}>Details</Link>
                             </td>
                             <td className='Action'>
                                 <Tippy placement='bottom'
                                        content={<span>Edit</span>}
                                 >
-                                    <Link to={'/useredit/' + item.id}>
+                                    <Link to={'usersedit/' + item.id}>
                                         <button type="button" className="btn btn-primary">
                                             Edit
                                         </button>
