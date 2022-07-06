@@ -2,12 +2,8 @@
     background-color: #c0e2e2;
 }
 
-
 .footer-content {
     justify-content: space-between;
-}
-.footer div{
-    /* border: 1px solid red; */
 }
 
 .footer input {
@@ -15,7 +11,7 @@
     font-size: larger;
 }
 
-.subcribe-form {
+.footer .subcribe-form {
     align-items: center;
     justify-content: flex-end;
     /* border: 1px solid green; */
@@ -23,18 +19,32 @@
 }
 
 @media screen and (min-width: 992px) {
-    #myForm {
+    .footer #myForm {
         justify-content: end;
     }
 }
 
 @media screen and (max-width: 992px) {
-    #myForm {
+    .footer #myForm {
         justify-content: center;
         align-items: center;
     }
 
-    #myForm form div{
-       text-align: center;
+    .footer #myForm form div {
+        text-align: center;
     }
-  }
+}
+
+.footer a {
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #0778e8 !important;
+    font-weight: bold;
+}
+.footer a:active {
+    color: #0778e8 !important;
+}
+.footer h3 {
+    font-weight: 600;
+}

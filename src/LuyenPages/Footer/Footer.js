@@ -1,13 +1,13 @@
 import React from "react";
 import "../Footer/Footer.css";
-
+import { Link } from "react-router-dom";
 import { Button, Card, CardImg, Col, Container, Row } from "react-bootstrap";
 
 
 
 function Footer() {
     return (
-        <div class="footer">
+        <div class="footer" style={{"margin-top": "20px"}}>
             <div class="container">
                 <footer class="py-5">
                     <div class="row footer-content">
@@ -15,29 +15,29 @@ function Footer() {
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <h3>Menu</h3>
                                 <ul class="nav flex-column">
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Destination</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travel</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                                    <li class="nav-item mb-2"><Link to={"/"} class="nav-link p-0 text-muted">Home</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Destination</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Travel</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/about"} class="nav-link p-0 text-muted">About</Link></li>
                                 </ul>
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <h3>Our policy</h3>
                                 <ul class="nav flex-column">
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term of service</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Copyright report</a></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Privacy policy</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Term of service</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Copyright report</Link></li>
                                 </ul>
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <h3>Our fanpage</h3>
                                 <ul class="nav flex-column">
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pinterest</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Facebook</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Instagram</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Pinterest</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">FAQs</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,13 +58,8 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <div class="d-flex justify-content-between border-top">
                         <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-                        {/* <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use href="#twitter" /></svg></a></li>
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use href="#instagram" /></svg></a></li>
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use href="#facebook" /></svg></a></li>
-                        </ul> */}
                     </div>
                 </footer>
             </div>
