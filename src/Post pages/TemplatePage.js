@@ -283,17 +283,22 @@ function TemplatePage() {
                                                      src={require("../images/bed.png")}
                                                      style={{width: "50%"}}/>
                                             </td>
+
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://www.booking.com/"}>
                                                 <h3>Find Hotels</h3>
                                                 <span className={'text-muted'}>via Booking.com</span>
+                                                </a>
                                             </td>
                                             <td width={"5%"}>
                                                 <img className={'prep-list-table-img'}
                                                      src={require("../images/insurance.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://heymondo.com/"}>
                                                 <h3>Get a Travel Insurance</h3>
                                                 <span className={'text-muted'}>via Heymondo</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr className={'prep-list-table-row'}>
@@ -303,16 +308,20 @@ function TemplatePage() {
                                                      style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://www.sunnycars.com/"}>
                                                 <h3>Find a Rental Car</h3>
                                                 <span className={'text-muted'}>via Sunny Cars</span>
+                                                </a>
                                             </td>
                                             <td width={"5%"}>
                                                 <img className={'prep-list-table-img'}
                                                      src={require("../images/boot.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://www.viator.com/"}>
                                                 <h3>Book Tours & Attractions</h3>
                                                 <span className={'text-muted'}>via Viator</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr className={'prep-list-table-row'}>
@@ -321,16 +330,20 @@ function TemplatePage() {
                                                      src={require("../images/plane.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://www.skyscanner.com"}>
                                                 <h3>Find Cheap Flights</h3>
                                                 <span className={'text-muted'}>via Skyscanner</span>
+                                                </a>
                                             </td>
                                             <td width={"5%"}>
                                                 <img className={'prep-list-table-img'}
                                                      src={require("../images/ticket.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
+                                                <a className={'prep-list-table-link'} href={"https://12go.co"}>
                                                 <h3>Book a Bus/Train/Transfer</h3>
                                                 <span className={'text-muted'}>via 12Go</span>
+                                                </a>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -360,7 +373,7 @@ function TemplatePage() {
                         </Col>
                     </Row>
                     <Container>
-                        <Row style={{marginTop: "5rem", backgroundColor: "#f5f5f5", borderRadius: "5%"}}>
+                        <Row style={{marginTop: "5rem", backgroundColor: "#f5f5f5", borderRadius: "5%", maxHeight: "48rem", overflow: "hidden"}}>
                             <Col lg={6} style={{marginTop: "5rem"}}>
                                 <div className={'read-all-text d-flex flex-column'}>
                                     <span>Read all articles about</span><br/>

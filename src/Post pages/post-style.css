@@ -154,6 +154,11 @@ ol {
 .prep-list-container{
     padding: 0;
 }
+.prep-list-table-link{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
 .category-cover-title::after,.category-cover-title::before{
     left: -.06em;
     top: -.06em;
@@ -195,7 +200,7 @@ ol {
     box-sizing: inherit;
 }
 .arrow-icon{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 .social-buttons{
     margin-left: 2rem;
