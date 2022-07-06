@@ -7,7 +7,7 @@ const Title = ({data}) => {
     return (
         <div>
             <div className='continents'>
-                <Link to={"/categories/" + data.data.continent}>
+                <Link to={"/categories/" + data.data.continent} style={{color: "inherit", textDecoration: "none"}}>
                 <span>{data.data.continent}<ArrowForwardIosIcon/></span>
                 </Link>
             </div>

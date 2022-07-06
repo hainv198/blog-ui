@@ -10,7 +10,7 @@ const Country = ({data}) => {
         <div className='wrappers row'>
             <ul className='country col-md-3'>
                 {countrys.map((item) => (
-                    <Link to={'/categories/'+item}>
+                    <Link to={'/categories/'+item} style={{color: "inherit", textDecoration: "none"}}>
                     <p key={item.id}>{item}</p>
                     </Link>
                 ))}

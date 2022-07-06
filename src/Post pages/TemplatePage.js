@@ -388,7 +388,7 @@ function TemplatePage() {
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <img className={'read-all-img'} src={post.image} style={{width: "80%"}}/>
+                                <img className={'read-all-img'} src={post.image} style={{maxWidth: "80%"}}/>
                             </Col>
                         </Row>
                     </Container>

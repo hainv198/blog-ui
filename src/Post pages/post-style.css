@@ -33,7 +33,7 @@ ol {
     margin-bottom: 5rem;
     background-color: #eadfde;
     max-width: 90rem;
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 0;
 }
 .about-us div{
@@ -218,7 +218,7 @@ ol {
     margin-left: 10%;
 }
 .read-all-img{
-    border-radius: 40%;
+    border-radius: 10px;
     -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
     mask-size: 60rem;
     mask-position: center;
