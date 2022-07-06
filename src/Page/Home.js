@@ -24,7 +24,7 @@ const Home = () => {
     var country_list = [];
     if (country != null) {
         country_list = country.map((element) => (
-            <li>
+            <li className='text-nowrap'>
                 <Link to={"/categories/" + element.country}>
                     <img src={element.image} alt={"img"} />
                     {element.country}
