@@ -4,7 +4,7 @@ import Header from "./Header";
 import Home from "./Page/Home";
 import Travel from "./Page/Travel";
 import Destinations from "./Page/Destinations";
-import Contact from "./Page/Contact";
+import Aboutus from "./Page/Aboutus";
 import {AuthContextProvider} from "./Context/AuthContext";
 import SignIn from "./Components/Authentication/Signin";
 import SignUp from "./Components/Authentication/Signup";
@@ -25,7 +25,7 @@ function App() {
                         <Route index element={<Home/>}/>
                         <Route path='/destination' element={<Destinations/>}/>
                         <Route path='/travel' element={<Travel />}/>
-                        <Route path='/contact' element={<Contact />}/>
+                        <Route path='/about' element={<Aboutus />}/>
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='/page/:id' element={<TemplatePage/>}/>
