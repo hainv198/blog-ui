@@ -8,7 +8,11 @@
 
 .homepage #home-img1 div img {
     max-width: 100%;
-    clip-path: polygon(85% 6%, 64% 0%, 52% 1%, 31% 4%, 9% 24%, 1% 50%, 6% 79%, 27% 95%, 39% 100%, 67% 96%, 81% 88%, 92% 75%, 100% 45%, 98% 23%);
+    /*clip-path: polygon(85% 6%, 64% 0%, 52% 1%, 31% 4%, 9% 24%, 1% 50%, 6% 79%, 27% 95%, 39% 100%, 67% 96%, 81% 88%, 92% 75%, 100% 45%, 98% 23%);*/
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+    mask-repeat: no-repeat;
+    mask-size: 70rem;
+    mask-position: center;
 }
 
 .homepage #icon1 div {
