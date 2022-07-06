@@ -4,7 +4,7 @@
     font-size: 3rem;
 }
 .header-content{
-    font-family: 'Merriweather',Georgia,serif;
+    font-family: 'Poppins',Georgia,serif;
     font-style: italic;
     line-height: 3rem;
     font-size: 1.7rem;
@@ -14,7 +14,7 @@
     /*border-radius: 50%;*/
     width: 100%;
     -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
-    mask-size: 70rem;
+    mask-size: 100rem;
     mask-position: center;
     mask-repeat: no-repeat;
 }
@@ -27,7 +27,39 @@ ol {
     font-size: 1.5rem;
     font-weight: 700;
 }
+.about-us{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #eadfde;
+    max-width: 90rem;
+    border-radius: 10%;
+    padding: 0;
+}
+.about-us div{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+.about-us .about-us-left img{
+    max-width: 60%;
+    padding: 0;
+    margin-left: -1.5rem;
 
+}
+.about-us .about-us-right{
+    text-align: right;
+}
+.about-us-button{
+    font-size: 1.7rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 250ms ease-in-out;
+}
+.about-us:hover .about-us-button{
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out;
+}
 .post-related .card-img {
     transition: all ease-in-out 250ms;
     border-radius: 2%;
@@ -36,8 +68,14 @@ ol {
 .post-related-card {
     overflow: hidden;
     transition: all 250ms ease-in-out;
+    max-width: 40rem;
+    max-height: 11rem;
 }
-
+.post-related-card .card-text{
+    height: 11rem;
+    display: flex;
+    align-items: center;
+}
 .post-related .post-related-card:hover .card-img {
     transform: scale(1.1);
     transition: all 250ms ease-in-out;
@@ -58,7 +96,7 @@ ol {
 }
 
 .post-content-article {
-    font-family: 'Merriweather', Georgia, serif;
+    font-family: 'Poppins', Georgia, serif;
     font-size: 2rem;
     letter-spacing: .15rem;
     line-height: 3.3rem;
@@ -128,4 +166,19 @@ ol {
 }
 .arrow-icon{
     font-size: 3rem;
+}
+.social-buttons{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+
+}
+.read-all-text{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.read-all-img{
+    border-radius: 40%;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
+    mask-size: 60rem;
+    mask-position: center;
 }
