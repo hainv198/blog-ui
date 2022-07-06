@@ -59,8 +59,12 @@
 }
 
 .homepage .featured-img img {
-    max-width: 100%;
+    max-width: 90%;
+    min-width: 85%;
     border-radius: 10px;
+    display: block;
+    margin: auto;
+    max-height: 275px;
 }
 
 .homepage .featured-img img:hover {
@@ -162,11 +166,12 @@
     max-width: 450px;
     color: #FFFFFF;
     margin: auto;
+    font-size: larger;
 }
 
 .homepage .banner-left div h3,
 .banner-left div h1 {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .homepage .banner-btn {
@@ -210,6 +215,11 @@
 .homepage .banner-article img {
     max-width: 80px;
     border-radius: 10px;
+}
+
+.homepage .banner-article img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 
 
@@ -307,4 +317,20 @@
 /* section6 */
 .homepage .form-inline {
     justify-content: center;
+}
+
+.homepage a {
+    text-decoration: none;
+    color: black;
+}
+
+.homepage a:hover {
+    color: #0778e8;
+}
+
+.homepage button:hover {
+    background-color: bisque;
+    transform: scale(1.05);
+    transition-duration: 1s;
+    color: #0778e8;
 }
