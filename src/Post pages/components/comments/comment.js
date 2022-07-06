@@ -12,7 +12,7 @@ const Comment = (props) => {
 
 //?post_id= + props.data
     useEffect(() => {
-        let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments";
+        let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
         console.log(url)
         fetch(url)
             .then(response => response.json())
@@ -23,7 +23,7 @@ const Comment = (props) => {
     if (showCmt != null ? (
         cmtList = showCmt.map((item) => (
             <>
-                <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px", maxWidth: "90%"}}>
+                <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px"}}>
                     <div>
                         <h3>{item.username}</h3> <span style={{fontSize: "1.3rem"}}> {new Date(item.createdAt).toDateString()}</span>
                     </div>
@@ -112,10 +112,14 @@ console.log(date);
     return (
         <>
             <Container>
+                <Row>
                 <Col md={6} className={'me-auto ms-auto mt-3'}>
+                    <div style={{height: "50rem"}} className={'comment-container'}>
                     {cmtList}
+                    </div>
                 </Col>
-            </Container>
+
+                    <Col>
             <form className={'ms-auto me-auto comment-form '}>
                 <div className="form-group">
                     <label className={'comment-label'} htmlFor="note">Write a comment</label>
@@ -142,6 +146,9 @@ console.log(date);
                 </div>
                 <button type="button" className="send-btn comment-button" onClick={saveComment}>Send Comment</button>
             </form>
+                    </Col>
+                </Row>
+            </Container>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
