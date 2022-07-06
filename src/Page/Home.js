@@ -5,8 +5,9 @@ import '../LuyenPages/Homepage/homepage.css';
 import FlightSharpIcon from '@mui/icons-material/FlightSharp';
 
 const Home = () => {
+
     return (
-        <div style={{ marginTop: 100 }} className = "homepage">
+        <div style={{ marginTop: 75 }} className = "homepage">
             {/* <!-- section 1 --> */}
             <div className={'container'} id={'section1'}>
                 <div className={'row'} id={'home-img1'}>
@@ -17,8 +18,7 @@ const Home = () => {
 
                     <div className={'col-lg-6 col-md-6 col-sm-6 col-xs-12'} id={'icon1'}>
                         <div>
-                            <img src={'../LuyenPages/Homepage/Img/icons8-table-lamp-50.png'} />
-                            <FlightSharpIcon/>
+                            <img src={require ("../images/hand.png")} alt="img" />
                         </div>
                         <p>Hi, we’re Nick & Hannah from Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
@@ -41,7 +41,7 @@ const Home = () => {
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src="/homepage/Img/icons8-table-lamp-50.png" alt="img1" />
+                            <img src={require ("../images/globe.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src="/homepage/Img/icons8-table-lamp-50.png" alt="img1" />
+                            <img src={require ("../images/boot.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
@@ -71,7 +71,7 @@ const Home = () => {
                     </div>
                     <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
                         <div class="text-center featured-img-title">
-                            <img src="/homepage/Img/icons8-table-lamp-50.png" alt="img1" />
+                            <img src={require ("../images/plane.png")} alt="img1" />
                             <div>Italy</div>
                         </div>
                         <div class="text-center featured-img-title">
