@@ -1,0 +1,36 @@
+form {
+    width: 50%;
+    min-width: 30rem;
+    /*background-color: gray;*/
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 15px;
+}
+
+button {
+    background: #f1bc68;
+    border: 0 solid #000;
+    border-radius: 99em;
+    -webkit-box-shadow: 2px 3px 0 #d8a04e;
+    box-shadow: 2px 3px 0 #d8a04e;
+    color: #353535;
+    cursor: pointer;
+    display: inline-block;
+    font-family: headings,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    margin: 0 0 0.9375rem;
+    padding: 0.7em 26px;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    float: right;
+}
