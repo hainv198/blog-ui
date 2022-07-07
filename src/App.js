@@ -23,6 +23,7 @@ import Asia from "./Categories/asia";
 import Europe from "./Categories/europe";
 import Africa from "./Categories/africa";
 import Costarica from "./Categories/Costa";
+import NoPage from "./Page/NoPage";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
                             <Route path='europe' element={<Europe />}/>
                             <Route path='africa' element={<Africa />}/>
                         </Route>
+                        <Route path={"*"} element={<NoPage/>}/>
                     </Route>
 
                 </Routes>

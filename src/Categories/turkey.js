@@ -66,23 +66,23 @@ const Turkey = () => {
                             <h3 className="search-title__heading">Pick a destination</h3>
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">ISTANBUL</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/turkey/turkey.jpg")} alt="icon images"/>
+                                    <Link to={'/page/7'}><span className="page-content__search-link">ISTANBUL</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
+                                    <img className="page-content__search-icon" src={require("../images/turkey/turkey3.jpg")} alt="icon images"/>
                                     <a href="src/components/Asia#"><span className="page-content__search-link">CAPPADOCIA</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
+                                    <img className="page-content__search-icon" src={require("../images/turkey/mustdo3.jpg")} alt="icon images"/>
                                     <a href="src/components/Asia#"><span className="page-content__search-link">FETHIYE</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">ISTANBUL</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/turkey/turkey1.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">ANKARA</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>
+                                    <img className="page-content__search-icon" src={require("../images/turkey/mustdo2.jpg")} alt="icon images"/>
                                     <a href="src/components/Asia#"><span className="page-content__search-link">ANTALYA</span></a>
                                 </li>
                                 <li className="page-content__search-li">
