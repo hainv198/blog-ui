@@ -46,8 +46,18 @@
     font-weight: bold;
 }
 
+
+.homepage #destination {
+    display: inline-block;
+    width: 120px;
+    color:  grey;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .choose-destination:hover {
-    
+    display: flex;
 }
 
 

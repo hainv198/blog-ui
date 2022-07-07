@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../LuyenPages/Homepage/homepage.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Destinations from '../Header/Destinations';
 
 const Home = () => {
     const [country, setCountry] = useState(null);
@@ -51,13 +52,8 @@ const Home = () => {
                         <p>Hi, we’re Nick & Hannah from Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
                             holiday a piece of cake!</p>
-                        <p>Choose a
-                            <select class="choose-destination">
-                                <option value="default">destination here</option>
-                                <option value="1">HN</option>
-                                <option value="2">QN</option>
-                                <option value="3">HA</option>
-                            </select>
+                        <p id='destination-wrapper'>Choose a
+                            <span id="destination"><Destinations/></span>
                             to start your journey.
                         </p>
                     </div>
