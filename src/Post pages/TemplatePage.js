@@ -4,6 +4,7 @@ import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
 import Comment from "./components/comments/comment";
+import CommentArea from "./components/commentArea/CommentArea";
 
 
 function TemplatePage() {
@@ -395,6 +396,7 @@ function TemplatePage() {
                     <Container>
                         <Row>
                             <Col className={'col-lg-12 me-auto ms-auto'}>
+                                <CommentArea data={post.title}/>
                                 <Comment data={params.id}/>
                             </Col>
                         </Row>
