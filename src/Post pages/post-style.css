@@ -1,4 +1,6 @@
-
+*{
+    /*background-color: #ffe4c4;*/
+}
 .header-title{
     font-weight: 800;
     font-size: 3rem;
@@ -25,8 +27,16 @@ ol {
 .top-header-list {
     display: inline-block;
     margin-left: 3px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 700;
+    color: black;
+
+}
+.top-header-list-text{
+    background-image: linear-gradient(transparent calc(100% - .45em),#d8c4c3 0),linear-gradient(transparent calc(100% - .45em),#c0e2e2 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%, 100% 90%;
+    transition: background-size .1s ease-in-out;
 }
 .about-us{
     margin-top: 5rem;
@@ -74,7 +84,7 @@ ol {
 }
 .post-related-card .card-text{
     color: black;
-    height: 11rem;
+    height: 9rem;
     display: flex;
     align-items: center;
 }
@@ -87,13 +97,18 @@ ol {
     background-color: #e6e6e6;
     transition: all 250ms ease-in-out;
 }
-
+.post-related-link{
+    text-decoration: none;
+}
 .post-related .card-text {
     font-weight: 800;
 }
 .post-related-container{
     margin-left: 1.7rem;
     margin-top: 1rem;
+}
+.post-related-container{
+    cursor: pointer;
 }
 .post-related{
     overflow: hidden;
@@ -112,7 +127,6 @@ ol {
     .post-related{
         margin: auto!important;
         padding: 0;
-        border: solid red 1px;
         overflow: hidden;
     }
     .post-related-container{

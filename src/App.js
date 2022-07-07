@@ -20,7 +20,8 @@ import France from "./Categories/France";
 import Vietnam from "./Categories/Vietnam";
 import Columbia from "./Categories/columbia";
 import Turkey from "./Categories/turkey";
-import Asia from "./Categories/Asia";
+
+import Europe from "./Categories/Europe";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
                             <Route path='vietnam' element={<Vietnam/>}/>
                             <Route path='columbia' element={<Columbia/>}/>
                             <Route path='turkey' element={<Turkey/>}/>
-                            <Route path='asia' element={<Asia/>}/>
+                            <Route path='europe' element={<Europe/>}/>
                         </Route>
                     </Route>
 

@@ -12,23 +12,23 @@ const Comment = (props) => {
 
 //?post_id= + props.data
     useEffect(() => {
-        // let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
-        let url = 'https://62bd6dd4c5ad14c110be7072.mockapi.io/comments';
+        let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
+        // let url = 'https://62bd6dd4c5ad14c110be7072.mockapi.io/comments';
         console.log(url)
         fetch(url)
             .then(response => response.json())
             .then(data => setShowCmt(data))
     }, [])
     let cmtList = [];
-    let testCmt = [];
-    if (showCmt != null ? (
-        testCmt = showCmt.filter(item => item.username.includes("Mckenzie48")).map((item) => (
-            <>
-                <h1>{item.username}</h1>
-                <h2>{item.content}</h2>
-            </>
-        ))
-    ) : ("")) ;
+    // let testCmt = [];
+    // if (showCmt != null ? (
+    //     testCmt = showCmt.filter(item => item.username.includes("Mckenzie48")).map((item) => (
+    //         <>
+    //             <h1>{item.username}</h1>
+    //             <h2>{item.content}</h2>
+    //         </>
+    //     ))
+    // ) : ("")) ;
     if (showCmt != null ? (
         cmtList = showCmt.map((item) => (
             <>
@@ -125,7 +125,7 @@ const Comment = (props) => {
                 <Row>
                     <Col md={6} className={'me-auto ms-auto mt-3'}>
                         <div style={{height: "50rem"}} className={'comment-container'}>
-                            {testCmt}
+                            {/*{testCmt}*/}
                             {cmtList}
                         </div>
                     </Col>
