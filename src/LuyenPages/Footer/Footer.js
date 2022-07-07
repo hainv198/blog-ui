@@ -58,7 +58,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between border-top">
+                    <div class="border-top" id="companyCopyRight">
                         <p>&copy; 2022 Company, Inc. All rights reserved.</p>
                     </div>
                 </footer>

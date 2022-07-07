@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../LuyenPages/Homepage/homepage.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Destinations from '../Header/Destinations';
 
 const Home = () => {
     const [country, setCountry] = useState(null);
@@ -51,13 +52,8 @@ const Home = () => {
                         <p>Hi, we’re Nick & Hannah from Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
                             holiday a piece of cake!</p>
-                        <p>Choose a
-                            <select class="choose-destination">
-                                <option value="default">destination here</option>
-                                <option value="1">HN</option>
-                                <option value="2">QN</option>
-                                <option value="3">HA</option>
-                            </select>
+                        <p id='destination-wrapper'>Choose a
+                            <span id="destination"><Destinations/></span>
                             to start your journey.
                         </p>
                     </div>
@@ -67,7 +63,7 @@ const Home = () => {
             {/* <!-- section2 --> */}
             <div class="container" id="section2">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/globe.png")} alt="img1" />
                             <div>Vietnam</div>
@@ -84,7 +80,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/boot.png")} alt="img1" />
                             <div>France</div>
@@ -101,14 +97,14 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/plane.png")} alt="img1" />
                             <div>Egypt</div>
                         </div>
                         <div class="text-center featured-img-title">
                             <h3>
-                            7 Best Things To Do in Cairo
+                                7 Best Things To Do in Cairo
                             </h3>
                         </div>
                         <div class="featured-img">
@@ -126,13 +122,6 @@ const Home = () => {
                         <li>
                             Where to Next?
                         </li>
-
-                        {/* <li>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Costa Rica
-                        </li>
-                        <li>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Thailand
-                        </li> */}
                         {country_list}
                     </ul>
                 </div>
@@ -156,12 +145,12 @@ const Home = () => {
                             <div class="row banner-article">
                                 <div class="col-3">
                                     <Link to={"/#"}>
-                                    <img src="https://static.saltinourhair.com/wp-content/uploads/2019/10/23130311/easy-tips-travel-plastic-free-800x582.jpg" alt="img" />
+                                        <img src="https://static.saltinourhair.com/wp-content/uploads/2019/10/23130311/easy-tips-travel-plastic-free-800x582.jpg" alt="img" />
                                     </Link>
                                 </div>
                                 <div class="col-9">
                                     <Link to={"/#"}>
-                                    <p>13 Easy Tips to Reduce Plastic & Travel Plastic-Free</p>
+                                        <p>13 Easy Tips to Reduce Plastic & Travel Plastic-Free</p>
                                     </Link>
                                 </div>
                                 <hr />
@@ -169,13 +158,13 @@ const Home = () => {
                             <div class="row banner-article">
                                 <div class="col-3">
                                     <Link to={"/#"}>
-                                    <img src="https://static.saltinourhair.com/wp-content/uploads/2020/03/23121432/sustainable-travel-shop-local-741x600.jpg" alt="img" />
-                                    </Link>                               
+                                        <img src="https://static.saltinourhair.com/wp-content/uploads/2020/03/23121432/sustainable-travel-shop-local-741x600.jpg" alt="img" />
+                                    </Link>
                                 </div>
                                 <div class="col-9">
                                     <Link to={"/#"}>
-                                    <p>Sustainable Travel Tips – 10 Easy Tips for You to Use Now!</p>
-                                    </Link>                                 
+                                        <p>Sustainable Travel Tips – 10 Easy Tips for You to Use Now!</p>
+                                    </Link>
                                 </div>
                                 <hr />
                             </div>
@@ -188,7 +177,7 @@ const Home = () => {
                                 <div class="col-9">
                                     <Link to={"/#"}>
                                         <p>How to Become Vegetarian: 8 Super Simple Steps</p>
-                                    </Link>                                   
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +249,7 @@ const Home = () => {
                             <img src="https://static.saltinourhair.com/wp-content/uploads/2021/06/04100711/santorini-greece-things-to-do-travel-guide-810x810.jpg"
                                 alt="img" />
                         </Link>
-                      
+
                         <div class="bottom-left">
                             <h2>
                                 Venice
@@ -290,7 +279,7 @@ const Home = () => {
                         <Link to={"/page/10"}>
                             <img src="https://static.saltinourhair.com/wp-content/uploads/2022/02/15210431/puerto-viejo-1.jpg"
                                 alt="img" />
-                        </Link>                     
+                        </Link>
                         <div class="bottom-left">
                             <h2>
                                 Puerto Viejo
@@ -319,8 +308,7 @@ const Home = () => {
                                     creation' company named Salt in our Hair. We inspire people to travel via our travel guides,
                                     photography and videography.
                                 </p>
-                                <Link to={"/contact"}>More about us</Link><span> /</span>
-                                <a href="#">Work with us</a>
+                                <Link to={"/about"} className="about-link">More about us</Link>
                             </div>
                         </div>
                     </div>

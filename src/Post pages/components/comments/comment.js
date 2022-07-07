@@ -13,19 +13,28 @@ const Comment = (props) => {
 //?post_id= + props.data
     useEffect(() => {
         let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
-        console.log(url)
+        // let url = 'https://62bd6dd4c5ad14c110be7072.mockapi.io/comments';
         fetch(url)
             .then(response => response.json())
             .then(data => setShowCmt(data))
     }, [])
     let cmtList = [];
-
+    // let testCmt = [];
+    // if (showCmt != null ? (
+    //     testCmt = showCmt.filter(item => item.username.includes("Mckenzie48")).map((item) => (
+    //         <>
+    //             <h1>{item.username}</h1>
+    //             <h2>{item.content}</h2>
+    //         </>
+    //     ))
+    // ) : ("")) ;
     if (showCmt != null ? (
         cmtList = showCmt.map((item) => (
             <>
                 <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px"}}>
                     <div>
-                        <h3>{item.username}</h3> <span style={{fontSize: "1.3rem"}}> {new Date(item.createdAt).toDateString()}</span>
+                        <h3>{item.username}</h3> <span
+                        style={{fontSize: "1.3rem"}}> {new Date(item.createdAt).toDateString()}</span>
                     </div>
                     <p>{item.content}
                         <br/><br/><Button variant={'outline-secondary'} className={"rounded-pill"}><i
@@ -106,46 +115,53 @@ const Comment = (props) => {
         }
 
     };
-const date = new Date();
-console.log(date);
-
+    const date = new Date();
     return (
         <>
             <Container>
                 <Row>
-                <Col md={6} className={'me-auto ms-auto mt-3'}>
-                    <div style={{height: "50rem"}} className={'comment-container'}>
-                    {cmtList}
-                    </div>
-                </Col>
+                    <Col md={6} className={'me-auto ms-auto mt-3'}>
+                        <div className={'comment-container'}>
+                            {/*{testCmt}*/}
+                            {cmtList}
+                        </div>
+                    </Col>
 
-                    <Col>
-            <form className={'ms-auto me-auto comment-form '}>
-                <div className="form-group">
-                    <label className={'comment-label'} htmlFor="note">Write a comment</label>
-                    <p style={{fontSize: "1.3rem"}} className={'text-muted'}>Your email address will not be published.
-                        Required fields are marked*.</p>
-                    <label className={'comment-label'} htmlFor="inputName">Name<span>*</span></label>
-                    <input ref={nameRef} onChange={handleChange} type="text" className="form-control" id="inputName"
-                           name="username" required={true}/>
-                </div>
-                <div className="form-group">
-                    <label className={'comment-label'} htmlFor="inputEmail">Email<span>*</span></label>
-                    <input ref={emailRef} onChange={handleChange} type="email" className="form-control" id="inputEmail"
-                           name="email" required={true}/>
-                </div>
-                <div className="form-group">
-                    <label className={'comment-label'} htmlFor="inputCommentContent">Comment<span>*</span></label>
-                    <textarea ref={contentRef} onChange={handleChange} className="form-control" id="inputCommentContent"
-                              name="content" rows="15" cols='3' required={true}></textarea>
-                </div>
-                <div className="form-check mt-4">
-                    <input type="checkbox" className="form-check-input" id="notify_me"/>
-                    <label className="form-check-label" style={{fontWeight: "bold"}} htmlFor="notify_me">Notify me when
-                        new comments are loaded</label>
-                </div>
-                <button type="button" className="send-btn comment-button" onClick={saveComment}>Send Comment</button>
-            </form>
+                    <Col md={6}>
+                        <form className={'ms-auto me-auto comment-form '}>
+                            <div className="form-group">
+                                <label className={'comment-label'} htmlFor="note">Write a comment</label>
+                                <p style={{fontSize: "1.3rem"}} className={'text-muted'}>Your email address will not be
+                                    published.
+                                    Required fields are marked*.</p>
+                                <label className={'comment-label'} htmlFor="inputName">Name<span>*</span></label>
+                                <input ref={nameRef} onChange={handleChange} type="text" className="form-control comment-input"
+                                       id="inputName"
+                                       name="username" required={true}/>
+                            </div>
+                            <div className="form-group">
+                                <label className={'comment-label'} htmlFor="inputEmail">Email<span>*</span></label>
+                                <input ref={emailRef} onChange={handleChange} type="email" className="form-control comment-input"
+                                       id="inputEmail"
+                                       name="email" required={true}/>
+                            </div>
+                            <div className="form-group">
+                                <label className={'comment-label'}
+                                       htmlFor="inputCommentContent">Comment<span>*</span></label>
+                                <textarea ref={contentRef} onChange={handleChange} className="form-control"
+                                          id="inputCommentContent"
+                                          name="content" rows="15" cols='6' required={true}></textarea>
+                            </div>
+                            <div className="form-check mt-4">
+                                <input type="checkbox" className="form-check-input" id="notify_me"/>
+                                <label className="form-check-label" style={{fontWeight: "bold"}} htmlFor="notify_me">Notify
+                                    me when
+                                    new comments are loaded</label>
+                            </div>
+                            <button type="button" className="send-btn comment-button" onClick={saveComment}>Send
+                                Comment
+                            </button>
+                        </form>
                     </Col>
                 </Row>
             </Container>
