@@ -276,7 +276,7 @@
 .homepage .feautured-article div img {
     max-width: 100%;
     border-radius: 10px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .homepage .feautured-article div {
@@ -346,6 +346,11 @@
 
 .homepage .about-us {
     text-align: right;
+}
+
+.homepage .about-link {
+    font-style: italic;
+    font-weight: 500;
 }
 
 /* section6 */

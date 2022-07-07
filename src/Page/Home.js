@@ -108,7 +108,7 @@ const Home = () => {
                         </div>
                         <div class="text-center featured-img-title">
                             <h3>
-                            7 Best Things To Do in Cairo
+                                7 Best Things To Do in Cairo
                             </h3>
                         </div>
                         <div class="featured-img">
@@ -149,12 +149,12 @@ const Home = () => {
                             <div class="row banner-article">
                                 <div class="col-3">
                                     <Link to={"/#"}>
-                                    <img src="https://static.saltinourhair.com/wp-content/uploads/2019/10/23130311/easy-tips-travel-plastic-free-800x582.jpg" alt="img" />
+                                        <img src="https://static.saltinourhair.com/wp-content/uploads/2019/10/23130311/easy-tips-travel-plastic-free-800x582.jpg" alt="img" />
                                     </Link>
                                 </div>
                                 <div class="col-9">
                                     <Link to={"/#"}>
-                                    <p>13 Easy Tips to Reduce Plastic & Travel Plastic-Free</p>
+                                        <p>13 Easy Tips to Reduce Plastic & Travel Plastic-Free</p>
                                     </Link>
                                 </div>
                                 <hr />
@@ -162,13 +162,13 @@ const Home = () => {
                             <div class="row banner-article">
                                 <div class="col-3">
                                     <Link to={"/#"}>
-                                    <img src="https://static.saltinourhair.com/wp-content/uploads/2020/03/23121432/sustainable-travel-shop-local-741x600.jpg" alt="img" />
-                                    </Link>                               
+                                        <img src="https://static.saltinourhair.com/wp-content/uploads/2020/03/23121432/sustainable-travel-shop-local-741x600.jpg" alt="img" />
+                                    </Link>
                                 </div>
                                 <div class="col-9">
                                     <Link to={"/#"}>
-                                    <p>Sustainable Travel Tips – 10 Easy Tips for You to Use Now!</p>
-                                    </Link>                                 
+                                        <p>Sustainable Travel Tips – 10 Easy Tips for You to Use Now!</p>
+                                    </Link>
                                 </div>
                                 <hr />
                             </div>
@@ -181,7 +181,7 @@ const Home = () => {
                                 <div class="col-9">
                                     <Link to={"/#"}>
                                         <p>How to Become Vegetarian: 8 Super Simple Steps</p>
-                                    </Link>                                   
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@ const Home = () => {
                             <img src="https://static.saltinourhair.com/wp-content/uploads/2021/06/04100711/santorini-greece-things-to-do-travel-guide-810x810.jpg"
                                 alt="img" />
                         </Link>
-                      
+
                         <div class="bottom-left">
                             <h2>
                                 Venice
@@ -283,7 +283,7 @@ const Home = () => {
                         <Link to={"/page/10"}>
                             <img src="https://static.saltinourhair.com/wp-content/uploads/2022/02/15210431/puerto-viejo-1.jpg"
                                 alt="img" />
-                        </Link>                     
+                        </Link>
                         <div class="bottom-left">
                             <h2>
                                 Puerto Viejo
@@ -312,8 +312,8 @@ const Home = () => {
                                     creation' company named Salt in our Hair. We inspire people to travel via our travel guides,
                                     photography and videography.
                                 </p>
-                                <Link to={"/contact"}>More about us</Link><span> /</span>
-                                <a href="#">Work with us</a>
+                                <Link to={"/contact"} className="about-link">More about us</Link><span> /</span>
+                                <a href="#" className="about-link">Work with us</a>
                             </div>
                         </div>
                     </div>
