@@ -6,20 +6,25 @@ import './Pagination'
 import {Link} from "react-router-dom";
 import Tippy from "@tippyjs/react";
 import Pagination from "./Pagination";
-let PageSize = 10;
+let PageSize = 12;
 
 export default function Datatable ({data}) {
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(0);
     const [customer, setCustomer] = useState([])
     const [direction, setDirection] = useState(1);
+    const [currentData, setCurrentTableData] = useState(null);
 
     useEffect(() => {
-        setCustomer(data)
+        setCurrentPage(1);
+        setCustomer(data);
+        const firstPageIndex = 0
+        const lastPageIndex = PageSize;
+        setCurrentTableData([...data.slice(firstPageIndex, lastPageIndex)]);
     },[data])
-    const currentTableData = useMemo(() => {
+    useEffect(() => {
         const firstPageIndex = (currentPage - 1) * PageSize;
         const lastPageIndex = firstPageIndex + PageSize;
-        return data.slice(firstPageIndex, lastPageIndex);
+        setCurrentTableData([...data.slice(firstPageIndex, lastPageIndex)]);
     }, [currentPage]);
 
     const sortColumn = (field, type) => {
@@ -62,9 +67,26 @@ export default function Datatable ({data}) {
                     <th
                         style={{textAlign:'center'}}
                         onClick={() => sortColumn('lastName', 'string')}>
-                        Last Name <span> </span>
+                        Last Name
                     </th>
+                    <th
+                        style={{textAlign:'center'}}
+                        onClick={() => sortColumn('lastName', 'string')}>
+                        Date Of Birth
+                    </th>
+
+
                     <th>Email</th>
+                    <th
+                        style={{textAlign:'center'}}
+                        onClick={() => sortColumn('lastName', 'string')}>
+                        Country
+                    </th>
+                    <th
+                        style={{textAlign:'center'}}
+                        onClick={() => sortColumn('lastName', 'string')}>
+                        Phone
+                    </th>
                     <th
                         style={{textAlign:'center'}}
                         onClick={() => sortColumn('mark', 'number')}>Status</th>
@@ -73,7 +95,7 @@ export default function Datatable ({data}) {
                 </tr>
                 </thead>
                 <tbody style={{marginTop:100}}>
-                {currentTableData.map(item => {
+                {currentData&&currentData.map(item => {
                     return (
                         <tr style={{marginTop:20}}
                             key={item.id}>
@@ -81,13 +103,17 @@ export default function Datatable ({data}) {
                             <td style={{borderRight:'1px solid #333', textAlign:'center', width:'5%'}}>{item.id}</td>
                             <td style={{borderRight:'1px solid #333', textAlign:'center'}}>{item.firstName}</td>
                             <td style={{borderRight:'1px solid #333', textAlign:'center'}}>{item.lastName}</td>
-                            <td style={{borderRight:'1px solid #333', textAlign:'center', width:'30%'}}>{item.email}</td>
+                            <td style={{borderRight:'1px solid #333', textAlign:'center', width:'15%'}}>{(item.updated_at).slice(0, 10)}</td>
+                            <td style={{borderRight:'1px solid #333', textAlign:'center', width:'25%'}}>{item.email}</td>
+                            <td style={{borderRight:'1px solid #333', textAlign:'center', width:'20%'}}>{item.home.address}</td>
+                            <td style={{borderRight:'1px solid #333', textAlign:'center', width:'15%'}}>{(item.phone).slice(0, 10)}</td>
+
                             {item.status === true && (
                                 <td style={{borderRight:'1px solid #333', textAlign:'center', width:'10%'}}>
                                     <button
                                         style={{width:80}}
-                                        className="btn btn-success status">
-                                        Fancy <i className='bx bxs-star' style={{color:'yellow'}}></i>
+                                        className="btn btn-outline-success status">
+                                        Fancy <i className='bx bxs-star' style={{color:'#f30'}}></i>
                                     </button>
                                 </td>
                             )}
@@ -95,7 +121,7 @@ export default function Datatable ({data}) {
                                 <td style={{borderRight:'1px solid #333', textAlign:'center'}}>
                                     <button
                                         style={{width:80,height:34.33}}
-                                        className="btn btn-secondary ">
+                                        className="btn btn-outline-secondary ">
                                         User <i className='bx bxs-user-circle'></i>
                                     </button>
                                 </td>
@@ -108,7 +134,7 @@ export default function Datatable ({data}) {
                                        content={<span>Edit</span>}
                                 >
                                     <Link to={'usersedit/' + item.id}>
-                                        <button type="button" className="btn btn-primary">
+                                        <button type="button" className="btn btn-outline-primary">
                                             Edit
                                         </button>
                                     </Link>
@@ -118,8 +144,9 @@ export default function Datatable ({data}) {
                                     placement='bottom'
                                     content={<span>Delete</span>}>
                                     <button
+                                        style={{height:24}}
                                         type="button"
-                                        className="btn btn-danger"
+                                        className="btn btn-outline-danger"
                                         onClick={() => deleteUser(item.id)}
                                     >
                                         <i className='bx bx-coffee-togo'></i>

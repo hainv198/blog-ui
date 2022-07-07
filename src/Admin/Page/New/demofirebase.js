@@ -8,7 +8,8 @@ import {useNavigate} from "react-router-dom";
 import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
 import { storage } from "../../../firebase";
 const New = () => {
-    const [files, setFiles] = useState("");
+    const [file, setFile] = useState("");
+    const [percent, setPercent] = useState(0);
     const params = useParams();
     const [users, setUsers] = useState(null);
     const [countries, setCountries] = useState(null);
@@ -41,8 +42,38 @@ const New = () => {
     // Up load image
 
     function handleChangeFile(event) {
-        setFiles(event.target.files[0]);
+        setFile(event.target.files[0]);
     }
+
+    const handleUpload = () => {
+        if (!file) {
+            alert("Please upload an image first!");
+        }
+
+        const storageRef = ref(storage, `/files/${file.name}`);
+
+        const uploadTask = uploadBytesResumable(storageRef, file);
+
+        uploadTask.on(
+            "state_changed",
+            (snapshot) => {
+                const percent = Math.round(
+                    (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                );
+
+                // update progress
+                setPercent(percent);
+            },
+            (err) => console.log(err),
+            () => {
+                // download url
+                getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+                    console.log(url);
+                });
+            }
+        );
+    };
+
     // end
 
     const handleChange = (event) => {
@@ -105,8 +136,8 @@ const New = () => {
                         <div className="left">
                             <img
                                 src={
-                                    files
-                                        ? URL.createObjectURL(files)
+                                    file
+                                        ? URL.createObjectURL(file)
                                         : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
                                 }
                                 alt=""
@@ -121,10 +152,15 @@ const New = () => {
                                     <input
                                         accept="image/*"
                                         type="file"
+                                        name='avatar'
                                         id="file"
                                         onChange={handleChangeFile}
                                         style={{ display: "none" }}
                                     />
+                                    {/*<button onClick={handleUpload} className="btn btn-primary">Upload</button>*/}
+
+
+
                                 </div>
 
                                 <div className="formInput">
@@ -185,23 +221,23 @@ const New = () => {
                                         onChange={(e) => handleChangeHome(e)}
                                     ></input>
                                 </div>
-
                                 <div>
                                     <button
-                                        type="button"
+                                        type="submit"
                                         className="btn btn-primary"
                                         onClick={() => saveUser()}
                                     >
                                         Save
                                     </button>
                                     <span> </span>
-                                    <Link to="/admin/users">
+                                    <Link to="/home/users">
                                         <button type="button" className="btn btn-secondary">
                                             Cancel
                                         </button>
                                     </Link>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
