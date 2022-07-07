@@ -121,7 +121,7 @@ const Comment = (props) => {
             <Container>
                 <Row>
                     <Col md={6} className={'me-auto ms-auto mt-3'}>
-                        <div style={{height: "50rem"}} className={'comment-container'}>
+                        <div className={'comment-container'}>
                             {/*{testCmt}*/}
                             {cmtList}
                         </div>
@@ -135,13 +135,13 @@ const Comment = (props) => {
                                     published.
                                     Required fields are marked*.</p>
                                 <label className={'comment-label'} htmlFor="inputName">Name<span>*</span></label>
-                                <input ref={nameRef} onChange={handleChange} type="text" className="form-control"
+                                <input ref={nameRef} onChange={handleChange} type="text" className="form-control comment-input"
                                        id="inputName"
                                        name="username" required={true}/>
                             </div>
                             <div className="form-group">
                                 <label className={'comment-label'} htmlFor="inputEmail">Email<span>*</span></label>
-                                <input ref={emailRef} onChange={handleChange} type="email" className="form-control"
+                                <input ref={emailRef} onChange={handleChange} type="email" className="form-control comment-input"
                                        id="inputEmail"
                                        name="email" required={true}/>
                             </div>

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Col, Row} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-const France = () => {
+const Europe = () => {
     let inputRef = useRef();
     return (
         <>
@@ -16,19 +16,18 @@ const France = () => {
                                 <div className={'category-cover-left'}>
                                     <h1 className={'category-cover-left__heading'}>
                                         <span className={'category-cover-subtitle'}>Travel in</span>
-                                        <div className={'category-cover-title'} style={{fontSize: "12rem"}} title={'France'}>
-                                            France
+                                        <div className={'category-cover-title'} style={{fontSize: "15rem"}} title={'Europe'}>
+                                            Europe
                                         </div>
                                     </h1>
-                                    <p style={{fontSize:"1.6rem", fontWeight:"light", width:"400px"}} className={'category-cover-excerpt'}>
-
-                                        Famed for its Eiffel Tower, Art museums, stunning beaches and snow-capped Alps including Europe's tallest peak.
+                                    <p style={{fontSize:"1.6rem", fontWeight:"light"}} className={'category-cover-excerpt'}>
+                                        Architectural masterpieces, beautiful nature, and fantastic culinary diversity.
                                     </p>
                                 </div>
                             </h1>
                         </Col>
-                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem", marginTop: "-20rem", marginBottom: "20rem"}} >
-                            <img className={'page-cover_image'} src={require('../images/france/cover.jpg')} style={{marginTop :"20rem"}}
+                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem"}} >
+                            <img style={{marginTop: "10rem"}} className={'page-cover_image'} src={require('../images/europe/cover.jpg')}
                                  alt={'10 Best Beaches in Sri Lanka'}/>
                         </Col>
                         <Col className>
@@ -40,8 +39,8 @@ const France = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Best time to travel</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>March to October is the best time to visit France</span>
+                                        <h5><strong>Did you know?</strong></h5>
+                                        <span>The world’s second-largest food exporter is the Netherlands, just after the USA, which is 237 times larger in size!</span>
                                     </div>
                                 </div>
                                 <div className={'category-cover-right-top mt-3'}>
@@ -51,8 +50,8 @@ const France = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Currency</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>The currency in France is Euro. 1 USD is equivalent to 0.90 Euro.</span>
+                                        <h5><strong>Europe</strong></h5>
+                                        <span>A total of 44 countries with The Vatican as the world’s smallest country!</span>
                                     </div>
                                 </div>
                             </div>
@@ -67,24 +66,24 @@ const France = () => {
                             <h3 className="search-title__heading">Pick a destination</h3>
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PARIS</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search3.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">CZECH REPUBLIC</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search4.jpg")} alt="icon images"/>
-                                    <Link to={'/page/3'}><span className="page-content__search-link">NICE (FRENCH RIVIERA)</span></Link>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search5.jpg")} alt="icon images"/>
+                                    <Link to={'/categories/france'}><span className="page-content__search-link">FRANCE</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search3.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">DORDOGNE</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search2.jpg")} alt="icon images"/>
+                                    <Link to={'/page/12'}><span className="page-content__search-link">HUNGARY</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search6.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BORDEAUX</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search6.jpg")} alt="icon images"/>
+                                    <Link to={'/page/8'}><span className="page-content__search-link">ITALY</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search5.jpg")} alt="icon images"/>
-                                    <Link to={'/page/4'}><span className="page-content__search-link">MARSEILLE</span></Link>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search1.jpg")} alt="icon images"/>
+                                    <Link to={'/categories/turkey'}><span className="page-content__search-link">TURKEY</span></Link>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">
@@ -97,16 +96,16 @@ const France = () => {
                             </ul>
                         </div>
                         <div className="page-content-article" >
-                            <div className="article-img img-img">
+                            <div className="article-img img-img" style={{width: "68rem"}}>
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                                <img className="article-img__img" src={require("../images/france/article.jpg")} alt="article picture"/>
+                                <img className="article-img__img" src={require("../images/europe/article.jpg")} alt="article picture" style={{width: "80rem", marginTop: "30rem"}}/>
                             </div>
                             <div className="div">
                              <span>
                                  <img style={{width: "8rem"}} className={'salt-icon'} src={require("../images/icons/lightbulb.png")}/>
                              </span>
                                 <div className="article-heading">
-                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>France travel guide: A complete 3-week itinerary</h1>
+                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>10 best city trips of Europe in 2021</h1>
                                 </div>
                             </div>
                         </div>
@@ -117,29 +116,29 @@ const France = () => {
             {/*page content intro article*/}
             <Container>
                 <div className="must-do section container" style={{marginTop:"10rem"}}>
-                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN FRANCE</h1>
+                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN EUROPE</h1>
                     <div className="d-flex justify-content-between">
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/france/mustdo.jpg")} alt="title"/>
+                            <img className="must-do__img" src={require("../images/europe/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">
                                 <div>
-                                    <span>11 things to do in Nice</span><br/>France<br/>
-                                    <span className="must-do__tag">France</span>
+                                    <span>11 things to do in Venice (City trip guide)</span><br/>
+                                    <span className="must-do__tag">Italy</span>
                                 </div>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img text-white" src={require("../images/france/mustdo1.jpg")} />
+                            <img className="must-do__img text-white" src={require("../images/europe/mustdo1.jpg")} />
                             <div className="must-do__title">
-                                <span>11 things to do in Paris, <br/>France</span><br/>
-                                <span className="must-do__tag">France</span>
+                                <span>11 best things to do in Budapest, Hungary</span><br/>
+                                <span className="must-do__tag">Hungary</span>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/france/mustdo2.jpg")} />
+                            <img className="must-do__img" src={require("../images/europe/mustdo3.jpg")} />
                             <div className="must-do__title">
-                                <span>Trekking in France, on <br/>Complete guide</span><br/>
-                                <span className="must-do__tag">France</span>
+                                <span>Iceland travel guide: 3-week trip</span><br/>
+                                <span className="must-do__tag">Iceland</span>
                             </div>
                         </div>
                     </div>
@@ -149,28 +148,19 @@ const France = () => {
                 <div className="section ending-content container">
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            France
+                            Europe
                         </h3 >
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            France: a nation that breathes life into ‘love’, and home to the most romantic and elegant cities in the world. Most known for its capital city Paris, travelers flock from all over the world to experience its breathtaking beauty. Discover enchanting cobbled streets, fairytale architecture, and a soulful atmosphere. Dine by candlelight, jump between pastry shops or stroll leisurely along the River Seine and underneath the dazzling Eiffel Tower. Paris is a true lothario, stealing hearts, and charming over and over again.
+                            Europe is the continent of hopeless romantics. A place that radiates warmth, happiness, and enchantment in the form of hot summer nights, under the stars. By day, wander picturesque streets, laughing and chatting, or dip salty, sunkissed skin in beautiful blue waters. Continue to feed the soul by visiting the most sensational cities in the world! Each magical European city writes a love letter to the past, through its buildings and customs. For example, the abstract works of Gaudi in Barcelona, the love lock bridge of Paris, or the exotic grand bazaar of Istanbul. Alternatively, get ready for an epic adventure through the ages. Discover wonders like the majestic acropolis in Athens, the magnificent Colosseum in Rome, or the remarkable floating city of Venice.Europe is the continent of hopeless romantics. A place that radiates warmth, happiness, and enchantment in the form of hot summer nights, under the stars. By day, wander picturesque streets, laughing and chatting, or dip salty, sunkissed skin in beautiful blue waters. Continue to feed the soul by visiting the most sensational cities in the world! Each magical European city writes a love letter to the past, through its buildings and customs. For example, the abstract works of Gaudi in Barcelona, the love lock bridge of Paris, or the exotic grand bazaar of Istanbul. Alternatively, get ready for an epic adventure through the ages. Discover wonders like the majestic acropolis in Athens, the magnificent Colosseum in Rome, or the remarkable floating city of Venice.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            World-Famous Scenery
+                            Crossing Borders and Cultures
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            If travelers can bear to drag themselves away from the magical sights of Paris, there are plenty more treasures waiting. Drive through golden fields of grass swaying in the breeze, and fantastic vineyards that make the best wine in the world! Alternatively, wander amongst enchanting castles, or along the glamorous azure coastline of the French Riviera.
-                        </p>
-                    </div>
-
-                    <div className="ending-content__p">
-                        <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Elegant France
-                        </h3>
-                        <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            It’s true that France is the height of sophistication, glamour, and decadence. Do as the French do and dine on endless delicious cheeses, the best bread and pastries, mouthwatering Michelin star meals, and the finest champagne. There’s nowhere quite like it in the world: a place where every dream can be achieved. All the while, to the sounds of beautiful music, the smells of fantastic food, and stunning sights that vary from the lavender fields of Provence to the spectacular peaks of the French Alps. France is waiting to charm, impress, and satisfy every travel craving.
+                            Each nation, however small, has its own unique culture and language. As a result, Europe is one of a kind. In just 24 hours several countries could be visited, each with a different beauty, landscape, culture, and language. Experience the icy charm of northern Europe, with its epic fjords, snow-capped mountains, frosty blue lakes, and hilltop castles. Together with the vibrancy of southern Europe, with its colorful houses, street art, shady cobbled streets, bustling plazas, and heavenly islands. The diversity of a continent which stretches as far as the Arctic Circle, and borders both Africa and Asia, is hard to beat.
                         </p>
                     </div>
 
@@ -181,4 +171,4 @@ const France = () => {
     );
 };
 
-export default France;
+export default Europe;

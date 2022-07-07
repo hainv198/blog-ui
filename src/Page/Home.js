@@ -308,8 +308,7 @@ const Home = () => {
                                     creation' company named Salt in our Hair. We inspire people to travel via our travel guides,
                                     photography and videography.
                                 </p>
-                                <Link to={"/contact"} className="about-link">More about us</Link><span> /</span>
-                                <a href="#" className="about-link">Work with us</a>
+                                <Link to={"/about"} className="about-link">More about us</Link>
                             </div>
                         </div>
                     </div>

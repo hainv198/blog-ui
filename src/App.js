@@ -14,14 +14,16 @@ import HomeAdmin from "./Admin/Page/Home";
 import List from "./Admin/Page/List";
 import New from "./Admin/Page/New";
 import Single from "./Admin/Page/Single";
-import Costa from "./Categories/Costa";
 import Egypt from "./Categories/Egypt";
 import France from "./Categories/France";
 import Vietnam from "./Categories/Vietnam";
 import Columbia from "./Categories/columbia";
 import Turkey from "./Categories/turkey";
-
-import Europe from "./Categories/Europe";
+import Asia from "./Categories/asia";
+import Europe from "./Categories/europe";
+import Africa from "./Categories/africa";
+import Costarica from "./Categories/Costa";
+import NoPage from "./Page/NoPage";
 
 function App() {
   return (
@@ -38,14 +40,17 @@ function App() {
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='page/:id' element={<TemplatePage/>}/>
                         <Route path='/categories/'>
-                            <Route path='costa' element={<Costa/>}/>
+                            <Route path='costarica' element={<Costarica/>}/>
                             <Route path='egypt' element={<Egypt/>}/>
                             <Route path='france' element={<France/>}/>
                             <Route path='vietnam' element={<Vietnam/>}/>
-                            <Route path='columbia' element={<Columbia/>}/>
+                            <Route path='colombia' element={<Columbia/>}/>
                             <Route path='turkey' element={<Turkey/>}/>
-                            <Route path='europe' element={<Europe/>}/>
+                            <Route path='asia' element={<Asia />}/>
+                            <Route path='europe' element={<Europe />}/>
+                            <Route path='africa' element={<Africa />}/>
                         </Route>
+                        <Route path={"*"} element={<NoPage/>}/>
                     </Route>
 
                 </Routes>

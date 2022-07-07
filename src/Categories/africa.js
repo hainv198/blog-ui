@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Col, Row} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-const France = () => {
+const Africa = () => {
     let inputRef = useRef();
     return (
         <>
@@ -16,19 +16,18 @@ const France = () => {
                                 <div className={'category-cover-left'}>
                                     <h1 className={'category-cover-left__heading'}>
                                         <span className={'category-cover-subtitle'}>Travel in</span>
-                                        <div className={'category-cover-title'} style={{fontSize: "12rem"}} title={'France'}>
-                                            France
+                                        <div className={'category-cover-title'} style={{fontSize: "15rem"}} title={'AFRICA'}>
+                                            AFRICA
                                         </div>
                                     </h1>
-                                    <p style={{fontSize:"1.6rem", fontWeight:"light", width:"400px"}} className={'category-cover-excerpt'}>
-
-                                        Famed for its Eiffel Tower, Art museums, stunning beaches and snow-capped Alps including Europe's tallest peak.
+                                    <p style={{fontSize:"1.6rem", fontWeight:"light"}} className={'category-cover-excerpt'}>
+                                        From the exotic wildlife and sand dunes, to the rich history & picturesque cities of Morocco.
                                     </p>
                                 </div>
                             </h1>
                         </Col>
-                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem", marginTop: "-20rem", marginBottom: "20rem"}} >
-                            <img className={'page-cover_image'} src={require('../images/france/cover.jpg')} style={{marginTop :"20rem"}}
+                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem"}} >
+                            <img className={'page-cover_image'} src={require('../images/Africa/cover.jpg')}
                                  alt={'10 Best Beaches in Sri Lanka'}/>
                         </Col>
                         <Col className>
@@ -40,8 +39,8 @@ const France = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Best time to travel</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>March to October is the best time to visit France</span>
+                                        <h5><strong>Did you know?</strong></h5>
+                                        <span>March to October is the best time to visit Africa</span>
                                     </div>
                                 </div>
                                 <div className={'category-cover-right-top mt-3'}>
@@ -51,8 +50,8 @@ const France = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Currency</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>The currency in France is Euro. 1 USD is equivalent to 0.90 Euro.</span>
+                                        <h5><strong>Africa</strong></h5>
+                                        <span>has a total of 54 countries with around 2,000 different spoken languages!</span>
                                     </div>
                                 </div>
                             </div>
@@ -67,24 +66,24 @@ const France = () => {
                             <h3 className="search-title__heading">Pick a destination</h3>
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PARIS</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/cover.jpg")} alt="icon images"/>
+                                    <Link to={'/categories/egypt'}><span className="page-content__search-link">EGYPT</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search4.jpg")} alt="icon images"/>
-                                    <Link to={'/page/3'}><span className="page-content__search-link">NICE (FRENCH RIVIERA)</span></Link>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/mustdo3.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">MAURITIUS</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search3.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">DORDOGNE</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/search1.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">MOROCCO</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search6.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BORDEAUX</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/search2.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">SOUTH AFRICA</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/france/search5.jpg")} alt="icon images"/>
-                                    <Link to={'/page/4'}><span className="page-content__search-link">MARSEILLE</span></Link>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/mustdo2.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">KENYA</span></a>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">
@@ -97,16 +96,16 @@ const France = () => {
                             </ul>
                         </div>
                         <div className="page-content-article" >
-                            <div className="article-img img-img">
+                            <div className="article-img img-img" style={{width: "68rem"}}>
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                                <img className="article-img__img" src={require("../images/france/article.jpg")} alt="article picture"/>
+                                <img className="article-img__img" src={require("../images/Africa/article.jpg")} alt="article picture" style={{width: "80rem", marginTop:"30rem"}}/>
                             </div>
                             <div className="div">
                              <span>
                                  <img style={{width: "8rem"}} className={'salt-icon'} src={require("../images/icons/lightbulb.png")}/>
                              </span>
-                                <div className="article-heading">
-                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>France travel guide: A complete 3-week itinerary</h1>
+                                <div className="article-heading text-center">
+                                    <h1 className=" container w-75" style={{fontSize:"3rem"}}>Egypt Travel Guide Best Places To Visit</h1>
                                 </div>
                             </div>
                         </div>
@@ -117,29 +116,29 @@ const France = () => {
             {/*page content intro article*/}
             <Container>
                 <div className="must-do section container" style={{marginTop:"10rem"}}>
-                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN FRANCE</h1>
+                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN AFRICA</h1>
                     <div className="d-flex justify-content-between">
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/france/mustdo.jpg")} alt="title"/>
+                            <img className="must-do__img" src={require("../images/Africa/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">
                                 <div>
-                                    <span>11 things to do in Nice</span><br/>France<br/>
-                                    <span className="must-do__tag">France</span>
+                                    <span>9 best things to do in Chefchaouen</span><br/>
+                                    <span className="must-do__tag">Morocco</span>
                                 </div>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img text-white" src={require("../images/france/mustdo1.jpg")} />
+                            <img className="must-do__img text-white" src={require("../images/Africa/mustdo1.jpg")} />
                             <div className="must-do__title">
-                                <span>11 things to do in Paris, <br/>France</span><br/>
-                                <span className="must-do__tag">France</span>
+                                <span>Visit the colorful Nubian Villages</span><br/>
+                                <span className="must-do__tag">Egypt</span>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/france/mustdo2.jpg")} />
+                            <img className="must-do__img" src={require("../images/Africa/mustdo3.jpg")} />
                             <div className="must-do__title">
-                                <span>Trekking in France, on <br/>Complete guide</span><br/>
-                                <span className="must-do__tag">France</span>
+                                <span>Let's visit the Merzouga Desert</span><br/>
+                                <span className="must-do__tag">Morocco</span>
                             </div>
                         </div>
                     </div>
@@ -149,28 +148,28 @@ const France = () => {
                 <div className="section ending-content container">
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            France
+                           Africa
                         </h3 >
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            France: a nation that breathes life into ‘love’, and home to the most romantic and elegant cities in the world. Most known for its capital city Paris, travelers flock from all over the world to experience its breathtaking beauty. Discover enchanting cobbled streets, fairytale architecture, and a soulful atmosphere. Dine by candlelight, jump between pastry shops or stroll leisurely along the River Seine and underneath the dazzling Eiffel Tower. Paris is a true lothario, stealing hearts, and charming over and over again.
+                            Africa dances to the beat of its own drum. Music and rhythm are integral to the people, who live to sing and dance. Nature also dances to this rhythm, in a continent that is teeming with wildlife, marching with the rise and fall of the seasons and the land. Africa is truly the best place on earth for seeing the greatest animals of all time. See Gorillas in the rainforests of Rwanda, the remarkable migration of the wildebeest, or the ‘big 5’ on a world-famous safari. Just the sight of seeing such incredible animals as elephants and cheetahs in the wild is enough to reduce even the hardiest of travelers to excitable tears. It is an unforgettable experience that will leave an imprint on your heart for a lifetime.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            World-Famous Scenery
+                            Legendary Landscapes and Wildlife
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            If travelers can bear to drag themselves away from the magical sights of Paris, there are plenty more treasures waiting. Drive through golden fields of grass swaying in the breeze, and fantastic vineyards that make the best wine in the world! Alternatively, wander amongst enchanting castles, or along the glamorous azure coastline of the French Riviera.
+                            Africa is the continent that really does have it all. Home to the hottest deserts, the most epic mountains, the endless savannah, mammoth waterfalls, and paradise white-sand beaches. It is also home to fantastic cities from tip to toe. From the northern delights of Marrakech, filled with souks and treasures, to the southern gem of Cape Town, home to the legendary Table Mountain. Each country within Africa will bring travelers into another world, each one as extraordinary as the next. Reach new heights on Mount Kilimanjaro,  experience the road trip of a lifetime in Namibia, the delights of safari in the Masai Mara, the mind-blowing force of Victoria Falls, or wine tasting among the beautiful vineyards of South Africa.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Elegant France
+                            Joyful People
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            It’s true that France is the height of sophistication, glamour, and decadence. Do as the French do and dine on endless delicious cheeses, the best bread and pastries, mouthwatering Michelin star meals, and the finest champagne. There’s nowhere quite like it in the world: a place where every dream can be achieved. All the while, to the sounds of beautiful music, the smells of fantastic food, and stunning sights that vary from the lavender fields of Provence to the spectacular peaks of the French Alps. France is waiting to charm, impress, and satisfy every travel craving.
+                            Africa, the birthplace of mankind, is nothing short of addictive. Many places have stayed in the past, maintaining ancient traditions, languages, and spiritual bonds. Because of this, the fundamental principles of family, community, and nature have not been lost. As a result, people live life joyfully through colorful landscapes, vibrant patterns, soulful music, and beautiful smiles. Africa is truly an extraordinary continent that effortlessly steals hearts, and will continue to mesmerize travelers again and again.
                         </p>
                     </div>
 
@@ -181,4 +180,4 @@ const France = () => {
     );
 };
 
-export default France;
+export default Africa;
