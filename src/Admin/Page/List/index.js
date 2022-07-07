@@ -3,6 +3,7 @@ import Sidebar from "../../Components/Sidebar";
 import Datatable from "../../Components/Datatable";
 import {useEffect, useRef, useState} from "react";
 import {Link} from "react-router-dom";
+import AddIcon from '@mui/icons-material/Add';
 import React from "react";
 
 
@@ -32,10 +33,9 @@ const List = () => {
             <Sidebar/>
             <div className="listContainer" >
                 <div style={{width:'90%', margin:'auto'}}>
-                    <h1>User</h1>
                     <div className="row">
                         <div className="col-sm-6 header-todo">
-                            <div className="input-group container mt-5 mb-5">
+                            <div style={{height:30}} className="input-group container mt-5 mb-5">
                                 <input
                                     ref={inputRef}
                                     type="search"
@@ -52,19 +52,25 @@ const List = () => {
                                     search
                                 </button>
                             </div>
-                            <p>
-                                <Link to={'/admin/users/usersedit/new'}>
-                                    <button
-                                        className="btn btn-primary"
-                                        type="button"
-                                        onClick={handleChange}
-                                    >
-                                        Add New
-                                    </button>
-                                </Link>
-                            </p>
+                            <div className='user-title' style={{display:"flex", justifyContent:'space-between', width:'100%'}}>
+                                <h1>Users</h1>
+                                <p>
+                                    <Link to={'/admin/users/usersedit/new'}>
+                                        <button
+                                            className="btn btn-primary"
+                                            type="button"
+                                            onClick={handleChange}
+                                        >
+                                            Add New <AddIcon/>
+                                        </button>
+                                    </Link>
+                                </p>
+
+                            </div>
+
                         </div>
                     </div>
+
                     <Datatable data={data}/>
                 </div>
             </div>

@@ -2,3 +2,41 @@
   margin: 0;
   height: auto;
 }
+.me-auto {
+  display: flex;
+  justify-content: space-around;
+}
+.theme {
+  svg {
+    font-size: 3rem;
+  }
+}
+
+
+.header-admin {
+  display: flex;
+  width: 20%;
+}
+
+.admin-icon {
+  display: flex;
+  width: 100%;
+  margin:auto;
+  justify-content: space-evenly;
+
+  span {
+    margin: auto;
+  }
+  svg {
+    font-size: 3.2rem;
+    margin: auto;
+  }
+}
+
+.css-1c32n2y-MuiBadge-root {
+  margin: auto;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right: 0;
+}

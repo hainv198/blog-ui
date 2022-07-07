@@ -17,10 +17,10 @@ const Home = () => {
             .then((data) => {
                 setCountry(data);
             });
-        console.log("Countries =" + country);
+        // console.log("Countries =" + country);
     }, []);
 
-    console.log("Countries =" + country);
+    // console.log("Countries =" + country);
 
     var country_list = [];
     if (country != null) {
@@ -33,7 +33,7 @@ const Home = () => {
             </li>
         ));
     }
-    console.log(country_list);
+    // console.log(country_list);
 
     return (
         <div style={{ marginTop: 75 }} className="homepage">

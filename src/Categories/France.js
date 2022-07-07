@@ -21,7 +21,6 @@ const France = () => {
                                         </div>
                                     </h1>
                                     <p style={{fontSize:"1.6rem", fontWeight:"light", width:"400px"}} className={'category-cover-excerpt'}>
-
                                         Famed for its Eiffel Tower, Art museums, stunning beaches and snow-capped Alps including Europe's tallest peak.
                                     </p>
                                 </div>
@@ -118,12 +117,12 @@ const France = () => {
             <Container>
                 <div className="must-do section container" style={{marginTop:"10rem"}}>
                     <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN FRANCE</h1>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-between row">
                         <div className="must-do__img-container">
                             <img className="must-do__img" src={require("../images/france/mustdo.jpg")} alt="title"/>
                             <div className="must-do__title">
                                 <div>
-                                    <span>11 things to do in Nice</span><br/>France<br/>
+                                    <span>11 things to do in Nice, France</span><br/>
                                     <span className="must-do__tag">France</span>
                                 </div>
                             </div>

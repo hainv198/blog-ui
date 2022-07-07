@@ -1,6 +1,5 @@
 import React from 'react';
 import './sidebar.scss'
-import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -12,14 +11,41 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import { Link } from "react-router-dom";
+import List from '@mui/material/List';
+import Collapse from '@mui/material/Collapse';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import StarBorder from '@mui/icons-material/StarBorder';
+import {Link, useNavigate} from "react-router-dom";
 // import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 import {Outlet} from "react-router";
+import {UserAuth} from "../../../Context/AuthContext";
+import {ListItemButton, ListItemIcon, ListItemText, ListSubheader} from "@mui/material";
+import {ExpandLess, ExpandMore} from "@mui/icons-material";
 const Sidebar = () => {
-    // const { dispatch } = useContext(DarkModeContext);
+    const [open, setOpen] = React.useState(true);
+    const handleClick = () => {
+        setOpen(!open);
+    };
+    const { user, logout } = UserAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        try {
+            await logout();
+            navigate('/');
+            console.log('You are logged out')
+        } catch (e) {
+            console.log(e.message);
+        }
+    };
+
+
+
     return (
+
+
         <div className="sidebar ">
             {/*<div className="top">*/}
             {/*    <Link to="/" style={{ textDecoration: "none" }}>*/}
@@ -30,10 +56,13 @@ const Sidebar = () => {
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
-                    <li>
-                        <DashboardIcon className="icon" />
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to="/admin/home" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
+
                     <p className="title">LISTS</p>
                     <Link to="/admin/users" style={{ textDecoration: "none" }}>
                         <li>
@@ -41,12 +70,10 @@ const Sidebar = () => {
                             <span>Users</span>
                         </li>
                     </Link>
-                    <Link to="/admin/products" style={{ textDecoration: "none" }}>
                         <li>
                             <StoreIcon className="icon" />
                             <span>Products</span>
                         </li>
-                    </Link>
                     <li>
                         <CreditCardIcon className="icon" />
                         <span>Orders</span>
@@ -78,14 +105,49 @@ const Sidebar = () => {
                         <span>Settings</span>
                     </li>
                     <p className="title">USER</p>
-                    <li>
-                        <AccountCircleOutlinedIcon className="icon" />
-                        <span>Profile</span>
-                    </li>
+                    <List sx={{ width: '100%' }}>
+
+                        <ListItemButton
+                            sx={{ padding:'3px 3px'}}
+                            onClick={handleClick}>
+                            <ListItemIcon sx={{  minWidth:29}}>
+                                <InboxIcon sx={{  color:'#7451f8',fontSize:'2.2rem'}}/>
+                            </ListItemIcon>
+                            <ListItemText
+                                sx={{ paddingLeft:0}}
+                                primary={<h4 style={{fontWeight:"bold",color:'#888', fontSize:'1.6rem'}}>Profile</h4>}
+                                inset
+                            />
+                            {open ? <ExpandLess /> : <ExpandMore />}
+                        </ListItemButton>
+                        <Collapse in={!open} timeout="auto" unmountOnExit >
+                            <List  disablePadding>
+                                <ListItemButton
+                                    sx={{ padding:'3px 3px',pl: 4}}
+                                >
+                                    <ListItemIcon sx={{  minWidth:29}}>
+                                        <AccountCircleIcon sx={{  color:'#7451f8',fontSize:'2.2rem'}} />
+                                    </ListItemIcon>
+                                    <ListItemText
+                                        sx={{ paddingRight:0}}
+                                        primary={<h4 style={{fontWeight:"bold",color:'#888', fontSize:'1.6rem'}}>{user && user.email}</h4>}/>
+                                </ListItemButton>
+                            </List>
+                        </Collapse>
+                    </List>
                     <li>
                         <ExitToAppIcon className="icon" />
-                        <span>Logout</span>
+                        <button
+                            style={{fontWeight: 'bold',
+                                color: 'rgb(136, 136, 136)',
+                                fontSize: '1.6rem',
+                                background:"transparent"
+                        }}
+                            onClick={handleLogout}>
+                            Logout
+                        </button>
                     </li>
+
                 </ul>
             </div>
             <div className="bottom">
@@ -104,3 +166,8 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+// <Tippy
+//     content={<span>Upload</span>}>
+//     <span><CloudUploadIcon/></span>
+// </Tippy>

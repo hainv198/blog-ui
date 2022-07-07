@@ -62,11 +62,11 @@ function App() {
                             <Route path='users/:id' element={<Single/>}/>
                             <Route path='usersedit/:id' element={<New/>}/>
                         </Route>
-                        <Route path='products'>
-                            <Route index element={<Single/>}/>
-                            <Route path=':productId' element={<Single/>}/>
-                            <Route path='new' element={<New/>}/>
-                        </Route>
+                        {/*<Route path='products'>*/}
+                        {/*    <Route index element={<Single/>}/>*/}
+                        {/*    <Route path=':productId' element={<Single/>}/>*/}
+                        {/*    <Route path='new' element={<New/>}/>*/}
+                        {/*</Route>*/}
                     </Route>
 
                 </Routes>

@@ -1,32 +1,27 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import {UserAuth} from "../../Context/AuthContext";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import {Outlet} from "react-router";
-import HomeAdmin from "../Page/Home";
 import './Layout.scss'
-import Search from "../../Header/Search";
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import HeadlessTippy from "@tippyjs/react";
+import Language from "../../Header/Language";
+import PublicIcon from "@mui/icons-material/Public";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Tippy from "@tippyjs/react";
+import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
+import Theme from "../../Atomic/Button";
+import AvatarAdmin from "../../Atomic/Avatar";
+import Mail from "../../Atomic/Messiage";
 
 const Admin = () => {
-    const { user, logout } = UserAuth();
-    const navigate = useNavigate();
 
-    const handleLogout = async () => {
-        try {
-            await logout();
-            navigate('/');
-            console.log('You are logged out')
-        } catch (e) {
-            console.log(e.message);
-        }
-    };
 
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg"  variant="light">
+        <div >
+            <Navbar collapseOnSelect expand="lg" style={{height:70}}  variant="light">
                 <Container>
                     <Navbar.Brand href="/admin/home">
                         <img src={'https://static.saltinourhair.com/build/images/saltinourhair-logo.png'} alt="" width={'114px'} height={'23px'}/>
@@ -34,34 +29,32 @@ const Admin = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/admin/home">Home</Nav.Link>
-                            <Nav.Link href="/admin/list">List</Nav.Link>
-                            {/*<NavDropdown title="Dropdown" id="collasible-nav-dropdown">*/}
-                            {/*    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
-                            {/*    <NavDropdown.Item href="#action/3.2">*/}
-                            {/*        Another action*/}
-                            {/*    </NavDropdown.Item>*/}
-                            {/*    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
-                            {/*    <NavDropdown.Divider />*/}
-                            {/*    <NavDropdown.Item href="#action/3.4">*/}
-                            {/*        Separated link*/}
-                            {/*    </NavDropdown.Item>*/}
-                            {/*</NavDropdown>*/}
-
+                            {/*//todo*/}
                         </Nav>
-                        <Nav>
+                        <div className='header-admin'>
+                            <div>
 
-                            <Nav.Link href="#memes">
-                                <p>User Email: {user && user.email}</p>
-                                <button onClick={handleLogout}>
-                                    Logout
-                                </button>
-                            </Nav.Link>
-                        </Nav>
+                            </div>
+                            <div className='theme' style={{margin:"auto", }}>
+                                <Tippy
+                                    content={<span>Theme</span>}>
+                                    <Theme/>
+                                </Tippy>
+                            </div>
+                            <div className='admin-icon'>
+                                <Tippy
+                                    content={<span>Upload</span>}>
+                                    <span><CloudUploadIcon/></span>
+                                </Tippy>
+                                <Mail/>
+                                <Tippy content={<span>Pinterest</span>}>
+                                    <AvatarAdmin/>
+                                </Tippy>
+                            </div>
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
             <Outlet/>
 
         </div>
