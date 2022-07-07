@@ -52,14 +52,10 @@ const Vietnam = () => {
                                     </span>
                                 </div>
                                 <div className="right-content-text">
-<<<<<<< Updated upstream
                                     <h5 style={{fontSize:"1.6rem"}}><strong>Currency</strong></h5>
                                     <span style={{fontSize:"1.3rem"}}>Vietnam’s currency is called Dong. 1 USD is equivalent to 23,500 Vietnamese Dong.</span>
-=======
                                     <h5><strong>Currency</strong></h5>
                                     <span>Vietnam’s currency is called Dong. 1 USD is equivalent to 23,500 Vietnamese Dong.</span>
-======
->>>>>>> Stashed changes
                                 </div>
                             </div>
                         </div>
