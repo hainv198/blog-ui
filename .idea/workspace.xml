@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="70a2fc33-aef5-4968-bb53-a111cd3ca833" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 
@@ -12,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/Components/Admin/Drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Components/Chart/chart.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Admin/Drawer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/Components/Chart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Admin/Header/index.js" beforeDir="false" />
@@ -20,6 +22,26 @@
       <change beforePath="$PROJECT_DIR$/src/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/index.js" afterDir="false" />
     <list default="true" id="70a2fc33-aef5-4968-bb53-a111cd3ca833" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Categories/category-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categories/category-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Page/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post pages/Template page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post pages/post-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post pages/post-style.css" afterDir="false" />
+=======
+    <list default="true" id="84e9cb18-1806-44f7-a108-397d816553e0" name="Changes" comment="Authentication firebase">
+      <change afterPath="$PROJECT_DIR$/src/Components/Admin/Drawer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Admin/Drawer/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Admin/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Signin/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/Signin/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Authentication/Signup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Authentication/Signup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/index.js" afterDir="false" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +55,7 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -42,6 +65,7 @@
   <component name="ProjectId" id="2BX14Z777z3IcGfbIUmJbkBwP7r" />
   <component name="ProjectId" id="2BY7XxG51eTf7txVcJhxVJWyWcp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+<<<<<<< Updated upstream
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,6 +123,27 @@
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Components/Admin/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/ProtectedRoute/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/Signin/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/Authentication/Signup/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Components/GlobalStyles/GlobalStyles.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Context/AuthContext.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Header/Header.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Header/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Page/Home.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\blog-ui\src\Components" />
+    </key>
+  </component>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="70a2fc33-aef5-4968-bb53-a111cd3ca833" name="Changes" comment="" />
@@ -124,4 +169,12 @@
       </map>
     </option>
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="authen" />
+    <MESSAGE value="Authentication firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentication firebase" />
+  </component>
+>>>>>>> Stashed changes
 </project>
