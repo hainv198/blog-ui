@@ -114,6 +114,7 @@ ol {
     overflow: hidden;
     position: sticky;
     top: 10rem;
+    right: 10rem;
     align-self: start;
 }
 

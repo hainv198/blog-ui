@@ -8,9 +8,9 @@ import Comment from "./components/comments/comment";
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
-    const [randomArt1, setRandomArt1] = useState(null);
-    const [randomArt2, setRandomArt2] = useState(null);
-    const [randomArt3, setRandomArt3] = useState(null);
+    const [randomArt1, setrandomArt1] = useState(null);
+    const [randomArt2, setrandomArt2] = useState(null);
+    const [randomArt3, setrandomArt3] = useState(null);
     let params = useParams()
     useEffect(() => {
         //doi params vao day
@@ -20,22 +20,22 @@ function TemplatePage() {
             .then(data => setPost(data))
     }, [])
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
         fetch(url)
             .then(response => response.json())
-            .then(data => setRandomArt1(data))
+            .then(data => setrandomArt1(data))
     }, [])
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
         fetch(url)
             .then(response => response.json())
-            .then(data => setRandomArt2(data))
+            .then(data => setrandomArt2(data))
     }, [])
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
         fetch(url)
             .then(response => response.json())
-            .then(data => setRandomArt3(data))
+            .then(data => setrandomArt3(data))
     }, [])
 
     return (
