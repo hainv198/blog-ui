@@ -565,6 +565,7 @@ div.div span {
 
 .must-do__img-container {
     width: 32%;
+    min-width: 300px;
     height: 50rem;
     overflow: hidden;
     position: relative;
@@ -656,3 +657,143 @@ div.div span {
     font-size: 1.6rem;
     line-height: 2rem;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        background: url(../images/others/pink-roundshape.webp);
+        background-repeat: no-repeat;
+
+    }
+
+    .category-cover-left__heading span {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .category-cover-title {
+        font-size: 8rem !important;
+    }
+
+    .category-cover-excerpt {
+        font-size: 2rem;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .page-cover-image {
+        display: none;
+    }
+
+    .page-cover_image {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .category-cover-right-top {
+        display: flex !important;
+        float: left;
+        width: 90% !important;
+        margin-left: -12rem;
+    }
+
+    .category-cover-right-top img {
+        width: 50px !important;
+    }
+
+    .right-content-text h5 {
+        font-size: 18px !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .right-content-text span {
+        font-size: 10px !important;
+    }
+
+    .page-content {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .page-content__search {
+        margin-left: 15rem;
+        margin-top: -10rem;
+    }
+
+    .article-img {
+        width: 300px !important;
+        height: 250px !important;
+        margin-left: 11rem;
+    }
+
+    .div span {
+        padding: 0 !important;
+    }
+
+    .div span img {
+        margin-left: -22rem;
+    }
+
+    .article-heading h1 {
+        font-weight: bold;
+        width: 400px !important;
+    }
+
+    .must-do {
+        margin-top: 5rem !important;
+        background: url('../images/others/pink-roundshape.webp');
+        display: -ms-flexbox;
+
+    }
+
+    .must-do__img-container {
+        margin-bottom: 1rem;
+    }
+
+    /* Styles */
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    /* Styles */
+
+    .category-cover-right-top {
+        display: flex !important;
+        float: left;
+        width: 600px !important;
+        margin-left: -12rem;
+    }
+
+    .category-cover-right-top {
+        display: flex !important;
+        float: left;
+        width: 90% !important;
+        margin-left: -12rem;
+    }
+
+    .category-cover-right-top img {
+        width: 50px !important;
+    }
+
+    .right-content-text h5 {
+        font-size: 18px !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .right-content-text span {
+        font-size: 10px !important;
+    }
+
+}
+

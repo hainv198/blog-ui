@@ -51,7 +51,11 @@ function App() {
                             <Route path='africa' element={<Africa />}/>
                         </Route>
 
+
                         <Route path='/' element={<NoPage/>}/>
+
+                        {/*<Route path={"*"} element={<NoPage/>}/>*/}
+
                     </Route>
 
                 </Routes>
@@ -71,6 +75,7 @@ function App() {
                     </Route>
 
                 </Routes>
+
             </Router>
         </AuthContextProvider>
     </div>
