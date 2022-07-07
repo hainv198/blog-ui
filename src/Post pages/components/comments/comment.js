@@ -14,7 +14,6 @@ const Comment = (props) => {
     useEffect(() => {
         let url = "https://62bd6dd4c5ad14c110be7072.mockapi.io/comments?post_id="+props.data;
         // let url = 'https://62bd6dd4c5ad14c110be7072.mockapi.io/comments';
-        console.log(url)
         fetch(url)
             .then(response => response.json())
             .then(data => setShowCmt(data))
@@ -117,8 +116,6 @@ const Comment = (props) => {
 
     };
     const date = new Date();
-    console.log(date);
-
     return (
         <>
             <Container>

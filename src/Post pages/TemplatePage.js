@@ -13,26 +13,31 @@ function TemplatePage() {
     const [randomArt3, setrandomArt3] = useState(null);
     let params = useParams()
     useEffect(() => {
-        //doi params vao day
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + params.id;
         fetch(url)
             .then(response => response.json())
             .then(data => setPost(data))
     }, [])
+    let ranNum1;
+    let ranNum2;
+    let ranNum3;
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
+        ranNum1 = Math.floor(Math.random()*11)+2;
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum1;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt1(data))
     }, [])
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
+        ranNum2 = ranNum1 + 1;
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum2;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt2(data))
     }, [])
     useEffect(() => {
-        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 12);
+        ranNum3 = ranNum1 - 1;
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum3;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt3(data))
