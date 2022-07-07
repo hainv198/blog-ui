@@ -465,9 +465,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2020/05/23120157/saltinourhair-asia.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body '}>
-                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Asia'}>
+                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Asia'}><span className={'fr-card-text-span'}>
                                                 Asia
+                                                </span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -478,9 +479,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2019/06/23134442/italy-travel-itinerary.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
-                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Europe'}>
+                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Europe'}><span className={'fr-card-text-span'}>
                                                 Europe
+                                                </span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -491,9 +493,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2019/03/23140507/egypt-tourism-travel-header.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
-                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Africa'}>
+                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Africa'}><span className={'fr-card-text-span'}>
                                                 Africa
+                                                </span>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
