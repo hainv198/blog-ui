@@ -11,6 +11,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
@@ -167,7 +168,7 @@ const Sidebar = () => {
 
 export default Sidebar;
 
-// <Tippy
-//     content={<span>Upload</span>}>
-//     <span><CloudUploadIcon/></span>
-// </Tippy>
+// <p>User Email: {user && user.email}</p>
+// <button onClick={handleLogout}>
+//     Logout
+// </button>

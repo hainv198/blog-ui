@@ -50,7 +50,8 @@ function App() {
                             <Route path='europe' element={<Europe />}/>
                             <Route path='africa' element={<Africa />}/>
                         </Route>
-                        <Route path={"*"} element={<NoPage/>}/>
+
+                        <Route path='/' element={<NoPage/>}/>
                     </Route>
 
                 </Routes>
