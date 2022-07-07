@@ -16,15 +16,12 @@ import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import StarBorder from '@mui/icons-material/StarBorder';
 import {Link, useNavigate} from "react-router-dom";
-// import { DarkModeContext } from "../../context/darkModeContext";
-import { useContext } from "react";
-import {Outlet} from "react-router";
 import {UserAuth} from "../../../Context/AuthContext";
 import {ListItemButton, ListItemIcon, ListItemText, ListSubheader} from "@mui/material";
 import {ExpandLess, ExpandMore} from "@mui/icons-material";
-const Sidebar = () => {
+const Sidebar = ({setDark}) => {
+
     const [open, setOpen] = React.useState(true);
     const handleClick = () => {
         setOpen(!open);
@@ -71,10 +68,13 @@ const Sidebar = () => {
                             <span>Users</span>
                         </li>
                     </Link>
+                    <Link to='/admin/products' style={{ textDecoration: "none" }}>
                         <li>
                             <StoreIcon className="icon" />
                             <span>Products</span>
                         </li>
+                    </Link>
+
                     <li>
                         <CreditCardIcon className="icon" />
                         <span>Orders</span>
@@ -154,11 +154,11 @@ const Sidebar = () => {
             <div className="bottom">
                 <div
                     className="colorOption"
-                    // onClick={() => dispatch({ type: "LIGHT" })}
+                    onClick={() => setDark(false)}
                 ></div>
                 <div
                     className="colorOption"
-                    // onClick={() => dispatch({ type: "DARK" })}
+                    onClick={() =>setDark(true)}
                 ></div>
             </div>
 
