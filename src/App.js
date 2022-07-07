@@ -21,7 +21,6 @@ import Vietnam from "./Categories/Vietnam";
 import Columbia from "./Categories/columbia";
 import Turkey from "./Categories/turkey";
 
-import Europe from "./Categories/Europe";
 
 function App() {
   return (
@@ -44,7 +43,6 @@ function App() {
                             <Route path='vietnam' element={<Vietnam/>}/>
                             <Route path='columbia' element={<Columbia/>}/>
                             <Route path='turkey' element={<Turkey/>}/>
-                            <Route path='europe' element={<Europe/>}/>
                         </Route>
                     </Route>
 

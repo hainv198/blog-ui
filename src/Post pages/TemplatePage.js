@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, Col, Container, Row, Table} from "react-bootstrap";
+import {Button, Card, CardGroup, Col, Container, Row, Table} from "react-bootstrap";
 import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
@@ -21,22 +21,23 @@ function TemplatePage() {
     let ranNum1;
     let ranNum2;
     let ranNum3;
+    let i = 0;
     useEffect(() => {
-        ranNum1 = Math.floor(Math.random()*11)+2;
+        ranNum1 = Math.floor(Math.random() * 4) + 1;
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum1;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt1(data))
     }, [])
     useEffect(() => {
-        ranNum2 = ranNum1 + 1;
+        ranNum2 = Math.floor(Math.random() * 4) + 5;
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum2;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt2(data))
     }, [])
     useEffect(() => {
-        ranNum3 = ranNum1 - 1;
+        ranNum3 = Math.floor(Math.random() * 4) + 9;
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum3;
         fetch(url)
             .then(response => response.json())
@@ -451,6 +452,54 @@ function TemplatePage() {
                                 </Col>
                             </Row>
                         </Link>
+                    </Container>
+                    <Container style={{marginBottom: "5rem"}}>
+                        <Row style={{marginTop: "5rem"}}>
+                            <h1 style={{fontWeight: "800"}}>Further reading</h1>
+                        </Row>
+                        <Row>
+                            <CardGroup>
+                                <Link className={'fr-link'} to={'/categories/asia'}>
+                                    <Card className={'me-3 fr-card'}>
+                                        <Card.Img className={'fr-card-img'} variant="top"
+                                                  src="https://static.saltinourhair.com/wp-content/uploads/2020/05/23120157/saltinourhair-asia.jpg"/>
+                                        <Card.Body
+                                            class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body '}>
+                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Asia'}>
+                                                Asia
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Link>
+                                <Link className={'fr-link'} to={'/categories/europe'}>
+                                    <Card className={'me-3 fr-card'}>
+                                        <Card.Img className={'fr-card-img'} variant="top"
+                                                  src="https://static.saltinourhair.com/wp-content/uploads/2019/06/23134442/italy-travel-itinerary.jpg"/>
+                                        <Card.Body
+                                            class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
+                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Europe'}>
+                                                Europe
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Link>
+                                <Link className={'fr-link'} to={'/categories/africa'}>
+                                    <Card className={'me-3 fr-card'}>
+                                        <Card.Img className={'fr-card-img'} variant="top"
+                                                  src="https://static.saltinourhair.com/wp-content/uploads/2019/03/23140507/egypt-tourism-travel-header.jpg"/>
+                                        <Card.Body
+                                            class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
+                                            <Card.Title className={'fr-card-title'}>Travel in</Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Africa'}>
+                                                Africa
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Link>
+                            </CardGroup>
+                        </Row>
                     </Container>
                     <Container>
                         <Row>
