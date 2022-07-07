@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Col, Row} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-const Columbia = () => {
+const Europe = () => {
     let inputRef = useRef();
     return (
         <>
@@ -16,18 +16,18 @@ const Columbia = () => {
                                 <div className={'category-cover-left'}>
                                     <h1 className={'category-cover-left__heading'}>
                                         <span className={'category-cover-subtitle'}>Travel in</span>
-                                        <div className={'category-cover-title'} style={{fontSize: "11rem"}} title={'Colombia'}>
-                                            Colombia
+                                        <div className={'category-cover-title'} style={{fontSize: "15rem"}} title={'Europe'}>
+                                            Europe
                                         </div>
                                     </h1>
-                                    <p style={{fontSize:"1.6rem", fontWeight:"light", width:"400px"}} className={'category-cover-excerpt'}>
-                                        Where skyscrapers sit next to quaint pueblos, and emerald green jungle quickly turns into otherworldly desert.
+                                    <p style={{fontSize:"1.6rem", fontWeight:"light"}} className={'category-cover-excerpt'}>
+                                        Architectural masterpieces, beautiful nature, and fantastic culinary diversity.
                                     </p>
                                 </div>
                             </h1>
                         </Col>
-                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem", marginTop: "-20rem", marginBottom: "20rem"}} >
-                            <img className={'page-cover_image'} src={require('../images/columbia/cover.jpg')}
+                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem"}} >
+                            <img style={{marginTop: "10rem"}} className={'page-cover_image'} src={require('../images/europe/cover.jpg')}
                                  alt={'10 Best Beaches in Sri Lanka'}/>
                         </Col>
                         <Col className>
@@ -39,8 +39,8 @@ const Columbia = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Best time to travel</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>March to October is the best time to visit Columbia</span>
+                                        <h5><strong>Did you know?</strong></h5>
+                                        <span>The world’s second-largest food exporter is the Netherlands, just after the USA, which is 237 times larger in size!</span>
                                     </div>
                                 </div>
                                 <div className={'category-cover-right-top mt-3'}>
@@ -50,8 +50,8 @@ const Columbia = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Currency</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>The currency in Colombia is Peso. 1 USD is equivalent to 4000 COP.</span>
+                                        <h5><strong>Europe</strong></h5>
+                                        <span>A total of 44 countries with The Vatican as the world’s smallest country!</span>
                                     </div>
                                 </div>
                             </div>
@@ -66,24 +66,24 @@ const Columbia = () => {
                             <h3 className="search-title__heading">Pick a destination</h3>
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BOGOTA</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search3.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">CZECH REPUBLIC</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">CARTAGENA</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search5.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">FRANCE</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">MEDELLIN</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search2.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">HUNGARY</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PALOMINO</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search6.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">PORTUGAL</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">SALENTO</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/europe/search1.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">TURKEY</span></a>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">
@@ -96,16 +96,16 @@ const Columbia = () => {
                             </ul>
                         </div>
                         <div className="page-content-article" >
-                            <div className="article-img img-img">
+                            <div className="article-img img-img" style={{width: "68rem"}}>
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                                <img className="article-img__img" src={require("../images/columbia/article.jpg")} alt="article picture"/>
+                                <img className="article-img__img" src={require("../images/europe/article.jpg")} alt="article picture" style={{width: "80rem", marginTop: "30rem"}}/>
                             </div>
                             <div className="div">
                              <span>
                                  <img style={{width: "8rem"}} className={'salt-icon'} src={require("../images/icons/lightbulb.png")}/>
                              </span>
                                 <div className="article-heading">
-                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>Colombia travel guide: A complete 3-week itinerary</h1>
+                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>10 best city trips of Europe in 2021</h1>
                                 </div>
                             </div>
                         </div>
@@ -116,29 +116,29 @@ const Columbia = () => {
             {/*page content intro article*/}
             <Container>
                 <div className="must-do section container" style={{marginTop:"10rem"}}>
-                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN COLOMBIA</h1>
+                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN EUROPE</h1>
                     <div className="d-flex justify-content-between">
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/columbia/mustdo2.jpg")} alt="title"/>
+                            <img className="must-do__img" src={require("../images/europe/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">
                                 <div>
-                                    <span>11 things to do in Marrakech</span><br/>
-                                    <span className="must-do__tag">Colombia</span>
+                                    <span>11 things to do in Venice (City trip guide)</span><br/>
+                                    <span className="must-do__tag">Italy</span>
                                 </div>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img text-white" src={require("../images/columbia/mustdo1.jpg")} />
+                            <img className="must-do__img text-white" src={require("../images/europe/mustdo1.jpg")} />
                             <div className="must-do__title">
-                                <span>11 things to do in Fes, <br/>Colombia</span><br/>
-                                <span className="must-do__tag">Colombia</span>
+                                <span>11 best things to do in Budapest, Hungary</span><br/>
+                                <span className="must-do__tag">Hungary</span>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/columbia/mustdo.jpg")} />
+                            <img className="must-do__img" src={require("../images/europe/mustdo3.jpg")} />
                             <div className="must-do__title">
-                                <span>Trekking in Morocco, on <br/>Complete guide</span><br/>
-                                <span className="must-do__tag">Colombia</span>
+                                <span>Iceland travel guide: 3-week trip</span><br/>
+                                <span className="must-do__tag">Iceland</span>
                             </div>
                         </div>
                     </div>
@@ -148,28 +148,19 @@ const Columbia = () => {
                 <div className="section ending-content container">
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Colombia
+                            Europe
                         </h3 >
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Colombia is a country of two sides, a place where skyscrapers sit next to quaint pueblos, and emerald green jungle quickly turns into otherworldly desert. The unique blend of landscapes and experiences you’ll find here is second to none–always unexpectedly beautiful. Its turbulent history of gang rivalry and drug cartels is partly to blame, with visitors shocked to find united communities and smiling locals. However, this history is also what makes Colombia special, giving every suburb, corner, and crevice of the land a deep nostalgia for what has been and an appreciation of what’s to come.
+                            Europe is the continent of hopeless romantics. A place that radiates warmth, happiness, and enchantment in the form of hot summer nights, under the stars. By day, wander picturesque streets, laughing and chatting, or dip salty, sunkissed skin in beautiful blue waters. Continue to feed the soul by visiting the most sensational cities in the world! Each magical European city writes a love letter to the past, through its buildings and customs. For example, the abstract works of Gaudi in Barcelona, the love lock bridge of Paris, or the exotic grand bazaar of Istanbul. Alternatively, get ready for an epic adventure through the ages. Discover wonders like the majestic acropolis in Athens, the magnificent Colosseum in Rome, or the remarkable floating city of Venice.Europe is the continent of hopeless romantics. A place that radiates warmth, happiness, and enchantment in the form of hot summer nights, under the stars. By day, wander picturesque streets, laughing and chatting, or dip salty, sunkissed skin in beautiful blue waters. Continue to feed the soul by visiting the most sensational cities in the world! Each magical European city writes a love letter to the past, through its buildings and customs. For example, the abstract works of Gaudi in Barcelona, the love lock bridge of Paris, or the exotic grand bazaar of Istanbul. Alternatively, get ready for an epic adventure through the ages. Discover wonders like the majestic acropolis in Athens, the magnificent Colosseum in Rome, or the remarkable floating city of Venice.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Natural Gifts
+                            Crossing Borders and Cultures
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Some of the most extraordinary natural experiences on the planet are to be found in Colombia, whether it’s riding through the world’s tallest palm trees, hiking in the Andes, or snorkeling in Caribbean coastal waters. Among these landscapes, discover lost cities, underground salt mines, and puzzling natural phenomena—each with an ancient story that forms the backbone of Colombia’s heritage.
-                        </p>
-                    </div>
-
-                    <div className="ending-content__p">
-                        <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            The Land of Food & Fiesta
-                        </h3>
-                        <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Food and fiesta are integral to Colombians, with families and friends finding any excuse to gather and enjoy home-cooked arepas or take to the streets and salsa dance. And it’s not just dancing and food that serves as a means of creative expression; in Colombia, art is everything, bringing people together and changing the lives of many. In previously dangerous suburbs, like Communa 13 in Medellin, communities have grown and changed with the arrival of street art, painting murals with an important political message. These colors will remain imprinted on your memory forever; there’s always a rainbow of emotions, flavors, and stories to be found in beautiful Colombia!
+                            Each nation, however small, has its own unique culture and language. As a result, Europe is one of a kind. In just 24 hours several countries could be visited, each with a different beauty, landscape, culture, and language. Experience the icy charm of northern Europe, with its epic fjords, snow-capped mountains, frosty blue lakes, and hilltop castles. Together with the vibrancy of southern Europe, with its colorful houses, street art, shady cobbled streets, bustling plazas, and heavenly islands. The diversity of a continent which stretches as far as the Arctic Circle, and borders both Africa and Asia, is hard to beat.
                         </p>
                     </div>
 
@@ -180,4 +171,4 @@ const Columbia = () => {
     );
 };
 
-export default Columbia;
+export default Europe;

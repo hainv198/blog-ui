@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Col, Row} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-const Columbia = () => {
+const Africa = () => {
     let inputRef = useRef();
     return (
         <>
@@ -16,18 +16,18 @@ const Columbia = () => {
                                 <div className={'category-cover-left'}>
                                     <h1 className={'category-cover-left__heading'}>
                                         <span className={'category-cover-subtitle'}>Travel in</span>
-                                        <div className={'category-cover-title'} style={{fontSize: "11rem"}} title={'Colombia'}>
-                                            Colombia
+                                        <div className={'category-cover-title'} style={{fontSize: "15rem"}} title={'AFRICA'}>
+                                            AFRICA
                                         </div>
                                     </h1>
-                                    <p style={{fontSize:"1.6rem", fontWeight:"light", width:"400px"}} className={'category-cover-excerpt'}>
-                                        Where skyscrapers sit next to quaint pueblos, and emerald green jungle quickly turns into otherworldly desert.
+                                    <p style={{fontSize:"1.6rem", fontWeight:"light"}} className={'category-cover-excerpt'}>
+                                        From the exotic wildlife and sand dunes, to the rich history & picturesque cities of Morocco.
                                     </p>
                                 </div>
                             </h1>
                         </Col>
-                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem", marginTop: "-20rem", marginBottom: "20rem"}} >
-                            <img className={'page-cover_image'} src={require('../images/columbia/cover.jpg')}
+                        <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem"}} >
+                            <img className={'page-cover_image'} src={require('../images/Africa/cover.jpg')}
                                  alt={'10 Best Beaches in Sri Lanka'}/>
                         </Col>
                         <Col className>
@@ -39,8 +39,8 @@ const Columbia = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Best time to travel</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>March to October is the best time to visit Columbia</span>
+                                        <h5><strong>Did you know?</strong></h5>
+                                        <span>March to October is the best time to visit Africa</span>
                                     </div>
                                 </div>
                                 <div className={'category-cover-right-top mt-3'}>
@@ -50,8 +50,8 @@ const Columbia = () => {
                                     </span>
                                     </div>
                                     <div className="right-content-text">
-                                        <h5><strong>Currency</strong></h5>
-                                        <span style={{fontSize:"1.6rem"}}>The currency in Colombia is Peso. 1 USD is equivalent to 4000 COP.</span>
+                                        <h5><strong>Africa</strong></h5>
+                                        <span>has a total of 54 countries with around 2,000 different spoken languages!</span>
                                     </div>
                                 </div>
                             </div>
@@ -66,24 +66,24 @@ const Columbia = () => {
                             <h3 className="search-title__heading">Pick a destination</h3>
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BOGOTA</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/cover.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">EGYPT</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">CARTAGENA</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/mustdo3.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">MAURITIUS</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">MEDELLIN</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/search1.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">MOROCCO</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PALOMINO</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/search2.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">SOUTH AFRICA</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">SALENTO</span></a>
+                                    <img className="page-content__search-icon" src={require("../images/Africa/mustdo2.jpg")} alt="icon images"/>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">KENYA</span></a>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">
@@ -96,16 +96,16 @@ const Columbia = () => {
                             </ul>
                         </div>
                         <div className="page-content-article" >
-                            <div className="article-img img-img">
+                            <div className="article-img img-img" style={{width: "68rem"}}>
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                                <img className="article-img__img" src={require("../images/columbia/article.jpg")} alt="article picture"/>
+                                <img className="article-img__img" src={require("../images/Africa/article.jpg")} alt="article picture" style={{width: "80rem", marginTop:"30rem"}}/>
                             </div>
                             <div className="div">
                              <span>
                                  <img style={{width: "8rem"}} className={'salt-icon'} src={require("../images/icons/lightbulb.png")}/>
                              </span>
-                                <div className="article-heading">
-                                    <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>Colombia travel guide: A complete 3-week itinerary</h1>
+                                <div className="article-heading text-center">
+                                    <h1 className=" container w-75" style={{fontSize:"3rem"}}>Egypt Travel Guide Best Places To Visit</h1>
                                 </div>
                             </div>
                         </div>
@@ -116,29 +116,29 @@ const Columbia = () => {
             {/*page content intro article*/}
             <Container>
                 <div className="must-do section container" style={{marginTop:"10rem"}}>
-                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN COLOMBIA</h1>
+                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN AFRICA</h1>
                     <div className="d-flex justify-content-between">
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/columbia/mustdo2.jpg")} alt="title"/>
+                            <img className="must-do__img" src={require("../images/Africa/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">
                                 <div>
-                                    <span>11 things to do in Marrakech</span><br/>
-                                    <span className="must-do__tag">Colombia</span>
+                                    <span>9 best things to do in Chefchaouen</span><br/>
+                                    <span className="must-do__tag">Morocco</span>
                                 </div>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img text-white" src={require("../images/columbia/mustdo1.jpg")} />
+                            <img className="must-do__img text-white" src={require("../images/Africa/mustdo1.jpg")} />
                             <div className="must-do__title">
-                                <span>11 things to do in Fes, <br/>Colombia</span><br/>
-                                <span className="must-do__tag">Colombia</span>
+                                <span>Visit the colorful Nubian Villages</span><br/>
+                                <span className="must-do__tag">Egypt</span>
                             </div>
                         </div>
                         <div className="must-do__img-container">
-                            <img className="must-do__img" src={require("../images/columbia/mustdo.jpg")} />
+                            <img className="must-do__img" src={require("../images/Africa/mustdo3.jpg")} />
                             <div className="must-do__title">
-                                <span>Trekking in Morocco, on <br/>Complete guide</span><br/>
-                                <span className="must-do__tag">Colombia</span>
+                                <span>Let's visit the Merzouga Desert</span><br/>
+                                <span className="must-do__tag">Morocco</span>
                             </div>
                         </div>
                     </div>
@@ -148,28 +148,28 @@ const Columbia = () => {
                 <div className="section ending-content container">
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Colombia
+                           Africa
                         </h3 >
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Colombia is a country of two sides, a place where skyscrapers sit next to quaint pueblos, and emerald green jungle quickly turns into otherworldly desert. The unique blend of landscapes and experiences you’ll find here is second to none–always unexpectedly beautiful. Its turbulent history of gang rivalry and drug cartels is partly to blame, with visitors shocked to find united communities and smiling locals. However, this history is also what makes Colombia special, giving every suburb, corner, and crevice of the land a deep nostalgia for what has been and an appreciation of what’s to come.
+                            Africa dances to the beat of its own drum. Music and rhythm are integral to the people, who live to sing and dance. Nature also dances to this rhythm, in a continent that is teeming with wildlife, marching with the rise and fall of the seasons and the land. Africa is truly the best place on earth for seeing the greatest animals of all time. See Gorillas in the rainforests of Rwanda, the remarkable migration of the wildebeest, or the ‘big 5’ on a world-famous safari. Just the sight of seeing such incredible animals as elephants and cheetahs in the wild is enough to reduce even the hardiest of travelers to excitable tears. It is an unforgettable experience that will leave an imprint on your heart for a lifetime.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            Natural Gifts
+                            Legendary Landscapes and Wildlife
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Some of the most extraordinary natural experiences on the planet are to be found in Colombia, whether it’s riding through the world’s tallest palm trees, hiking in the Andes, or snorkeling in Caribbean coastal waters. Among these landscapes, discover lost cities, underground salt mines, and puzzling natural phenomena—each with an ancient story that forms the backbone of Colombia’s heritage.
+                            Africa is the continent that really does have it all. Home to the hottest deserts, the most epic mountains, the endless savannah, mammoth waterfalls, and paradise white-sand beaches. It is also home to fantastic cities from tip to toe. From the northern delights of Marrakech, filled with souks and treasures, to the southern gem of Cape Town, home to the legendary Table Mountain. Each country within Africa will bring travelers into another world, each one as extraordinary as the next. Reach new heights on Mount Kilimanjaro,  experience the road trip of a lifetime in Namibia, the delights of safari in the Masai Mara, the mind-blowing force of Victoria Falls, or wine tasting among the beautiful vineyards of South Africa.
                         </p>
                     </div>
 
                     <div className="ending-content__p">
                         <h3  style={{fontSize:"3rem", lineHeight:"2.5rem"}}>
-                            The Land of Food & Fiesta
+                            Joyful People
                         </h3>
                         <p  style={{fontSize:"large", lineHeight:"3.5rem"}}>
-                            Food and fiesta are integral to Colombians, with families and friends finding any excuse to gather and enjoy home-cooked arepas or take to the streets and salsa dance. And it’s not just dancing and food that serves as a means of creative expression; in Colombia, art is everything, bringing people together and changing the lives of many. In previously dangerous suburbs, like Communa 13 in Medellin, communities have grown and changed with the arrival of street art, painting murals with an important political message. These colors will remain imprinted on your memory forever; there’s always a rainbow of emotions, flavors, and stories to be found in beautiful Colombia!
+                            Africa, the birthplace of mankind, is nothing short of addictive. Many places have stayed in the past, maintaining ancient traditions, languages, and spiritual bonds. Because of this, the fundamental principles of family, community, and nature have not been lost. As a result, people live life joyfully through colorful landscapes, vibrant patterns, soulful music, and beautiful smiles. Africa is truly an extraordinary continent that effortlessly steals hearts, and will continue to mesmerize travelers again and again.
                         </p>
                     </div>
 
@@ -180,4 +180,4 @@ const Columbia = () => {
     );
 };
 
-export default Columbia;
+export default Africa;
