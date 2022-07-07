@@ -28,7 +28,7 @@ const France = () => {
                             </h1>
                         </Col>
                         <Col className={'page-cover-image me-5'}  style={{marginLeft: "5rem", marginTop: "-20rem", marginBottom: "20rem"}} >
-                            <img className={'page-cover_image'} src={require('../images/columbia/cover.jpg')}
+                            <img className={'page-cover_image'} src={require('../images/france/cover.jpg')} style={{marginTop :"20rem"}}
                                  alt={'10 Best Beaches in Sri Lanka'}/>
                         </Col>
                         <Col className>
