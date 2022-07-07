@@ -67,7 +67,7 @@ const Home = () => {
             {/* <!-- section2 --> */}
             <div class="container" id="section2">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/globe.png")} alt="img1" />
                             <div>Vietnam</div>
@@ -84,7 +84,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/boot.png")} alt="img1" />
                             <div>France</div>
@@ -101,7 +101,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div class="col-lg-4 .col-md-4 .col-sm-6 .col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="text-center featured-img-title">
                             <img src={require("../images/plane.png")} alt="img1" />
                             <div>Egypt</div>

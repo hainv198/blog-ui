@@ -4,6 +4,7 @@
 
 .homepage #home-img1 {
     align-items: center;
+    justify-content: space-around;
 }
 
 .homepage #home-img1 div img {
@@ -288,6 +289,7 @@
 .homepage .section4-card {
     position: relative;
     border-radius: 10px;
+    margin-top: 10px;
     /* border: 1px solid pink; */
 }
 
@@ -313,15 +315,14 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     #section4-reverse {
         flex-direction: column-reverse;
     }
 
     .homepage .section4-card {
         margin-bottom: 10px;
-    }
-    
+    } 
 }
 
 /* section5 */
