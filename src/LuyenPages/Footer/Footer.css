@@ -35,6 +35,22 @@
     }
 }
 
+.footer #companyCopyRight p{
+    max-width: 350px;
+}
+
+.footer #companyCopyRight {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .footer #companyCopyRight p{
+        margin: auto;
+    }
+
+}
+
+
 .footer a {
     text-decoration: none;
 }

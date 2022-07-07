@@ -1,5 +1,5 @@
 .homepage #section1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .homepage #home-img1 {
@@ -8,7 +8,6 @@
 
 .homepage #home-img1 div img {
     max-width: 100%;
-    /*clip-path: polygon(85% 6%, 64% 0%, 52% 1%, 31% 4%, 9% 24%, 1% 50%, 6% 79%, 27% 95%, 39% 100%, 67% 96%, 81% 88%, 92% 75%, 100% 45%, 98% 23%);*/
     -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
     mask-repeat: no-repeat;
     mask-size: 70rem;
@@ -18,7 +17,6 @@
 @media screen and (max-width: 1200px) {
     .homepage #home-img1 div img {
         max-width: 100%;
-        /* clip-path: polygon(85% 6%, 64% 0%, 52% 1%, 31% 4%, 9% 24%, 1% 50%, 6% 79%, 27% 95%, 39% 100%, 67% 96%, 81% 88%, 92% 75%, 100% 45%, 98% 23%); */
         -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik01My4zLC01MEM2Ny44LC0zOC44LDc3LjQsLTE5LjQsNzguOCwxLjRDODAuMiwyMi4xLDczLjMsNDQuMyw1OC44LDU3LjdDNDQuMyw3MS4yLDIyLjEsNzYsLTAuMiw3Ni4yQy0yMi42LDc2LjQsLTQ1LjIsNzIuMSwtNTgsNTguNkMtNzAuOSw0NS4yLC03NC4xLDIyLjYsLTczLjcsMC40Qy03My4zLC0yMS44LC02OS4zLC00My41LC01Ni40LC01NC44Qy00My41LC02Ni4xLC0yMS44LC02Ni44LC0xLjIsLTY1LjdDMTkuNCwtNjQuNSwzOC44LC02MS4zLDUzLjMsLTUwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
         mask-repeat: no-repeat;
         mask-size: 40rem;
@@ -47,10 +45,16 @@
     font-weight: bold;
 }
 
+.choose-destination:hover {
+    
+}
+
+
+
 /* section2 */
 .homepage #section2 {
-    border: 1px solid black;
-    margin: 20px auto;
+    /* border: 1px solid black; */
+    margin: 40px auto 0px;
 }
 
 .homepage #section2 div:nth-of-type(1) {
@@ -65,11 +69,13 @@
     display: block;
     margin: auto;
     max-height: 275px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
 }
 
 .homepage .featured-img img:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: 250ms;
 }
 
 .homepage .featured-img-title {
@@ -91,12 +97,16 @@
     }
 }
 
+.homepage .where-to li:nth-of-type(1) {
+    font-weight: bold;
+}
 
 /* recomendation */
 
 @media screen and (max-width: 991px) {
     .homepage .where-to li:nth-of-type(1) {
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     .homepage .where-to {
@@ -111,27 +121,34 @@
 }
 
 .homepage .where-to {
-    margin: 30px 15px 10px;
+    margin: 10px;
     list-style: none;
-    border: 1px solid red;
-    /* line-height: 30px;
-    overflow:hidden !important; */
+        /* border: 1px solid red; */
+    display: block;
+    overflow-y:hidden !important;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  
 }
 
 
 .homepage .where-to li {
     margin-right: 5px;
     display: inline;
-    background-color:#f1bc68;
+    background-color:#f0e8e7;
     border-radius: 20px;
-    /* width: 50px; */
-    padding: 10px;
     font-weight: bold;
-    margin: 5px;
 
-    /* overflow: hidden; 
-    text-overflow: hidden;
-    white-space: nowrap; */
+    float: left;
+    width: 130px;
+    /* border: 1px solid green; */
+    padding: 5px;
+}
+
+.homepage .where-to li:hover {
+    background-color: #f5f4f2;
 }
 
 .homepage .where-to li:nth-of-type(1) {
@@ -140,32 +157,29 @@
     background-color: transparent;
 }
 
-
 .homepage .where-to li img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 4px;
     object-fit: cover;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
 }
 
 .homepage .where-to li img:hover{
     transform: scale(1.05);
-    transition-duration: 1s;
-    
+    transition-duration: 250ms;
 }
 
-.homepage .list-group-item {
-    list-style: none;
-    display: inline !important;
-}
 
 /* section3 */
 
 .homepage #section3 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url("https://img.freepik.com/free-photo/top-view-white-plane-green-background_23-2148971056.jpg?w=2000");
     padding: 20px 10px;
+    margin-top: 40px;
 }
 
 .homepage .section3-right {
@@ -229,18 +243,20 @@
 .homepage .banner-article img {
     max-width: 80px;
     border-radius: 10px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
 }
 
 .homepage .banner-article img:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: 250ms;
 }
 
 
 /* section4 */
 .homepage #section4 {
-    border: 1px solid red;
-    margin-top: 20px;
+    /* border: 1px solid red; */
+    margin-top: 40px;
 }
 
 .homepage #section4 div {
@@ -251,7 +267,7 @@
 .homepage .feautured-article {
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -264,7 +280,7 @@
 
 .homepage .feautured-article div {
     font-weight: bold;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 
@@ -272,7 +288,7 @@
 .homepage .section4-card {
     position: relative;
     border-radius: 10px;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 .homepage .section4-card img {
@@ -280,11 +296,13 @@
     border-radius: 10px;
     display: block;
     margin: auto;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
 }
 
 .homepage .section4-card img:hover {
     transform: scale(1.05);
-    transition-duration: 1s;    
+    transition-duration: 250ms;    
 }
 
 .homepage .bottom-left {
@@ -309,8 +327,9 @@
 /* section5 */
 
 .homepage #section5 {
-    margin-top: 20px;
-    border: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
 }
 
 .homepage #section5 div {
@@ -321,7 +340,7 @@
 }
 
 .homepage .section5-left img {
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .homepage .about-us {
@@ -345,6 +364,7 @@
 .homepage button:hover {
     background-color: bisque;
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: 250ms;
     color: #0778e8;
+    transition-timing-function: ease-in-out;
 }

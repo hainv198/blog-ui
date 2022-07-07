@@ -126,13 +126,6 @@ const Home = () => {
                         <li>
                             Where to Next?
                         </li>
-
-                        {/* <li>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Costa Rica
-                        </li>
-                        <li>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Thap_Rua.jpg" alt="" />Thailand
-                        </li> */}
                         {country_list}
                     </ul>
                 </div>
