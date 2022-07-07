@@ -4,6 +4,7 @@ import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
 import Comment from "./components/comments/comment";
+import loading from '../images/circles-menu-1.gif'
 
 
 function TemplatePage() {
@@ -82,7 +83,7 @@ function TemplatePage() {
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div className="row about-us-right">
-                                            <div className="col-12" >
+                                            <div className="col-12">
                                                 <h2>Hi, we're Nick & Hannah</h2>
                                                 <p className="about-us-content">
                                                     We hope you're enjoying our free travel guides & tips! If so, please
@@ -521,9 +522,17 @@ function TemplatePage() {
                     </Container>
                 </Container>
             ) : (
-                <div className="spinner-border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </div>
+                <Container>
+                    <Col md={12} className={'ms-auto me-auto'}>
+                        <div
+                            // className="spinner-border"
+                             style={{marginTop: "50rem", marginBottom: "50rem", marginLeft: "auto", marginRight: "auto"}}
+                             className={'text-center'}
+                             role="status">
+                            <img style={{marginLeft: "15rem"}} src={loading}/>
+                        </div>
+                    </Col>
+                </Container>
             )}
         </>
     )

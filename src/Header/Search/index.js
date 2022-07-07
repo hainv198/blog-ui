@@ -25,7 +25,8 @@ const Search = () => {
             setSearchResult([])
             return
         }
-        fetch(`https://62b297ff20cad3685c902f74.mockapi.io/web/?search=${encodeURIComponent(searchValue)}`)
+        // fetch(`https://62b297ff20cad3685c902f74.mockapi.io/web/?search=${encodeURIComponent(searchValue)}`)
+        fetch(`https://62b11da8196a9e98702f9eca.mockapi.io/blog?search=${encodeURIComponent(searchValue)}`)
             .then((res) => res.json())
             .then((res) => {
                 setSearchResult(res)
@@ -48,11 +49,11 @@ const Search = () => {
                 render={attrs => (
                     <div className="result-search" tabIndex='-1' {...attrs}>
                         <Wrapper>
-                            <h4 className='search-account'>Suggestions</h4>
-                            {searchResult.map((todo) => (
-                                <Suggestions data={todo} key={todo.id}/>
-                            ))}
-                            <h4 className="search-account">Account</h4>
+                            {/*<h4 className='search-account'>Suggestions</h4>*/}
+                            {/*{searchResult.map((todo) => (*/}
+                            {/*    <Suggestions data={todo} key={todo.id}/>*/}
+                            {/*))}*/}
+                            {/*<h4 className="search-account">Account</h4>*/}
                             {searchResult.map((item) => (
                                 <AccountItem key={item.id} data={ item}/>
                             ))}
