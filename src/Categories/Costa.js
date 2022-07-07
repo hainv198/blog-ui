@@ -83,7 +83,7 @@ const Costarica = () => {
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/costa/search5.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PUERTO VIEJO</span></a>
+                                    <Link to={'/page/10'}><span className="page-content__search-link">PUERTO VIEJO</span></Link>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">

@@ -39,11 +39,11 @@ function App() {
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='page/:id' element={<TemplatePage/>}/>
                         <Route path='/categories/'>
-                            <Route path='costa' element={<Costarica/>}/>
+                            <Route path='costarica' element={<Costarica/>}/>
                             <Route path='egypt' element={<Egypt/>}/>
                             <Route path='france' element={<France/>}/>
                             <Route path='vietnam' element={<Vietnam/>}/>
-                            <Route path='columbia' element={<Columbia/>}/>
+                            <Route path='colombia' element={<Columbia/>}/>
                             <Route path='turkey' element={<Turkey/>}/>
                             <Route path='asia' element={<Asia />}/>
                             <Route path='europe' element={<Europe />}/>

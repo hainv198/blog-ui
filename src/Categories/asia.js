@@ -77,7 +77,7 @@ const Asia = () => {
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">VIETNAM</span></a>
+                                    <Link to={'/categories/vietnam'}><span className="page-content__search-link">VIETNAM</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>

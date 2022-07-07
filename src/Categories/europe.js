@@ -71,19 +71,19 @@ const Europe = () => {
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/europe/search5.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">FRANCE</span></a>
+                                    <Link to={'/categories/france'}><span className="page-content__search-link">FRANCE</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/europe/search2.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">HUNGARY</span></a>
+                                    <Link to={'/page/12'}><span className="page-content__search-link">HUNGARY</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/europe/search6.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PORTUGAL</span></a>
+                                    <Link to={'/page/8'}><span className="page-content__search-link">ITALY</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/europe/search1.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">TURKEY</span></a>
+                                    <Link to={'/categories/turkey'}><span className="page-content__search-link">TURKEY</span></Link>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">

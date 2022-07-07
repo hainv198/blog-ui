@@ -74,26 +74,28 @@ function TemplatePage() {
                     </Row>
                     <Container fluid className={'about-us'}>
                         <Row>
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-us-left">
-                                    <img src="https://static.saltinourhair.com/build/images/kofi-block-image.png"
-                                         alt=""/>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div className="row about-us-right">
-                                        <div className="col-12">
-                                            <h2>Hi, we're Nick & Hannah</h2>
-                                            <p className="about-us-content">
-                                                We hope you're enjoying our free travel guides & tips! If so, please
-                                                consider supporting our work.
-                                            </p>
-                                            <Link to={"/about"}><Button variant={'dark'} size={'lg'}
-                                                                        className={'about-us-button rounded-pill'}>About
-                                                us <i className="bi bi-arrow-right"></i></Button></Link>
+                            <Link to={"/about"} style={{textDecoration: "none"}}>
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-us-left">
+                                        <img src="https://static.saltinourhair.com/build/images/kofi-block-image.png"
+                                             alt=""/>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div className="row about-us-right">
+                                            <div className="col-12" >
+                                                <h2>Hi, we're Nick & Hannah</h2>
+                                                <p className="about-us-content">
+                                                    We hope you're enjoying our free travel guides & tips! If so, please
+                                                    consider supporting our work.
+                                                </p>
+                                                <Button variant={'dark'} size={'lg'}
+                                                        className={'about-us-button rounded-pill'}>About
+                                                    us <i className="bi bi-arrow-right"></i></Button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </Row>
                     </Container>
                     <Row>
@@ -433,7 +435,7 @@ function TemplatePage() {
                                 borderRadius: "5%",
                                 maxHeight: "48rem",
                                 overflow: "hidden"
-                            }}>
+                            }} className={'read-all'}>
                                 <Col lg={6} style={{marginTop: "5rem"}}>
                                     <div className={'read-all-text d-flex flex-column'}>
                                         <span>Read all articles about</span><br/>
@@ -443,7 +445,7 @@ function TemplatePage() {
                                         <div>
 
                                             <span className={'arrow-icon'}><i
-                                                className="bi bi-arrow-right-circle-fill"></i></span>
+                                                className="read-all-arrow bi bi-arrow-right-circle-fill"></i></span>
                                         </div>
                                     </div>
                                 </Col>
@@ -465,8 +467,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2020/05/23120157/saltinourhair-asia.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body '}>
-                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Asia'}><span className={'fr-card-text-span'}>
+                                            <Card.Title className={'fr-card-title'}><span
+                                                className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Asia'}><span
+                                                className={'fr-card-text-span'}>
                                                 Asia
                                                 </span>
                                             </Card.Text>
@@ -479,8 +483,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2019/06/23134442/italy-travel-itinerary.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
-                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Europe'}><span className={'fr-card-text-span'}>
+                                            <Card.Title className={'fr-card-title'}><span
+                                                className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Europe'}><span
+                                                className={'fr-card-text-span'}>
                                                 Europe
                                                 </span>
                                             </Card.Text>
@@ -493,8 +499,10 @@ function TemplatePage() {
                                                   src="https://static.saltinourhair.com/wp-content/uploads/2019/03/23140507/egypt-tourism-travel-header.jpg"/>
                                         <Card.Body
                                             class={'card-img-overlay d-flex flex-column justify-content-end card-body fr-card-body'}>
-                                            <Card.Title className={'fr-card-title'}><span className={'fr-card-title-span'}>Travel in</span></Card.Title>
-                                            <Card.Text className={'fr-card-text'} title={'Africa'}><span className={'fr-card-text-span'}>
+                                            <Card.Title className={'fr-card-title'}><span
+                                                className={'fr-card-title-span'}>Travel in</span></Card.Title>
+                                            <Card.Text className={'fr-card-text'} title={'Africa'}><span
+                                                className={'fr-card-text-span'}>
                                                 Africa
                                                 </span>
                                             </Card.Text>

@@ -67,7 +67,7 @@ const Africa = () => {
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
                                     <img className="page-content__search-icon" src={require("../images/Africa/cover.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">EGYPT</span></a>
+                                    <Link to={'/categories/egypt'}><span className="page-content__search-link">EGYPT</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/Africa/mustdo3.jpg")} alt="icon images"/>

@@ -53,7 +53,7 @@ const Vietnam = () => {
                                 </div>
                                 <div className="right-content-text">
                                     <h5 style={{fontSize:"1.6rem"}}><strong>Currency</strong></h5>
-                                    <span style={{fontSize:"1.3rem"}}>March to October is the best time to visit Vietnam</span>
+                                    <span style={{fontSize:"1.3rem"}}>Vietnam’s currency is called Dong. 1 USD is equivalent to 23,500 Vietnamese Dong.</span>
                                 </div>
                             </div>
                         </div>
@@ -69,11 +69,11 @@ const Vietnam = () => {
                 <ul className="page-content__search-ul">
                     <li className="page-content__search-li mt-3 mb-1">
                         <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                        <a href="src/components/Asia#"><span className="page-content__search-link">HANOI</span></a>
+                        <Link to={'/page/2'}><span className="page-content__search-link">HANOI</span></Link>
                     </li>
                     <li className="page-content__search-li mt-3  mb-1">
                         <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
-                        <a href="src/components/Asia#"><span className="page-content__search-link">DA NANG</span></a>
+                        <Link to={'/page/1'}><span className="page-content__search-link">PHU QUOC</span></Link>
                     </li>
                     <li className="page-content__search-li mt-3  mb-1">
                         <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
@@ -81,7 +81,7 @@ const Vietnam = () => {
                     </li>
                     <li className="page-content__search-li mt-3  mb-1">
                         <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
-                        <a href="src/components/Asia#"><span className="page-content__search-link">SAPA</span></a>
+                        <Link to={'/page/11'}><span className="page-content__search-link">HOI AN</span></Link>
                     </li>
                     <li className="page-content__search-li mt-3  mb-1">
                         <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>

@@ -67,7 +67,7 @@ const Columbia = () => {
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
                                     <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BOGOTA</span></a>
+                                    <Link to={'/page/9'}><span className="page-content__search-link">BOGOTA</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>

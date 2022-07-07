@@ -70,8 +70,11 @@ ol {
 
 .about-us .about-us-right {
     text-align: right;
+    color: black;
 }
-
+.about-us-content{
+    text-decoration: none;
+}
 .about-us-button {
     font-size: 1.7rem;
     padding-left: 15px;
@@ -281,7 +284,6 @@ ol {
     mask-position: center;
     mask-repeat: no-repeat;
 }
-
 .fr-card-body {
     /*color: white;*/
     border-radius: 10px;

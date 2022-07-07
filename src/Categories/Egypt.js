@@ -67,15 +67,15 @@ const Egypt = () => {
                             <ul className="page-content__search-ul">
                                 <li className="page-content__search-li mt-3 mb-1">
                                     <img className="page-content__search-icon" src={require("../images/egypt/search.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">BOGOTA</span></a>
+                                    <a href="src/components/Asia#"><span className="page-content__search-link">ALEXANDRIA</span></a>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/egypt/search2.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">CAIRO</span></a>
+                                    <Link to={'/page/5'}><span className="page-content__search-link">CAIRO</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/egypt/cover.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">LUXOR</span></a>
+                                    <Link to={'/page/6'}><span className="page-content__search-link">LUXOR</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/egypt/mustdo.jpg")} alt="icon images"/>

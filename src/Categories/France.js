@@ -72,7 +72,7 @@ const France = () => {
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/france/search4.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">FRENCH RIVIERA</span></a>
+                                    <Link to={'/page/3'}><span className="page-content__search-link">NICE (FRENCH RIVIERA)</span></Link>
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/france/search3.jpg")} alt="icon images"/>
@@ -84,7 +84,7 @@ const France = () => {
                                 </li>
                                 <li className="page-content__search-li mt-3  mb-1">
                                     <img className="page-content__search-icon" src={require("../images/france/search5.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">NICE</span></a>
+                                    <Link to={'/page/4'}><span className="page-content__search-link">MARSEILLE</span></Link>
                                 </li>
                                 <li className="page-content__search-li">
                                     <div className="input-group rounded">
