@@ -290,6 +290,7 @@ ol {
 .fr-card-title {
     font-weight: 700;
     font-size: 2.5rem;
+    
 }
 
 .fr-card {
@@ -308,41 +309,36 @@ ol {
     height: 100%;
     border-radius: 10px;
 }
+.fr-link{
+    text-decoration: none;
+    color: black;
+    width: 33%;
+}
+.fr-link:hover{
+    color: black;
+}
 .fr-card-text{
-    color: #7451f8;
-    font-size: 6em;
+    /*color: #7451f8;*/
+    font-size: 2em;
     left: 0;
     top: 0;
     transition: top .25s ease-in, left .25s ease-in, color .25s ease-in;
     transition-delay: .8s;
     display: inline-block;
-    line-height: .9;
+    /*line-height: .9;*/
     margin: 0;
     position: relative;
     z-index: 80;
     text-transform: uppercase;
     word-break: break-word;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
 }
-.fr-card-title::after, .fr-card-title::before {
-    left: -.06em;
-    top: -.06em;
-    transition: top .25s ease-in, left .25s ease-in, color .25s ease-in;
-    transition-delay: .8s;
+.fr-card-text-span{
+    background-color: white;
 }
-
-.fr-card-title::before {
-    color: rgba(255, 255, 255, .4);
-    z-index: -1;
-}
-
-.fr-card-title::after {
-    color: rgba(94, 60, 59, .3);
-}
-
-.fr-card-title::after, .fr-card-title::before {
-    content: attr(title);
-    position: absolute;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: currentColor;
-    -webkit-text-stroke-width: .02em;
+.fr-card-title-span{
+    background-color: white;
+    padding-left: .7rem;
+    padding-right: .4rem;
 }
