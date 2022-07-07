@@ -534,5 +534,5 @@ img.page-cover_image {
 .page-content-container {
     background: url(../images/others/pink-roundshape.webp) no-repeat;
     background-size: contain;
-    width: 100%;
+    /*width: 100%;*/
 }

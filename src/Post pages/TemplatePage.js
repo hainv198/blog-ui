@@ -4,11 +4,13 @@ import "./post-style.css";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
 import Comment from "./components/comments/comment";
-import CommentArea from "./components/commentArea/CommentArea";
 
 
 function TemplatePage() {
     const [post, setPost] = useState(null);
+    const [randomArt1, setRandomArt1] = useState(null);
+    const [randomArt2, setRandomArt2] = useState(null);
+    const [randomArt3, setRandomArt3] = useState(null);
     let params = useParams()
     useEffect(() => {
         //doi params vao day
@@ -17,7 +19,24 @@ function TemplatePage() {
             .then(response => response.json())
             .then(data => setPost(data))
     }, [])
-    const [postHead, setPostHead] = useState([]);
+    useEffect(() => {
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setRandomArt1(data))
+    }, [])
+    useEffect(() => {
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setRandomArt2(data))
+    }, [])
+    useEffect(() => {
+        let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + Math.floor(Math.random() * 13);
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setRandomArt3(data))
+    }, [])
 
     return (
         <>
@@ -27,13 +46,18 @@ function TemplatePage() {
                         <Col lg={7} style={{marginTop: "20rem"}}>
                             <div className={'header-content-container'}>
                                 <ol className={'ms-auto me-auto w-50'}>
-                                    <li className={'top-header-list'}>Home</li>
+                                    <Link to={'/'}>
+                                        <li className={'top-header-list top-header-list-text'}>Home</li>
+                                    </Link>
                                     <li className={'top-header-list'}> ></li>
-                                    <li className={'top-header-list'}>{post.sub_tag} </li>
+                                    <Link to={'/categories/' + post.sub_tag}>
+                                        <li className={'top-header-list top-header-list-text'}>{post.sub_tag} </li>
+                                    </Link>
                                     <li className={'top-header-list'}> ></li>
                                 </ol>
-                                <h1 className={'w-75 ms-auto me-auto header-title'}>{post.title}</h1>
-                                <p className={'w-75 ms-auto me-auto header-content'}>{post.tag_header}</p>
+                                <h1 style={{width: "60%"}} className={' ms-auto me-auto header-title'}>{post.title}</h1>
+                                <p style={{width: "60%"}}
+                                   className={' ms-auto me-auto header-content'}>{post.tag_header}</p>
                             </div>
                         </Col>
                         <Col lg={5}>
@@ -58,7 +82,7 @@ function TemplatePage() {
                                                 consider supporting our work.
                                             </p>
                                             <Link to={"/about"}><Button variant={'dark'} size={'lg'}
-                                                                          className={'about-us-button rounded-pill'}>About
+                                                                        className={'about-us-button rounded-pill'}>About
                                                 us <i className="bi bi-arrow-right"></i></Button></Link>
                                         </div>
                                     </div>
@@ -185,91 +209,109 @@ function TemplatePage() {
                                 </>
                             ) : ("")}
                         </Col>
-                        <Col lg={3} className={'post-related'}>
-                            <Row>
-                                <h3 className={'text-center'}>Related articles</h3>
-                                <div className={'post-related-container d-flex flex-column'}>
-                                    <div className="card post-related-card mb-3">
-                                        <div className="row g-0">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src="https://static.saltinourhair.com/wp-content/uploads/2020/06/23114636/Tam-Coc-Ninh-Binh-vietnam-810x810.jpg"
-                                                    className="card-img img-fluid rounded-start" alt="..."/>
+                        {randomArt1 != null && randomArt2 != null && randomArt3 != null ? (
+                            <Col lg={3} className={'post-related'}>
+                                <Row>
+                                    <h3 className={'text-center'}>Read another article!</h3>
+                                    <div className={'post-related-container d-flex flex-column'}>
+                                        <Link to={'/page/' + randomArt1.id} class={'post-related-link'}>
+                                            <div className="card post-related-card mb-3">
+                                                <div className="row g-0">
+                                                    <div className="col-md-4">
+                                                        {/*<img*/}
+                                                        {/*    src="https://static.saltinourhair.com/wp-content/uploads/2020/06/23114636/Tam-Coc-Ninh-Binh-vietnam-810x810.jpg"*/}
+                                                        {/*    className="card-img img-fluid rounded-start" alt="..."/>*/}
+                                                        <img src={randomArt1.image}
+                                                             className={'card-img img-fluid rounded-start'}/>
+                                                    </div>
+                                                    <div className="col-md-8">
+                                                        <div className="card-body">
+                                                            {/*<p className="card-text"> Best Things To Do in Ninh Binh & Tam Coc*/}
+                                                            {/*    (Vietnam)</p>*/}
+                                                            <p className={'card-text'}>{randomArt1.title}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <p className="card-text"> Best Things To Do in Ninh Binh & Tam Coc
-                                                        (Vietnam)</p>
+                                        </Link>
+                                        <Link to={'/page/' + randomArt2.id} class={'post-related-link'}>
+                                            <div className="card post-related-card mb-3">
+                                                <div className="row g-0">
+                                                    <div className="col-md-4">
+                                                        {/*<img*/}
+                                                        {/*    src="https://static.saltinourhair.com/wp-content/uploads/2020/07/23113313/vietnam-travel-guide-741x810.jpg"*/}
+                                                        {/*    className="img-fluid card-img rounded-start" alt="..."/>*/}
+                                                        <img src={randomArt2.image}
+                                                             className={'card-img img-fluid rounded-start'}/>
+                                                    </div>
+                                                    <div className="col-md-8">
+                                                        <div className="card-body">
+                                                            {/*<p className="card-text">Vietnam Travel Guide: A Complete 3-Week*/}
+                                                            {/*    Itinerary</p>*/}
+                                                            <p className={'card-text'}>{randomArt2.title}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link to={'/page/' + randomArt3.id} class={'post-related-link'}>
+                                            <div className="card post-related-card mb-3">
+                                                <div className="row g-0">
+                                                    <div className="col-md-4">
+                                                        {/*<img*/}
+                                                        {/*    src="https://static.saltinourhair.com/wp-content/uploads/2016/09/23113533/mui-ne-white-sand-dunes-vietnam-892x810.jpg"*/}
+                                                        {/*    className="img-fluid card-img rounded-start" alt="..."/>*/}
+                                                        <img src={randomArt3.image}
+                                                             className={'card-img img-fluid rounded-start'}/>
+                                                    </div>
+                                                    <div className="col-md-8">
+                                                        <div className="card-body">
+                                                            {/*<p className="card-text">8 Best Things To Do in Mui Ne, Vietnam</p>*/}
+                                                            <p className={'card-text'}>{randomArt3.title}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <h3 className={'text-center mt-3'}>Must see articles</h3>
+                                    <div className={'post-related-container'}>
+                                        <div className="card post-related-card mb-3">
+                                            <div className="row g-0">
+                                                <div className="col-md-4">
+                                                    <img
+                                                        src="https://static.saltinourhair.com/wp-content/uploads/2020/07/23113113/SA70650-679x600.jpg"
+                                                        className="img-fluid card-img rounded-start" alt="..."/>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                        <p className="card-text">Best Travel Insurances in 2022
+                                                            (COVID-19
+                                                            coverage)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card post-related-card mb-3">
+                                            <div className="row g-0">
+                                                <div className="col-md-4">
+                                                    <img
+                                                        src="https://static.saltinourhair.com/wp-content/uploads/2020/04/23120953/best-places-travel-tbilisi-648x810.jpg"
+                                                        className="img-fluid card-img rounded-start" alt="..."/>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                        <p className="card-text"> Best Places to Travel in 2022</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card post-related-card mb-3">
-                                        <div className="row g-0">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src="https://static.saltinourhair.com/wp-content/uploads/2020/07/23113313/vietnam-travel-guide-741x810.jpg"
-                                                    className="img-fluid card-img rounded-start" alt="..."/>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <p className="card-text">Vietnam Travel Guide: A Complete 3-Week
-                                                        Itinerary</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card post-related-card mb-3">
-                                        <div className="row g-0">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src="https://static.saltinourhair.com/wp-content/uploads/2016/09/23113533/mui-ne-white-sand-dunes-vietnam-892x810.jpg"
-                                                    className="img-fluid card-img rounded-start" alt="..."/>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <p className="card-text">8 Best Things To Do in Mui Ne, Vietnam</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Row>
-                            <Row>
-                                <h3 className={'text-center mt-3'}>Must see articles</h3>
-                                <div className={'post-related-container'}>
-                                    <div className="card post-related-card mb-3">
-                                        <div className="row g-0">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src="https://static.saltinourhair.com/wp-content/uploads/2020/07/23113113/SA70650-679x600.jpg"
-                                                    className="img-fluid card-img rounded-start" alt="..."/>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <p className="card-text">Best Travel Insurances in 2022 (COVID-19
-                                                        coverage)</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card post-related-card mb-3">
-                                        <div className="row g-0">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src="https://static.saltinourhair.com/wp-content/uploads/2020/04/23120953/best-places-travel-tbilisi-648x810.jpg"
-                                                    className="img-fluid card-img rounded-start" alt="..."/>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <p className="card-text"> Best Places to Travel in 2022</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Row>
-                        </Col>
+                                </Row>
+                            </Col>
+                        ) : ("")}
                     </Row>
                     <Row>
                         <Col className={'ms-auto me-auto mt-5'} lg={12}>
@@ -289,8 +331,8 @@ function TemplatePage() {
 
                                             <td className={'prep-list-table-title'} width={'15%'}>
                                                 <a className={'prep-list-table-link'} href={"https://www.booking.com/"}>
-                                                <h3>Find Hotels</h3>
-                                                <span className={'text-muted'}>via Booking.com</span>
+                                                    <h3>Find Hotels</h3>
+                                                    <span className={'text-muted'}>via Booking.com</span>
                                                 </a>
                                             </td>
                                             <td width={"5%"}>
@@ -299,8 +341,8 @@ function TemplatePage() {
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
                                                 <a className={'prep-list-table-link'} href={"https://heymondo.com/"}>
-                                                <h3>Get a Travel Insurance</h3>
-                                                <span className={'text-muted'}>via Heymondo</span>
+                                                    <h3>Get a Travel Insurance</h3>
+                                                    <span className={'text-muted'}>via Heymondo</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -311,9 +353,10 @@ function TemplatePage() {
                                                      style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <a className={'prep-list-table-link'} href={"https://www.sunnycars.com/"}>
-                                                <h3>Find a Rental Car</h3>
-                                                <span className={'text-muted'}>via Sunny Cars</span>
+                                                <a className={'prep-list-table-link'}
+                                                   href={"https://www.sunnycars.com/"}>
+                                                    <h3>Find a Rental Car</h3>
+                                                    <span className={'text-muted'}>via Sunny Cars</span>
                                                 </a>
                                             </td>
                                             <td width={"5%"}>
@@ -322,8 +365,8 @@ function TemplatePage() {
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
                                                 <a className={'prep-list-table-link'} href={"https://www.viator.com/"}>
-                                                <h3>Book Tours & Attractions</h3>
-                                                <span className={'text-muted'}>via Viator</span>
+                                                    <h3>Book Tours & Attractions</h3>
+                                                    <span className={'text-muted'}>via Viator</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -333,9 +376,10 @@ function TemplatePage() {
                                                      src={require("../images/plane.png")} style={{width: "50%"}}/>
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
-                                                <a className={'prep-list-table-link'} href={"https://www.skyscanner.com"}>
-                                                <h3>Find Cheap Flights</h3>
-                                                <span className={'text-muted'}>via Skyscanner</span>
+                                                <a className={'prep-list-table-link'}
+                                                   href={"https://www.skyscanner.com"}>
+                                                    <h3>Find Cheap Flights</h3>
+                                                    <span className={'text-muted'}>via Skyscanner</span>
                                                 </a>
                                             </td>
                                             <td width={"5%"}>
@@ -344,8 +388,8 @@ function TemplatePage() {
                                             </td>
                                             <td className={'prep-list-table-title'} width={'15%'}>
                                                 <a className={'prep-list-table-link'} href={"https://12go.co"}>
-                                                <h3>Book a Bus/Train/Transfer</h3>
-                                                <span className={'text-muted'}>via 12Go</span>
+                                                    <h3>Book a Bus/Train/Transfer</h3>
+                                                    <span className={'text-muted'}>via 12Go</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -355,20 +399,20 @@ function TemplatePage() {
                                 <Col>
                                     <Row>
                                         <Container>
-                                        <div className={'text-center col-md-8 mt-3'}>
-                                            <Button variant={'danger'} className={'social-buttons rounded-pill'}>
-                                                <i className="bi bi-pinterest"></i>
-                                                <span> Pinterest</span>
-                                            </Button>
-                                            <Button className={'social-buttons rounded-pill'}>
-                                                <i className="bi bi-facebook"></i>
-                                                <span> Facebook</span>
-                                            </Button>
-                                            <Button variant={'success'} className={'social-buttons rounded-pill'}>
-                                                <i className="bi bi-whatsapp"></i>
-                                                <span> Whatsapp</span>
-                                            </Button>
-                                        </div>
+                                            <div className={'text-center col-md-8 mt-3'}>
+                                                <Button variant={'danger'} className={'social-buttons rounded-pill'}>
+                                                    <i className="bi bi-pinterest"></i>
+                                                    <span> Pinterest</span>
+                                                </Button>
+                                                <Button className={'social-buttons rounded-pill'}>
+                                                    <i className="bi bi-facebook"></i>
+                                                    <span> Facebook</span>
+                                                </Button>
+                                                <Button variant={'success'} className={'social-buttons rounded-pill'}>
+                                                    <i className="bi bi-whatsapp"></i>
+                                                    <span> Whatsapp</span>
+                                                </Button>
+                                            </div>
                                         </Container>
                                     </Row>
                                 </Col>
@@ -376,33 +420,46 @@ function TemplatePage() {
                         </Col>
                     </Row>
                     <Container>
-                        <Row style={{marginTop: "5rem", backgroundColor: "#f5f5f5", borderRadius: "5%", maxHeight: "48rem", overflow: "hidden"}}>
-                            <Col lg={6} style={{marginTop: "5rem"}}>
-                                <div className={'read-all-text d-flex flex-column'}>
-                                    <span>Read all articles about</span><br/>
-                                    <div className={'category-cover-title'} title={post.sub_tag}>
-                                        {post.sub_tag}
+                        <Link to={'/categories/' + post.sub_tag} style={{color: "black", textDecoration: "none"}}>
+                            <Row style={{
+                                marginTop: "5rem",
+                                backgroundColor: "#f5f5f5",
+                                borderRadius: "5%",
+                                maxHeight: "48rem",
+                                overflow: "hidden"
+                            }}>
+                                <Col lg={6} style={{marginTop: "5rem"}}>
+                                    <div className={'read-all-text d-flex flex-column'}>
+                                        <span>Read all articles about</span><br/>
+                                        <div className={'category-cover-title'} title={post.sub_tag}>
+                                            {post.sub_tag}
+                                        </div>
+                                        <div>
+
+                                            <span className={'arrow-icon'}><i
+                                                className="bi bi-arrow-right-circle-fill"></i></span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <span className={'arrow-icon'}><i className="bi bi-arrow-right-circle-fill"></i></span>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={6}>
-                                <img className={'read-all-img'} src={post.image} style={{maxWidth: "80%"}}/>
-                            </Col>
-                        </Row>
+                                </Col>
+                                <Col lg={6}>
+                                    <img className={'read-all-img'} src={post.image} style={{maxWidth: "80%"}}/>
+                                </Col>
+                            </Row>
+                        </Link>
                     </Container>
                     <Container>
                         <Row>
                             <Col className={'col-lg-12 me-auto ms-auto'}>
-                                <CommentArea data={post.title}/>
                                 <Comment data={params.id}/>
                             </Col>
                         </Row>
                     </Container>
                 </Container>
-            ) : ("")}
+            ) : (
+                <div className="spinner-border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+            )}
         </>
     )
 }
