@@ -24,7 +24,7 @@ const Contact = () => {
                         <div>
                             <img src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/283507433_5391759140836934_1498239091595490901_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ppttuV-O-BYAX-IHiHX&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_fFpDmHObkFN69iYdRYfwU_XUL6dzBrkkwdxN1QWjS2A&oe=62CBC956" alt="" />
                         </div>
-                        <h3>Who's Ha Hai?</h3>
+                        <h3>Nguyen Van Ha Hai</h3>
                         <p>
                             That guy with the big amount of curls, that's me: Hi, I'm Hai! I would describe myself as a photo
                             perfectionist. Keep on trying until it's done! Yeah, that can take some time, but hey, taking photos
@@ -36,7 +36,7 @@ const Contact = () => {
                         <div>
                             <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt="img" id='ngan'/>
                         </div>
-                        <h3>Who's Ngan?</h3>
+                        <h3>Ha Thi Ngan</h3>
                         <p>
                             Hmmm... Let's see. I would probably describe myself as a girl who can't function when her stomach is
                             growling. That's why I'm always keeping one eye on the streets to find the perfect bakery (with
@@ -47,7 +47,7 @@ const Contact = () => {
                         <div>
                             <img src="https://zpsocial-f46-org.zadn.vn/e5e0133a9e6d7033297c.jpg" alt="Van Hai" id='vanhai'/>
                         </div>
-                        <h3>Who's Van Hai?</h3>
+                        <h3>Nguyen Van Hai</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
                         </p>
@@ -57,7 +57,7 @@ const Contact = () => {
                         <div>
                             <img src="https://www.rd.com/wp-content/uploads/2018/05/shutterstock_725437768.jpg?resize=700,466" alt="Luyen" id='luyen'/>
                         </div>
-                        <h3>Who's Luyen?</h3>
+                        <h3>Dao Dinh Luyen</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
                         </p>

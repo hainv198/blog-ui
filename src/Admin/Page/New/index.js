@@ -5,8 +5,7 @@ import Sidebar from "../../Components/Sidebar";
 import {useParams} from "react-router";
 import {Link} from 'react-router-dom'
 import {useNavigate} from "react-router-dom";
-import { ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
-import { storage } from "../../../firebase";
+
 const New = () => {
     const [files, setFiles] = useState("");
     const params = useParams();
@@ -164,8 +163,13 @@ const New = () => {
                                     ></input>
                                 </div>
                                 <div className="formInput">
-                                    <label>Password</label>
-                                    <input type='text' placeholder='password' />
+                                    <label>Date of birthday</label>
+                                    <input
+                                        name='created_at'
+                                        value={users.created_at}
+                                        type='text'
+                                        onChange={(e) => handleChange(e)}
+                                    />
                                 </div>
                                 <div className="formInput">
                                     <label>Address</label>

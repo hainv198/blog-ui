@@ -45,7 +45,7 @@ export default function Datatable ({data}) {
             console.log('delete successful!!');
             let result = [...customer];
             result = result.filter((item) => {
-                return item.id != id;
+                return item.id !== id;
             });
             setCustomer(result);
         });

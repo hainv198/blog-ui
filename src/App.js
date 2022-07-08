@@ -2,7 +2,6 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./Header";
 import Home from "./Page/Home";
-import Travel from "./Page/Travel";
 import Destinations from "./Page/Destinations";
 import Aboutus from "./Page/Aboutus";
 import {AuthContextProvider} from "./Context/AuthContext";
@@ -37,13 +36,12 @@ function App() {
                     <Route path='/' element={<Header/>}>
                         <Route index element={<Home/>}/>
                         <Route path='/destination' element={<Destinations/>}/>
-                        <Route path='/travel' element={<Travel />}/>
                         <Route path='/about' element={<Aboutus />}/>
                         <Route path='/singin' element={<SignIn/>}/>
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='page/:id' element={<TemplatePage/>}/>
                         <Route path='/categories/'>
-                            <Route path='costarica' element={<Costarica/>}/>
+                            <Route path='costa%20rica' element={<Costarica/>}/>
                             <Route path='egypt' element={<Egypt/>}/>
                             <Route path='france' element={<France/>}/>
                             <Route path='vietnam' element={<Vietnam/>}/>
