@@ -5,12 +5,12 @@ import { Button, Card, CardImg, Col, Container, Row } from "react-bootstrap";
 import validator from 'validator';
 import { useState } from 'react';
 
-
 function Footer() {
 
-    const [emailError, setEmailError] = useState('')
+    const [emailError, setEmailError] = useState('');
+
     const validateEmail = (e) => {
-        var email = e.target.value
+        var email = e.target.value;
 
         if (validator.isEmail(email)) {
             setEmailError('Email valid!')
