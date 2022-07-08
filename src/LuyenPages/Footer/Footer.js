@@ -10,13 +10,18 @@ function Footer() {
     const [emailError, setEmailError] = useState('');
 
     const validateEmail = (e) => {
-        var email = e.target.value;
+        if(email != "") {
+            var email = e.target.value;
 
-        if (validator.isEmail(email)) {
-            setEmailError('Email valid!')
+            if (validator.isEmail(email)) {
+                setEmailError('Email valid!')
+            } else {
+                setEmailError('Enter valid Email!')
+            }
         } else {
-            setEmailError('Enter valid Email!')
+            setEmailError('');  
         }
+
     }
     const destArr = ['asia', 'africa', 'europe']
     const pickDest = destArr[Math.floor(Math.random()*destArr.length)];
