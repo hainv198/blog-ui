@@ -6,8 +6,8 @@ import {demo} from "../../../Header/Destinations";
 const HeaderProducts = ({data}) => {
     const[category, setCategory] = useState(null)
     useEffect(() => {
-        setCategory(demo)
-    },[demo])
+        setCategory(data)
+    },[data])
     var list_country = []
     if(category !== null) {
         list_country = category.map((item) => (

@@ -14,7 +14,7 @@ const Post = () => {
     const [post, setPost] = useState([])
 
     useEffect(() => {
-        fetch('https://62b11da8196a9e98702f9eca.mockapi.io/blog')
+        fetch('https://62c2b3c5876c4700f52b9823.mockapi.io/blog')
             .then((res) => res.json())
             .then((res) => {
                 setPost(res)
@@ -27,12 +27,13 @@ const Post = () => {
             <div className="homeContainer">
                 <div className="xxx">
                     <HeaderProducts data={post}/>
-                   <CartPost data={post}/>
+
                 </div>
                 <div className='post_main'>
                     <div style={{alignItems:"center", textAlign:"center"}}>
                         <h1>TRENDING</h1>
                     </div>
+                    <CartPost data={post}/>
 
                 </div>
             </div>
