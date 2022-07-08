@@ -49,11 +49,12 @@ const Search = () => {
                 render={attrs => (
                     <div className="result-search" tabIndex='-1' {...attrs}>
                         <Wrapper>
-                            {/*<h4 className='search-account'>Suggestions</h4>*/}
+                            <h4 className='search-account'>Suggestions</h4>
                             {/*{searchResult.map((todo) => (*/}
                             {/*    <Suggestions data={todo} key={todo.id}/>*/}
-                            {/*))}*/}
-                            {/*<h4 className="search-account">Account</h4>*/}
+                            <Suggestions data={searchResult} key={searchResult.id}/>
+
+                            <h4 className="search-account">Account</h4>
                             {searchResult.map((item) => (
                                 <AccountItem key={item.id} data={ item}/>
                             ))}
