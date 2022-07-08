@@ -159,6 +159,12 @@ ol {
     .post-related-container {
         margin-left: 1.7rem;
     }
+    .prep-list-table-img-td{
+        width: 100%!important;
+    }
+    .prep-list-table-img{
+        width: 5rem!important;
+    }
 
     .read-all-text .category-cover-title {
         font-size: 8rem;

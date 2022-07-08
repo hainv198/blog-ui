@@ -353,7 +353,7 @@ function TemplatePage() {
                                            style={{maxWidth: "75%", marginTop: "2rem", columnCount: "2"}}>
                                         <tbody>
                                         <tr className={'prep-list-table-row'}>
-                                            <td width={"5%"}>
+                                            <td className={'prep-list-table-img-td'} width={"5%"}>
                                                 <img className={'prep-list-table-img'}
                                                      src={require("../images/bed.png")}
                                                      style={{width: "50%"}}/>
@@ -365,7 +365,7 @@ function TemplatePage() {
                                                     <span className={'text-muted'}>via Booking.com</span>
                                                 </a>
                                             </td>
-                                            <td width={"5%"}>
+                                            <td className={'prep-list-table-img-td'} width={"5%"}>
                                                 <img className={'prep-list-table-img'}
                                                      src={require("../images/insurance.png")} style={{width: "50%"}}/>
                                             </td>
