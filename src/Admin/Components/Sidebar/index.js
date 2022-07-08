@@ -11,7 +11,6 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
@@ -45,12 +44,6 @@ const Sidebar = ({setDark}) => {
 
 
         <div className="sidebar ">
-            {/*<div className="top">*/}
-            {/*    <Link to="/" style={{ textDecoration: "none" }}>*/}
-            {/*        <span className="logo">lamadmin</span>*/}
-            {/*    </Link>*/}
-            {/*</div>*/}
-
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
@@ -71,7 +64,7 @@ const Sidebar = ({setDark}) => {
                     <Link to='/admin/products' style={{ textDecoration: "none" }}>
                         <li>
                             <StoreIcon className="icon" />
-                            <span>Products</span>
+                            <span>Posts</span>
                         </li>
                     </Link>
 

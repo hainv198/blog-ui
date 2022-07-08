@@ -18,6 +18,7 @@ const Destinations = () => {
     return (
         <div>
             <HeadlessTippy
+                placement='bottom'
                 interactive
                 render={attrs => (
                     <div className="box" tabIndex='-1' {...attrs}>
@@ -34,7 +35,7 @@ const Destinations = () => {
                 )}
                 // onClickOutside={handleHideResult}
             >
-               <span>Destinations</span>
+               <span style={{cursor:"pointer"}}>Destinations</span>
             </HeadlessTippy>
 
         </div>

@@ -35,9 +35,6 @@ function Header() {
                             <div style={{alignItems:"center", display:"flex", gap:5, width:400, padding:'0 50px'}}>
                                     <Nav.Link as={NavLink} to="/" exact>Home</Nav.Link>
                                     <Destinations/>
-                                    <Nav.Link as={NavLink} to="/travel">
-                                        Travel
-                                    </Nav.Link>
                                     <Nav.Link style={{padding:'unset'}} as={NavLink} to="/about" exact>
                                         About
                                     </Nav.Link>

@@ -27,9 +27,7 @@ const Admin = ({setDarkss}) => {
                             {/*//todo*/}
                         </Nav>
                         <div className='header-admin'>
-                            <div>
 
-                            </div>
                             <div className='theme' style={{margin:"auto", }}>
                                 <Tippy
                                     content={<span>Theme</span>}>
