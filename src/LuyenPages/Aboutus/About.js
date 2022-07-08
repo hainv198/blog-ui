@@ -32,7 +32,7 @@ function About() {
 
                     <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 person text-center">
                         <div>
-                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt=""/>
+                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt="img"/>
                         </div>
                         <h3>Who's Hannah?</h3>
                         <p>
@@ -60,14 +60,7 @@ function About() {
                     <p>We created Salt in our Hair on Instagram on our first big backpack trip (Nov 2015) and started posting
                         almost daily. At the end of this trip GoPro featured one of our photos.</p>
                     <p>
-                        We went back to our corporate jobs (which we did love ❤️ by the way!) and started the blog (May 2016)
-                        where we post weekly, kept on posting daily on Instagram and traveled after every 12 weeks of working at
-                        our jobs. About 1 year later (May 2017) we were working about 80 hours a week each. 40 at our corporate
-                        jobs and 40 on Salt in our Hair in the evenings and weekends. But Salt in our Hair was getting quite
-                        some media attention which helped us grow faster and get a minimum but steady income out of it. Another
-                        thing was that we made sure our photos got shared on Instagram by using popular hashtags. Two years
-                        later (1 Nov 2017) we quit our corporate jobs and are working full-time on Salt in our Hair. Which is
-                        now our full-time, hard-working, dream job.
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                     </p>
                 </div>
                 <div class="section3-content">
@@ -77,10 +70,7 @@ function About() {
                         had the skills, so it was an obvious decision to start a travel blog. We launched our travel blog in May
                         2016.</p>
                     <p>
-                        It took us a year to really get it out there, which was pretty frustrating sometimes. Nick writes most
-                        of the blogs and Hannah makes sure all the visuals are on point.
-                        To market, we collaborate with bigger blogs or travel related websites to make sure people get to know
-                        our name. This, together with Pinterest helps us to get some good traffic to our blog.
+                    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
                     </p>
                 </div>
                 <div class="section3-content">

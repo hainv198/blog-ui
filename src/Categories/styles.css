@@ -658,6 +658,12 @@ div.div span {
     line-height: 2rem;
 }
 
+.must-do {
+    padding-left: 5rem;
+    margin-left: 5rem;
+
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
@@ -668,9 +674,10 @@ and (max-device-width : 480px) {
     }
 
     header {
-        width: 100%;
+        width: 100vw;
         background: url(../images/others/pink-roundshape.webp);
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
@@ -680,7 +687,8 @@ and (max-device-width : 480px) {
     }
 
     .category-cover-title {
-        font-size: 8rem !important;
+        font-size: 6rem !important;
+        width: 300px !important;
     }
 
     .category-cover-excerpt {
@@ -745,13 +753,14 @@ and (max-device-width : 480px) {
 
     .article-heading h1 {
         font-weight: bold;
-        width: 400px !important;
     }
 
     .must-do {
         margin-top: 5rem !important;
         background: url('../images/others/pink-roundshape.webp');
         display: -ms-flexbox;
+        background-size: cover;
+        margin-left: -1rem;
 
     }
 
@@ -759,6 +768,19 @@ and (max-device-width : 480px) {
         margin-bottom: 1rem;
     }
 
+    .page-content-article {
+        display: none !important;
+    }
+
+    .category-cover-left__heading {
+        width: 100% !important;
+    }
+
+    .category-cover-right {
+        width: 100vw !important;
+    }
+
+    #asia-title {font-size: 10rem !important;}
     /* Styles */
 }
 
@@ -793,6 +815,10 @@ and (max-device-width : 1024px) {
 
     .right-content-text span {
         font-size: 10px !important;
+    }
+
+    .page-content-article {
+        display: none !important;
     }
 
 }

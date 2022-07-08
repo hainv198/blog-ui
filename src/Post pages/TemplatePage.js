@@ -24,21 +24,36 @@ function TemplatePage() {
     let ranNum3;
     let i = 0;
     useEffect(() => {
-        ranNum1 = Math.floor(Math.random() * 4) + 1;
+        // ranNum1 = Math.floor(Math.random() * 4) + 1;
+        if (params.id < 10) {
+            ranNum1 = parseInt(params.id) + 1;
+        } else {
+            ranNum1 = parseInt(params.id) - 1;
+        }
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum1;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt1(data))
     }, [])
     useEffect(() => {
-        ranNum2 = Math.floor(Math.random() * 4) + 5;
+        // ranNum2 = Math.floor(Math.random() * 4) + 5;
+        if (params.id < 10) {
+            ranNum2 = parseInt(params.id) + 2;
+        } else {
+            ranNum2 = parseInt(params.id) - 2;
+        }
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum2;
         fetch(url)
             .then(response => response.json())
             .then(data => setrandomArt2(data))
     }, [])
     useEffect(() => {
-        ranNum3 = Math.floor(Math.random() * 4) + 9;
+        // ranNum3 = Math.floor(Math.random() * 4) + 9;
+        if (params.id < 10) {
+            ranNum3 = parseInt(params.id) + 3;
+        } else {
+            ranNum3 = parseInt(params.id) - 3;
+        }
         let url = "https://62b11da8196a9e98702f9eca.mockapi.io/blog/" + ranNum3;
         fetch(url)
             .then(response => response.json())
@@ -84,10 +99,12 @@ function TemplatePage() {
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div className="row about-us-right">
                                             <div className="col-12">
-                                                <h2>Hi, we're Nick & Hannah</h2>
+                                                <h2>Hi, we're Group 5</h2>
                                                 <p className="about-us-content">
-                                                    We hope you're enjoying our free travel guides & tips! If so, please
-                                                    consider supporting our work.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                                    ducimus id ipsam iste molestias porro qui quis sint sunt. A amet,
+                                                    assumenda autem cumque dolore incidunt labore quisquam similique
+                                                    sint?
                                                 </p>
                                                 <Button variant={'dark'} size={'lg'}
                                                         className={'about-us-button rounded-pill'}>About
@@ -187,7 +204,7 @@ function TemplatePage() {
                                                                 <img className={'post-content-img'}
                                                                      src={post.sub_image.a15}/>
                                                             </Row>
-                                                            {post.sub_head.a18 != null ? (
+                                                            {post.sub_head.a16 != null ? (
                                                                 <>
                                                                     <Row>
                                                                         <h1 className={'post-content-title'}>16. {post.sub_head.a16}</h1>
@@ -195,18 +212,22 @@ function TemplatePage() {
                                                                         <img className={'post-content-img'}
                                                                              src={post.sub_image.a16}/>
                                                                     </Row>
-                                                                    <Row>
-                                                                        <h1 className={'post-content-title'}>17. {post.sub_head.a17}</h1>
-                                                                        <p className={'post-content-article'}>{post.sub_content.a17}</p>
-                                                                        <img className={'post-content-img'}
-                                                                             src={post.sub_image.a17}/>
-                                                                    </Row>
-                                                                    <Row>
-                                                                        <h1 className={'post-content-title'}>18. {post.sub_head.a18}</h1>
-                                                                        <p className={'post-content-article'}>{post.sub_content.a18}</p>
-                                                                        <img className={'post-content-img'}
-                                                                             src={post.sub_image.a18}/>
-                                                                    </Row>
+                                                                    {post.sub_head.a18 != null ? (
+                                                                        <>
+                                                                            <Row>
+                                                                                <h1 className={'post-content-title'}>17. {post.sub_head.a17}</h1>
+                                                                                <p className={'post-content-article'}>{post.sub_content.a17}</p>
+                                                                                <img className={'post-content-img'}
+                                                                                     src={post.sub_image.a17}/>
+                                                                            </Row>
+                                                                            <Row>
+                                                                                <h1 className={'post-content-title'}>18. {post.sub_head.a18}</h1>
+                                                                                <p className={'post-content-article'}>{post.sub_content.a18}</p>
+                                                                                <img className={'post-content-img'}
+                                                                                     src={post.sub_image.a18}/>
+                                                                            </Row>
+                                                                        </>
+                                                                    ) : ("")}
                                                                 </>
                                                             ) : ("")}
                                                         </>
@@ -526,9 +547,9 @@ function TemplatePage() {
                     <Col md={12} className={'ms-auto me-auto'}>
                         <div
                             // className="spinner-border"
-                             style={{marginTop: "50rem", marginBottom: "50rem", marginLeft: "auto", marginRight: "auto"}}
-                             className={'text-center'}
-                             role="status">
+                            style={{marginTop: "50rem", marginBottom: "50rem", marginLeft: "auto", marginRight: "auto"}}
+                            className={'text-center'}
+                            role="status">
                             <img style={{marginLeft: "15rem"}} src={loading}/>
                         </div>
                     </Col>
