@@ -99,10 +99,12 @@ function TemplatePage() {
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div className="row about-us-right">
                                             <div className="col-12">
-                                                <h2>Hi, we're Nick & Hannah</h2>
+                                                <h2>Hi, we're Group 5</h2>
                                                 <p className="about-us-content">
-                                                    We hope you're enjoying our free travel guides & tips! If so, please
-                                                    consider supporting our work.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                                                    ducimus id ipsam iste molestias porro qui quis sint sunt. A amet,
+                                                    assumenda autem cumque dolore incidunt labore quisquam similique
+                                                    sint?
                                                 </p>
                                                 <Button variant={'dark'} size={'lg'}
                                                         className={'about-us-button rounded-pill'}>About

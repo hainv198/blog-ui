@@ -18,7 +18,8 @@ function Footer() {
             setEmailError('Enter valid Email!')
         }
     }
-
+    const destArr = ['asia', 'africa', 'europe']
+    const pickDest = destArr[Math.floor(Math.random()*destArr.length)];
     return (
         <div class="footer" style={{ "margin-top": "20px" }}>
             <div class="container">
@@ -29,7 +30,7 @@ function Footer() {
                                 <h3>Menu</h3>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2"><Link to={"/"} class="nav-link p-0 text-muted">Home</Link></li>
-                                    <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Destination</Link></li>
+                                    <li class="nav-item mb-2"><Link to={"/categories/" + pickDest} class="nav-link p-0 text-muted">Destination</Link></li>
                                     <li class="nav-item mb-2"><Link to={"/#"} class="nav-link p-0 text-muted">Travel</Link></li>
                                     <li class="nav-item mb-2"><Link to={"/about"} class="nav-link p-0 text-muted">About</Link></li>
                                 </ul>
