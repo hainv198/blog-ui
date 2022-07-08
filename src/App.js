@@ -41,7 +41,7 @@ function App() {
                         <Route path='/signup' element={<SignUp/>}/>
                         <Route path='page/:id' element={<TemplatePage/>}/>
                         <Route path='/categories/'>
-                            <Route path='costarica' element={<Costarica/>}/>
+                            <Route path='costa%20rica' element={<Costarica/>}/>
                             <Route path='egypt' element={<Egypt/>}/>
                             <Route path='france' element={<France/>}/>
                             <Route path='vietnam' element={<Vietnam/>}/>
