@@ -164,8 +164,11 @@ const New = () => {
                                     ></input>
                                 </div>
                                 <div className="formInput">
-                                    <label>Password</label>
-                                    <input type='text' placeholder='password' />
+                                    <label>Date of birthday</label>
+                                    <input
+                                        value={(users.created_at).slice(0, 10)}
+                                        type='text'
+                                           placeholder='Date of birthday' />
                                 </div>
                                 <div className="formInput">
                                     <label>Address</label>

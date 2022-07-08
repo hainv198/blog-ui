@@ -16,14 +16,14 @@ const Admin = ({setDarkss}) => {
         <div >
             <Navbar
                 className={dark ? 'app dark' : 'dark'}
-                collapseOnSelect expand="lg" style={{height:100}}  variant="light">
+                collapseOnSelect expand="lg" style={{height:70}}  variant="light">
                 <Container>
                     <Navbar.Brand href="/admin/home">
                         <img src={'https://static.saltinourhair.com/build/images/saltinourhair-logo.png'} alt="" width={'114px'} height={'23px'}/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-autoo">
+                    <Navbar.Collapse className='header_admin' id="responsive-navbar-nav">
+                        <Nav className="me-autos">
                             {/*//todo*/}
                         </Nav>
                         <div className='header-admin'>

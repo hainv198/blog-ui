@@ -29,7 +29,7 @@ const List = () => {
 
 
     return (
-        <div className="list" style={{marginTop:100}}>
+        <div className="list" style={{marginTop:71}}>
             <Sidebar/>
             <div className="listContainer" >
                 <div style={{width:'90%', margin:'auto'}}>

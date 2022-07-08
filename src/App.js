@@ -27,6 +27,7 @@ import NoPage from "./Page/NoPage";
 import './Style/dark.scss.css'
 import {useState} from "react";
 import Post from "./Admin/Page/Post/index";
+import DetailProducts from "./Admin/Components/CartPost";
 function App() {
     const [dark, setDark] = useState(false)
   return (
@@ -72,7 +73,7 @@ function App() {
                         </Route>
                         <Route path='products'>
                             <Route index element={<Post/>}/>
-                            <Route path=':productId' element={<Single/>}/>
+                            <Route path='readmore/:id' element={<DetailProducts/>}/>
                             <Route path='new' element={<New/>}/>
                         </Route>
                     </Route>
