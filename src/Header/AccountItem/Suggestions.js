@@ -1,24 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import PersonSearchIcon from '@mui/icons-material/PersonSearch';
+import React from 'react';
+import PublicIcon from '@mui/icons-material/Public';
+import {Link} from "react-router-dom";
 
 const Suggestions = ({data}) => {
-    const [set1, setSet1]= useState([])
-    useEffect(() => {
-        setSet1(data.sub_tag)
-    },[data])
-    console.log(data.sub_tag);
-    const country = set1.find((item) => <h1>{item.id}</h1>);
-    console.log(country)
+    if (data[0] !== undefined) {
+        var country = data[0].sub_tag;
+    }
     return (
         <div className='wrappers'>
-            <button className='btn-search'><PersonSearchIcon/></button>
+            <button className='btn-search'><PublicIcon/></button>
             <div className="info">
                 <p className="name">
-                    {data.tags !== null && (
-                        // <span>{data.sub_tag}</span>
-                        <span>{country}</span>
-                    )}
+                    {/*{data.tags !== null && (*/}
+                    {/*    <span>{data[0].sub_tag}</span>*/}
+                    <Link to={'/categories/' + country} style={{textDecoration: "none", color: "black"}}>
+                    <span>{country}</span>
+                    </Link>
+                    {/*)}*/}
                     {/*{data.status === true && (*/}
                     {/*    <FiberManualRecordIcon/>*/}
                     {/*)}*/}
