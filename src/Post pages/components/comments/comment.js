@@ -17,7 +17,7 @@ const Comment = (props) => {
         fetch(url)
             .then(response => response.json())
             .then(data => setShowCmt(data))
-    }, [])
+    }, [showCmt])
     let cmtList = [];
     // let testCmt = [];
     // if (showCmt != null ? (
@@ -29,7 +29,7 @@ const Comment = (props) => {
     //     ))
     // ) : ("")) ;
     if (showCmt != null ? (
-        cmtList = showCmt.map((item) => (
+        cmtList = showCmt.slice(0).reverse().map((item) => (
             <>
                 <Row style={{backgroundColor: "#f9f9f9", marginTop: "1rem", borderRadius: "10px"}}>
                     <div>
