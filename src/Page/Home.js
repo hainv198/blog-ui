@@ -49,11 +49,11 @@ const Home = () => {
                         <div>
                             <img src={require("../images/hand.png")} alt="img" />
                         </div>
-                        <p>Hi, we’re Nick & Hannah from Salt in our Hair.
+                        <p>We're group 5 with 4 members, 3 play boyz and 1 lady that run a 'travel content creation' company named Salt in our Hair.
                             We create inspiring travel blogs about the world’s most beautiful places to make planning your
                             holiday a piece of cake!</p>
                         <p id='destination-wrapper'>Choose a
-                            <span id="destination"><Destinations/></span>
+                            <span id="destination"><Destinations /></span>
                             to start your journey.
                         </p>
                     </div>

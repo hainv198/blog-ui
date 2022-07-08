@@ -2,12 +2,25 @@ import React from "react";
 import "../Footer/Footer.css";
 import { Link } from "react-router-dom";
 import { Button, Card, CardImg, Col, Container, Row } from "react-bootstrap";
-
+import validator from 'validator';
+import { useState } from 'react';
 
 
 function Footer() {
+
+    const [emailError, setEmailError] = useState('')
+    const validateEmail = (e) => {
+        var email = e.target.value
+
+        if (validator.isEmail(email)) {
+            setEmailError('Email valid!')
+        } else {
+            setEmailError('Enter valid Email!')
+        }
+    }
+
     return (
-        <div class="footer" style={{"margin-top": "20px"}}>
+        <div class="footer" style={{ "margin-top": "20px" }}>
             <div class="container">
                 <footer class="py-5">
                     <div class="row footer-content">
@@ -51,8 +64,17 @@ function Footer() {
                                 </div>
 
                                 <div class="d-flex w-100 gap-2 col-12">
-                                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" onChange={(e) => validateEmail(e)} />
+                                    
+                                    
+                                    
                                     <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                                <div>
+                                <span style={{
+                                            fontWeight: 'bold',
+                                            color: 'red',
+                                        }}>{emailError}</span>
                                 </div>
                             </form>
                         </div>
