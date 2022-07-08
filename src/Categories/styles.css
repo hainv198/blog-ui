@@ -671,6 +671,7 @@ and (max-device-width : 480px) {
         width: 100%;
         background: url(../images/others/pink-roundshape.webp);
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
@@ -752,6 +753,7 @@ and (max-device-width : 480px) {
         margin-top: 5rem !important;
         background: url('../images/others/pink-roundshape.webp');
         display: -ms-flexbox;
+        background-size: cover;
 
     }
 
@@ -759,6 +761,9 @@ and (max-device-width : 480px) {
         margin-bottom: 1rem;
     }
 
+    .page-content-article {
+        display: none !important;
+    }
     /* Styles */
 }
 
@@ -793,6 +798,10 @@ and (max-device-width : 1024px) {
 
     .right-content-text span {
         font-size: 10px !important;
+    }
+
+    .page-content-article {
+        display: none !important;
     }
 
 }
