@@ -34,7 +34,7 @@ const Contact = () => {
 
                     <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 person text-center">
                         <div>
-                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt="" />
+                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt="img" id='ngan'/>
                         </div>
                         <h3>Who's Ngan?</h3>
                         <p>
@@ -45,7 +45,7 @@ const Contact = () => {
 
                     <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 person text-center">
                         <div>
-                            <img src="https://zpsocial-f46-org.zadn.vn/e5e0133a9e6d7033297c.jpg" alt="Van Hai" />
+                            <img src="https://zpsocial-f46-org.zadn.vn/e5e0133a9e6d7033297c.jpg" alt="Van Hai" id='vanhai'/>
                         </div>
                         <h3>Who's Van Hai?</h3>
                         <p>
@@ -55,7 +55,7 @@ const Contact = () => {
 
                     <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 person text-center">
                         <div>
-                            <img src="https://www.rd.com/wp-content/uploads/2018/05/shutterstock_725437768.jpg?resize=700,466" alt="Luyen" />
+                            <img src="https://www.rd.com/wp-content/uploads/2018/05/shutterstock_725437768.jpg?resize=700,466" alt="Luyen" id='luyen'/>
                         </div>
                         <h3>Who's Luyen?</h3>
                         <p>

@@ -32,7 +32,7 @@ function About() {
 
                     <div class="col-lg-6 .col-md-6 .col-sm-6 .col-xs-12 person text-center">
                         <div>
-                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt=""/>
+                            <img src="https://static.saltinourhair.com/build/images/about-us/hannah.png" alt="img"/>
                         </div>
                         <h3>Who's Hannah?</h3>
                         <p>
