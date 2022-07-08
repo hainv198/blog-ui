@@ -62,39 +62,61 @@ const Columbia = () => {
             <Container className="container-container">
                 <div className="container page-content-container ">
                     <div className="page-content mt-5 d-flex justify-content-between  container" >
-                        <div className="page-content__search">
-                            <h3 className="search-title__heading">Pick a destination</h3>
-                            <ul className="page-content__search-ul">
-                                <li className="page-content__search-li mt-3 mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
-                                    <Link to={'/page/9'}><span className="page-content__search-link">BOGOTA</span></Link>
-                                </li>
-                                <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">CARTAGENA</span></a>
-                                </li>
-                                <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">MEDELLIN</span></a>
-                                </li>
-                                <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">PALOMINO</span></a>
-                                </li>
-                                <li className="page-content__search-li mt-3  mb-1">
-                                    <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>
-                                    <a href="src/components/Asia#"><span className="page-content__search-link">SALENTO</span></a>
-                                </li>
-                                <li className="page-content__search-li">
-                                    <div className="input-group rounded">
-                                        <input ref={inputRef} type="search" className="form-control rounded" defaultValue="Or type here to search..."
-                                               aria-label="Search" aria-describedby="search-addon" onFocus={(e) => inputRef.current.value=""} onBlur={(e) => inputRef.current.value="Or type here to search..."}/>
-                                        <span className="input-group-text border-0" id="search-addon">
+                        <div>
+
+
+                            <div className="page-content__search">
+                                <h3 className="search-title__heading">Pick a destination</h3>
+                                <ul className="page-content__search-ul">
+                                    <li className="page-content__search-li mt-3 mb-1">
+                                        <img className="page-content__search-icon" src={require("../images/columbia/search4.jpg")} alt="icon images"/>
+                                        <Link to={'/page/9'}><span className="page-content__search-link">BOGOTA</span></Link>
+                                    </li>
+                                    <li className="page-content__search-li mt-3  mb-1">
+                                        <img className="page-content__search-icon" src={require("../images/columbia/cover.jpg")} alt="icon images"/>
+                                        <a href="src/components/Asia#"><span className="page-content__search-link">CARTAGENA</span></a>
+                                    </li>
+                                    <li className="page-content__search-li mt-3  mb-1">
+                                        <img className="page-content__search-icon" src={require("../images/columbia/article.jpg")} alt="icon images"/>
+                                        <a href="src/components/Asia#"><span className="page-content__search-link">MEDELLIN</span></a>
+                                    </li>
+                                    <li className="page-content__search-li mt-3  mb-1">
+                                        <img className="page-content__search-icon" src={require("../images/columbia/mustdo1.jpg")} alt="icon images"/>
+                                        <a href="src/components/Asia#"><span className="page-content__search-link">PALOMINO</span></a>
+                                    </li>
+                                    <li className="page-content__search-li mt-3  mb-1">
+                                        <img className="page-content__search-icon" src={require("../images/columbia/mustdo2.jpg")} alt="icon images"/>
+                                        <a href="src/components/Asia#"><span className="page-content__search-link">SALENTO</span></a>
+                                    </li>
+                                    <li className="page-content__search-li">
+                                        <div className="input-group rounded">
+                                            <input ref={inputRef} type="search" className="form-control rounded" defaultValue="Or type here to search..."
+                                                   aria-label="Search" aria-describedby="search-addon" onFocus={(e) => inputRef.current.value=""} onBlur={(e) => inputRef.current.value="Or type here to search..."}/>
+                                            <span className="input-group-text border-0" id="search-addon">
                                     <i className="fas fa-search"></i></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="page-content-article-mobile" style={{display:"none"}} >
+                                <div className="article-img img-img">
+                                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                                    <img className="article-img__img" src={require("../images/columbia/article.jpg")} alt="article picture"/>
+                                </div>
+                                <div className="div">
+                             <span>
+                                 <img style={{width: "8rem"}} className={'salt-icon'} src={require("../images/icons/lightbulb.png")}/>
+                             </span>
+                                    <div className="article-heading">
+                                        <h1 className="text-center container w-75" style={{fontSize:"3rem"}}>Colombia travel guide: A complete 3-week itinerary</h1>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+
+
                         </div>
+
                         <div className="page-content-article" >
                             <div className="article-img img-img">
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
@@ -115,7 +137,7 @@ const Columbia = () => {
             </Container>
             {/*page content intro article*/}
             <Container>
-                <div className="must-do section container" style={{marginTop:"10rem"}}>
+                <div className="must-do row section container" style={{marginTop:"10rem"}}>
                     <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN COLOMBIA</h1>
                     <div className="d-flex justify-content-between">
                         <div className="must-do__img-container">

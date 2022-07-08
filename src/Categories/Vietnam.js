@@ -117,7 +117,7 @@ const Vietnam = () => {
 </Container>
             {/*page content intro article*/}
            <Container>
-               <div className="must-do section container" style={{marginTop:"10rem"}}>
+               <div className="must-do row section container" style={{marginTop:"10rem"}}>
                    <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN VIETNAM</h1>
                    <div className="d-flex justify-content-between row collection">
                        <div className="must-do__img-container">
