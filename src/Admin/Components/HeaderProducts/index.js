@@ -1,27 +1,29 @@
 import React, {useEffect, useState} from 'react';
 import './HeaderProduct.scss'
 import {Nav, Navbar, Container, NavDropdown} from "react-bootstrap";
-import {demo} from "../../../Header/Destinations";
+
 
 const HeaderProducts = ({data}) => {
+
+
     const[category, setCategory] = useState(null)
     useEffect(() => {
         setCategory(data)
     },[data])
     var list_country = []
     if(category !== null) {
+
         list_country = category.map((item) => (
-            <>
-                <Nav style={{display:"flex"}}>
-                    <NavDropdown
-                        id="nav-dropdown-dark-example"
-                        title={item.tags}
-                        menuVariant="dark"
-                    >
-                        <NavDropdown.Item href="#action/3.1">{item.sub_tag}</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-            </>
+            <div>
+                <NavDropdown.Item
+                    className='header-country'
+                    href="#action/3.1"
+                    style={{fontSize:'1.6rem'}}
+                >
+                    {item.sub_tag} >
+                    {item.title}
+                </NavDropdown.Item>
+            </div>
         ))
     }
     return (
@@ -37,7 +39,15 @@ const HeaderProducts = ({data}) => {
                 </div>
             </div>
             <div className="category">
-                {list_country}
+                <Nav style={{display:"flex"}}>
+                    <NavDropdown
+                        id="nav-dropdown-light-example"
+                        title='Newest '
+                        menuVariant="light"
+                    >
+                        {list_country}
+                    </NavDropdown>
+                </Nav>
             </div>
         </div>
     );

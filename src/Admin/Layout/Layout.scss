@@ -2,7 +2,11 @@
   margin: 0;
   height: auto;
 }
-.me-autoo {
+.header_admin {
+  flex-direction: row-reverse;
+}
+
+.me-autos {
   display: flex;
   justify-content: space-around;
 }

@@ -15,7 +15,7 @@ const Search = () => {
     const [ showResult, setShowResult] = useState(false)
 
     const {text} = useTypewriter({
-        words: ['Hello!!', 'How do you feel today?', 'What are you currently collecting?!','Search account and video'],
+        words: ['Hello!!', 'Which country interests you?', 'Your next travel destination?'],
         loop: '10',
         onLoopDone: () => console.log(`loop completed after 3 runs.`),
     })
