@@ -115,9 +115,9 @@ const Europe = () => {
             </Container>
             {/*page content intro article*/}
             <Container>
-                <div className="must-do row section container" style={{marginTop:"10rem"}}>
+                <div className="must-do section container" style={{marginTop:"10rem"}}>
                     <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN EUROPE</h1>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex row justify-content-between">
                         <div className="must-do__img-container">
                             <img className="must-do__img" src={require("../images/europe/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">

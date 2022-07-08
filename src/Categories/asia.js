@@ -16,7 +16,7 @@ const Asia = () => {
                                 <div className={'category-cover-left'}>
                                     <h1 className={'category-cover-left__heading'}>
                                         <span className={'category-cover-subtitle'}>Travel in</span>
-                                        <div className={'category-cover-title'} style={{fontSize: "18rem"}} title={'ASIA'}>
+                                        <div className={'category-cover-title'} id="asia-title" style={{fontSize: "18rem"}} title={'ASIA'}>
                                             ASIA
                                         </div>
                                     </h1>
@@ -117,9 +117,9 @@ const Asia = () => {
             </Container>
             {/*page content intro article*/}
             <Container>
-                <div className="must-do row section container" style={{marginTop:"10rem"}}>
+                <div className="must-do  section container" style={{marginTop:"10rem"}}>
                     <h1 style={{fontWeight:"bolder", fontSize:"3rem"}} className="mb-3">MUST DO IN ASIA</h1>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex row justify-content-between">
                         <div className="must-do__img-container">
                             <img className="must-do__img" src={require("../images/asia/mustdo2.jpg")} alt="title"/>
                             <div className="must-do__title">
