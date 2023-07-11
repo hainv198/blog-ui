@@ -7,32 +7,32 @@ import { useEffect } from 'react';
 import Destinations from '../Header/Destinations';
 
 const Home = () => {
-    const [country, setCountry] = useState(null);
-    useEffect(() => {
-        console.log('app useeffect!!');
-        let url = "https://62b04a60b0a980a2ef4f849b.mockapi.io/Test";
+    // const [country, setCountry] = useState(null);
+    // useEffect(() => {
+    //     console.log('app useeffect!!');
+    //     let url = "https://62b04a60b0a980a2ef4f849b.mockapi.io/Test";
 
-        fetch(url)
-            .then((response) => response.json())
-            .then((data) => {
-                setCountry(data);
-            });
-        // console.log("Countries =" + country);
-    }, []);
+    //     fetch(url)
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             setCountry(data);
+    //         });
+    //     // console.log("Countries =" + country);
+    // }, []);
 
-    // console.log("Countries =" + country);
+    // // console.log("Countries =" + country);
 
-    var country_list = [];
-    if (country != null) {
-        country_list = country.map((element) => (
-            <li className='text-nowrap'>
-                <Link to={"/categories/" + element.country}>
-                    <img src={element.image} alt={"img"} />
-                    {element.country}
-                </Link>
-            </li>
-        ));
-    }
+    // var country_list = [];
+    // if (country != null) {
+    //     country_list = country.map((element) => (
+    //         <li className='text-nowrap'>
+    //             <Link to={"/categories/" + element.country}>
+    //                 <img src={element.image} alt={"img"} />
+    //                 {element.country}
+    //             </Link>
+    //         </li>
+    //     ));
+    // }
     // console.log(country_list);
 
     return (
@@ -117,14 +117,14 @@ const Home = () => {
                 </div>
 
                 {/* <!-- section redomendation --> */}
-                <div class="container">
+                {/* <div class="container">
                     <ul class="where-to">
                         <li>
                             Where to Next?
                         </li>
                         {country_list}
                     </ul>
-                </div>
+                </div> */}
             </div>
 
 
